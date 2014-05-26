@@ -1,0 +1,26 @@
+<flow id="flowException2" name="flowExceptionTest">
+	<nodes>
+		<node id="begin">
+			<next-nodes>
+				<next-node component-result="begin" next-node-id="hello"/>
+			</next-nodes>
+		</node>
+		<node id="hello">
+			<component name="exceptionFlowComponent2">
+			</component>
+			<next-nodes>
+				<next-node exception-type="org.tinygroup.flow.exception.Exception1" next-node-id="exceptionProcess" />
+				<next-node next-node-id="end" />
+			</next-nodes>
+		</node>
+		<node id="exceptionProcess" name="exceptionProcess" title="异常处理节点">
+			<component name="ExceptionDealComponent">
+				
+			</component>
+			<next-nodes>
+				<next-node component-result="OK" next-node-id="end">
+				</next-node>
+			</next-nodes>
+		</node>
+	</nodes>
+</flow>

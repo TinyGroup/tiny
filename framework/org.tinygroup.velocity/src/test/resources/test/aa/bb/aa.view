@@ -1,0 +1,22 @@
+姓名：$name
+abc1
+
+Output:
+#set ($list = [1, 2, 2])
+#add1($list)
+
+#@d1()
+hello!
+#end
+
+ #@accordion1("ownaccordion")
+ #@accordionSection1("第一个小节") 
+ 第一个小节第一个小节第一个小节第一个小节第一个小节第一个小节第一个小节第一个小节第一个小节 
+ #end
+ #@accordionSection1("第二个小节") 
+ 第二个小节第二个小节第二个小节第二个小节第二个小节第二个小节第二个小节第二个小节第二个小节 
+ #end
+ #@accordionSection1("第三个小节") 第三个小节第三个小节第三个小节第三个小节第三个小节第三个小节第三个小节第三个小节第三个小节 #end
+ #@accordionSection1("第四个小节") 第四个小节第四个小节第四个小节第四个小节第四个小节第四个小节第四个小节第四个小节第四个小节 #end
+ #end
+ 

@@ -1,0 +1,65 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="user2" scope="prototype"
+		class="org.tinygroup.springutil.config.User">
+		<property name="name">
+			<value>aa1</value>
+		</property>
+		<property name="age">
+			<value>121</value>
+		</property>
+		<property name="cat">
+			<ref bean="cat1" />
+		</property>
+	</bean>
+
+	<bean id="user"  scope="singleton"
+		class="org.tinygroup.springutil.config.User">
+		<property name="name">
+			<value>aa</value>
+		</property>
+		<property name="age">
+			<value>12</value>
+		</property>
+		<property name="cat">
+			<ref bean="cat" />
+		</property>
+		<property name="cats">
+			<list>
+				<ref bean="cat" />
+			</list>
+		</property>
+		<property name="catSet">
+			<list>
+				<ref bean="cat" />
+			</list>
+		</property>
+		<property name="catMap">
+			<map>
+				<entry key="aa" value-ref="cat"></entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="cat" scope="singleton" class="org.tinygroup.springutil.config.Cat" />
+	<bean id="cat1" scope="prototype" class="org.tinygroup.springutil.config.Cat" />
+	<bean id="aaa1" scope="singleton" class="org.tinygroup.springutil.config.Aaa">
+		<property name="name">
+			<value>aaa1</value>
+		</property>
+	</bean>
+	<bean id="aaa" scope="singleton" class="org.tinygroup.springutil.config.Aaa">
+		<property name="name">
+			<value>aaa</value>
+		</property>
+	</bean>
+	<bean id="bbb" scope="singleton" class="org.tinygroup.springutil.config.Bbb"
+		autowire="byType" />
+	<bean id="ccc" scope="singleton" class="org.tinygroup.springutil.config.Ccc"
+		autowire="byName" />
+
+</beans>

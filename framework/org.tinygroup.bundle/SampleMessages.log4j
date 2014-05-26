@@ -1,0 +1,768 @@
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074938" level="INFO" thread="main">
+<log4j:message><![CDATA[正在进行全路径扫描....]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074949" level="INFO" thread="main">
+<log4j:message><![CDATA[查找WEB-INF/classes路径开始...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074950" level="INFO" thread="main">
+<log4j:message><![CDATA[WEB-INF/classes路径是:file:/D:/git/tiny/framework/org.tinygroup.bundle/target/test-classes/]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074950" level="INFO" thread="main">
+<log4j:message><![CDATA[WEB-INF/lib路径是:file:/D:/git/tiny/framework/org.tinygroup.bundle/target/test-classes/]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074950" level="INFO" thread="main">
+<log4j:message><![CDATA[查找WEB-INF/classes路径完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074951" level="WARN" thread="main">
+<log4j:message><![CDATA[WEBROOT变量找不到]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074951" level="INFO" thread="main">
+<log4j:message><![CDATA[查找Web工程中的jar文件列表开始...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074980" level="INFO" thread="main">
+<log4j:message><![CDATA[查找Web工程中的jar文件列表完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074988" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.parser\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074990" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.parser\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074990" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.springutil\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074991" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.springutil\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074992" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.order\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074993" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.order\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074993" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.binarytree\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074995" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.binarytree\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074995" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.logger\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074996" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.logger\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331074997" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.commons\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075006" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.commons\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075006" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.threadgroup\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075007" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.threadgroup\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075008" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.bundle\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075011" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.bundle\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075011" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.xmlparser\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075014" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.xmlparser\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075014" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.xstream\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075016" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.xstream\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075016" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.fileresolver\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075019" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.fileresolver\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075019" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.formater\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075021" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.formater\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075021" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.application\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075022" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.application\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075023" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.config\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075024" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.config\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075024" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.exception\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075025" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.exception\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075026" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.i18n\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075030" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.i18n\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075030" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.bundle\target\test-classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075062" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.bundle\target\test-classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075063" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.vfs\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075065" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.vfs\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075065" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.context\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075068" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.context\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075068" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.testutil\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075070" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.testutil\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.MultiThreadFileProcessor" timestamp="1400331075070" level="INFO" thread="main">
+<log4j:message><![CDATA[线程组:<file-resolver-threads>执行时间：83]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075141" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.order/target/classes/order.beans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075141" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.binarytree/target/classes/binarytree.beans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075142" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.bundle/target/classes/bundle.beans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075142" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.xstream/target/classes/xstream.beans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075143" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.fileresolver/target/classes/fileresolver.beans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075143" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.exception/target/classes/exception.beans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.springutil.SpringUtil" timestamp="1400331075144" level="INFO" thread="main">
+<log4j:message><![CDATA[添加Spring配置文件:file:D:/git/tiny/framework/org.tinygroup.bundle/target/test-classes/Application.springbeans.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.context.support.FileSystemXmlApplicationContext" timestamp="1400331075146" level="INFO" thread="main">
+<log4j:message><![CDATA[Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@6bd26ddd: display name [org.springframework.context.support.FileSystemXmlApplicationContext@6bd26ddd]; startup date [Sat May 17 20:51:15 CST 2014]; root of context hierarchy]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075227" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.order/target/classes/order.beans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075368" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.binarytree/target/classes/binarytree.beans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075403" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.bundle/target/classes/bundle.beans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075440" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.xstream/target/classes/xstream.beans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075473" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.fileresolver/target/classes/fileresolver.beans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075502" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.exception/target/classes/exception.beans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1400331075529" level="INFO" thread="main">
+<log4j:message><![CDATA[Loading XML bean definitions from URL [file:D:/git/tiny/framework/org.tinygroup.bundle/target/test-classes/Application.springbeans.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.context.support.FileSystemXmlApplicationContext" timestamp="1400331075561" level="INFO" thread="main">
+<log4j:message><![CDATA[Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@6bd26ddd]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e4e6c9d]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1400331075602" level="INFO" thread="main">
+<log4j:message><![CDATA[Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e4e6c9d: defining beans [orderProcessor,avlTreeImpl,bundleFileProcessor,bundleManager,fullContextFileRepository,fullContextFileFinder,i18nFileProcessor,xStreamFileProcessor,orderFileProcessor,springBeansFileProcessor,configurationFileProcessor,fileMonitorProcessor,fileResolver,fileResolverProcessor]; root of factory hierarchy]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075708" level="INFO" thread="main">
+<log4j:message><![CDATA[开始读取组件配置文件:filefind.config.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075710" level="INFO" thread="main">
+<log4j:message><![CDATA[读取组件配置文件:filefind.config.xml完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075711" level="INFO" thread="main">
+<log4j:message><![CDATA[开始读取组件配置文件:filemonitor.config.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075712" level="INFO" thread="main">
+<log4j:message><![CDATA[读取组件配置文件:filemonitor.config.xml完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075712" level="INFO" thread="main">
+<log4j:message><![CDATA[开始读取组件配置文件:fileresolver.config.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075714" level="INFO" thread="main">
+<log4j:message><![CDATA[读取组件配置文件:fileresolver.config.xml完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.config.impl.ConfigurationManagerImpl" timestamp="1400331075773" level="INFO" thread="main">
+<log4j:message><![CDATA[正在分发应用配置信息...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.config.impl.ConfigurationManagerImpl" timestamp="1400331075775" level="INFO" thread="main">
+<log4j:message><![CDATA[应用配置信息分发完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075775" level="INFO" thread="main">
+<log4j:message><![CDATA[全路径扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.application.impl.ApplicationDefault" timestamp="1400331075775" level="INFO" thread="main">
+<log4j:message><![CDATA[启动应用开始...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.application.impl.ApplicationDefault" timestamp="1400331075776" level="INFO" thread="main">
+<log4j:message><![CDATA[应用处理器class org.tinygroup.fileresolver.applicationprocessor.FileResolverProcessor正在启动...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075776" level="INFO" thread="main">
+<log4j:message><![CDATA[正在进行全路径扫描....]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075779" level="INFO" thread="main">
+<log4j:message><![CDATA[查找WEB-INF/classes路径开始...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075779" level="INFO" thread="main">
+<log4j:message><![CDATA[WEB-INF/classes路径是:file:/D:/git/tiny/framework/org.tinygroup.bundle/target/test-classes/]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075779" level="INFO" thread="main">
+<log4j:message><![CDATA[WEB-INF/lib路径是:file:/D:/git/tiny/framework/org.tinygroup.bundle/target/test-classes/]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075779" level="INFO" thread="main">
+<log4j:message><![CDATA[查找WEB-INF/classes路径完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075780" level="WARN" thread="main">
+<log4j:message><![CDATA[WEBROOT变量找不到]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075780" level="INFO" thread="main">
+<log4j:message><![CDATA[查找Web工程中的jar文件列表开始...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075802" level="INFO" thread="main">
+<log4j:message><![CDATA[查找Web工程中的jar文件列表完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075804" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.parser\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075806" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.parser\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075806" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.springutil\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075807" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.springutil\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075807" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.order\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075809" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.order\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075809" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.binarytree\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075810" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.binarytree\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075810" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.logger\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075811" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.logger\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075812" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.commons\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075819" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.commons\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075819" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.threadgroup\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075821" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.threadgroup\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075821" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.bundle\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075823" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.bundle\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075824" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.xmlparser\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075825" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.xmlparser\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075826" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.xstream\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075827" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.xstream\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075827" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.fileresolver\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075829" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.fileresolver\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075829" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.formater\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075831" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.formater\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075831" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.application\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075832" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.application\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075832" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.config\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075833" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.config\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075833" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.exception\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075834" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.exception\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075834" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.i18n\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075836" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.i18n\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075836" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.bundle\target\test-classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075845" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.bundle\target\test-classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075845" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.vfs\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075847" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.vfs\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075848" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.context\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075849" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.context\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075849" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[正在扫描路径[D:\git\tiny\framework\org.tinygroup.testutil\target\classes]...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075850" level="INFO" thread="file-resolver-threads-file-processor-thread-0">
+<log4j:message><![CDATA[路径[D:\git\tiny\framework\org.tinygroup.testutil\target\classes]扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.MultiThreadFileProcessor" timestamp="1400331075850" level="INFO" thread="main">
+<log4j:message><![CDATA[线程组:<file-resolver-threads>执行时间：46]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075851" level="INFO" thread="main">
+<log4j:message><![CDATA[找到国际化资源配置文件[D:\git\tiny\framework\org.tinygroup.bundle\target\classes\i18n\plugin_en_US.properties]，并开始加载...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075852" level="INFO" thread="main">
+<log4j:message><![CDATA[国际化资源配置文件[D:\git\tiny\framework\org.tinygroup.bundle\target\classes\i18n\plugin_en_US.properties]，加载完毕。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075852" level="INFO" thread="main">
+<log4j:message><![CDATA[找到国际化资源配置文件[D:\git\tiny\framework\org.tinygroup.bundle\target\classes\i18n\plugin_zh_CN.properties]，并开始加载...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075853" level="INFO" thread="main">
+<log4j:message><![CDATA[国际化资源配置文件[D:\git\tiny\framework\org.tinygroup.bundle\target\classes\i18n\plugin_zh_CN.properties]，加载完毕。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075853" level="INFO" thread="main">
+<log4j:message><![CDATA[找到国际化资源配置文件[D:\git\tiny\framework\org.tinygroup.vfs\target\classes\i18n\vfs_en_US.properties]，并开始加载...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075855" level="INFO" thread="main">
+<log4j:message><![CDATA[国际化资源配置文件[D:\git\tiny\framework\org.tinygroup.vfs\target\classes\i18n\vfs_en_US.properties]，加载完毕。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075856" level="INFO" thread="main">
+<log4j:message><![CDATA[找到XStream配置文件[D:\git\tiny\framework\org.tinygroup.bundle\target\classes\bundle.xstream.xml]，并开始加载...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075883" level="INFO" thread="main">
+<log4j:message><![CDATA[XStream配置文件[D:\git\tiny\framework\org.tinygroup.bundle\target\classes\bundle.xstream.xml]，加载完毕。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075883" level="INFO" thread="main">
+<log4j:message><![CDATA[开始读取Bundle配置文件:test1.bundle.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075886" level="INFO" thread="main">
+<log4j:message><![CDATA[读取Bundle配置文件:test1.bundle.xml完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075887" level="INFO" thread="main">
+<log4j:message><![CDATA[开始读取Bundle配置文件:test2.bundle.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075888" level="INFO" thread="main">
+<log4j:message><![CDATA[读取Bundle配置文件:test2.bundle.xml完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075889" level="INFO" thread="main">
+<log4j:message><![CDATA[开始读取Bundle配置文件:test3.bundle.xml]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.AbstractFileProcessor" timestamp="1400331075890" level="INFO" thread="main">
+<log4j:message><![CDATA[读取Bundle配置文件:test3.bundle.xml完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.fileresolver.impl.FileResolverImpl" timestamp="1400331075891" level="INFO" thread="main">
+<log4j:message><![CDATA[全路径扫描完成。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.application.impl.ApplicationDefault" timestamp="1400331075891" level="INFO" thread="main">
+<log4j:message><![CDATA[应用处理器class org.tinygroup.fileresolver.applicationprocessor.FileResolverProcessor启动完毕。]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075892" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止所有Bundle]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075892" level="INFO" thread="main">
+<log4j:message><![CDATA[停止所有Bundle完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075892" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动所有Bundle]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075893" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075893" level="INFO" thread="main">
+<log4j:message><![CDATA[启动Bundle:test1完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075894" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test2]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075894" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075894" level="INFO" thread="main">
+<log4j:message><![CDATA[Bundle:test1已启动，无需再次启动]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075895" level="INFO" thread="main">
+<log4j:message><![CDATA[启动Bundle:test2完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075896" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test3]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075896" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075896" level="INFO" thread="main">
+<log4j:message><![CDATA[Bundle:test1已启动，无需再次启动]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075897" level="INFO" thread="main">
+<log4j:message><![CDATA[启动Bundle:test3完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075897" level="INFO" thread="main">
+<log4j:message><![CDATA[启动所有Bundle完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075903" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止所有Bundle]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075903" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075904" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止Bundle:test2]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075904" level="INFO" thread="main">
+<log4j:message><![CDATA[停止Bundle:test2完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075904" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止Bundle:test3]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075904" level="INFO" thread="main">
+<log4j:message><![CDATA[停止Bundle:test3完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075905" level="INFO" thread="main">
+<log4j:message><![CDATA[停止Bundle:test1完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075905" level="INFO" thread="main">
+<log4j:message><![CDATA[停止所有Bundle完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075905" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动所有Bundle]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075905" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075906" level="INFO" thread="main">
+<log4j:message><![CDATA[启动Bundle:test1完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075906" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test2]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075906" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075906" level="INFO" thread="main">
+<log4j:message><![CDATA[Bundle:test1已启动，无需再次启动]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075907" level="INFO" thread="main">
+<log4j:message><![CDATA[启动Bundle:test2完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075907" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test3]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075907" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075908" level="INFO" thread="main">
+<log4j:message><![CDATA[Bundle:test1已启动，无需再次启动]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075909" level="INFO" thread="main">
+<log4j:message><![CDATA[启动Bundle:test3完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075909" level="INFO" thread="main">
+<log4j:message><![CDATA[启动所有Bundle完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075914" level="INFO" thread="main">
+<log4j:message><![CDATA[开始移除Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075915" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止Bundle:test1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075915" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止Bundle:test2]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075915" level="INFO" thread="main">
+<log4j:message><![CDATA[停止Bundle:test2完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075915" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止Bundle:test3]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075915" level="INFO" thread="main">
+<log4j:message><![CDATA[停止Bundle:test3完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075916" level="INFO" thread="main">
+<log4j:message><![CDATA[停止Bundle:test1完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075916" level="INFO" thread="main">
+<log4j:message><![CDATA[移除Bundle:test1完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075916" level="INFO" thread="main">
+<log4j:message><![CDATA[开始停止所有Bundle]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075916" level="INFO" thread="main">
+<log4j:message><![CDATA[停止所有Bundle完毕]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075917" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动所有Bundle]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075917" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test2]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075917" level="ERROR" thread="main">
+<log4j:message><![CDATA[Bundle:test2所依赖的Bundle:test1不存在，退出启动]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075917" level="INFO" thread="main">
+<log4j:message><![CDATA[开始启动Bundle:test3]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075918" level="ERROR" thread="main">
+<log4j:message><![CDATA[Bundle:test3所依赖的Bundle:test1不存在，退出启动]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.bundle.impl.BundleManagerDefault" timestamp="1400331075918" level="INFO" thread="main">
+<log4j:message><![CDATA[启动所有Bundle完毕]]></log4j:message>
+</log4j:event>
+

@@ -1,0 +1,86 @@
+<model-define id="MongoModel" name="MongoModel" title="mongo实体模型"
+	model-class="org.tinygroup.mongodb.model.MongoDBModel"
+	error-page="/model/modelError.pagelet"
+	validate-error-page="/model/modelValidateError.page"
+	model-infomation-getter="mongoModelInfoGetter" model-loader-bean="mongoModelLoader">
+	<model-processor-defines>
+		<model-processor-define record-mode="Single"
+			name="view" title="查看">
+			<model-processor-stage name="view" title="查看"
+				service-processor="viewOperationServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="viewOperationParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define record-mode="none" name="add" title="新增">
+			<model-processor-stage name="show" title="查询"
+				service-processor="" view-processor="defaultModelViewProcessor"
+				parameter-builder=""></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="addOperationServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="addOperationParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="copyAdd" title="拷贝新增" record-mode="Single">
+			<model-processor-stage name="copy" title="记录拷贝"
+				service-processor="copyAddOperationSelectServiceProcessor" view-processor="defaultModelViewProcessor"
+				parameter-builder="copyAddOperationSelectParamterBuilder"></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="copyAddOperationSaveServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="copyAddOperationSaveParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define record-mode="Multiple"
+			name="delete" title="删除">
+		    <page-config confirm="true" message="你确认要删除选中记录吗？" stage-name="delete"></page-config>
+			<!-- <model-processor-stage name="confirm" title="删除确认"
+				service-processor="entityViewModelDeleteConfirmServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationDeleteConfirmParameterBuilder"></model-processor-stage> -->
+			<model-processor-stage name="delete" title="删除"
+				service-processor="deleteOperationServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="deleteOperationParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define record-mode="Single"
+			name="nestedRemove" title="嵌套对象移除">
+		    <page-config confirm="true" message="你确认要删除选中记录吗？" stage-name="delete"></page-config>
+			<!-- <model-processor-stage name="confirm" title="删除确认"
+				service-processor="nestedRemoveOperationConfirmServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="nestedRemoveOperationConfirmParamterBuilder"></model-processor-stage> -->
+			<model-processor-stage name="remove" title="删除"
+				service-processor="nestedRemoveOperationServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="nestedRemoveOperationParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="modify" title="修改" record-mode="Single">
+			<model-processor-stage name="select" title="修改"
+				service-processor="modifyOperationSelectServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="modifyOperationSelectParamterBuilder"></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="modifyOperationSaveServiceProcessor" 
+				view-processor="defaultModelViewProcessor" parameter-builder="modifyOperationSaveParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="nestedAdd" title="嵌套数组新增">
+			<model-processor-stage name="select" title="选择"
+				service-processor="nestedAddOperationSelectServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="nestedAddOperationSelectParamterBuilder"></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="nestedAddOperationSaveServiceProcessor" 
+				view-processor="defaultModelViewProcessor" parameter-builder="nestedAddOperationSaveParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="table" title="表格">
+			<model-processor-stage name="table" title="表格"
+				service-processor="tableViewServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="tableViewParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="treeWithCode" title="树">
+			<model-processor-stage name="treeWithCode" title="树"
+				service-processor="treeViewServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="treeViewParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="relationQuery" title="关联查询">
+			<model-processor-stage name="relationQuery" title="关联查询"
+				service-processor="relationQueryServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="relationQueryParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="nestedArrayQuery" title="嵌套数组对象查询">
+			<model-processor-stage name="arrayQuery" title="嵌套数组对象查询"
+				service-processor="nestedArrayQueryServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="nestedArrayQueryParamterBuilder"></model-processor-stage>
+		</model-processor-define>
+	</model-processor-defines>
+</model-define>

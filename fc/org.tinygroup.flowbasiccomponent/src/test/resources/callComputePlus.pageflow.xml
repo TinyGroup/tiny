@@ -1,0 +1,17 @@
+<flow id="callComputePlus" name="callComputePlus" begin-node-id="callMethod"
+	default-node-id="end">
+	<nodes>
+		
+		<node id="callMethod" name="callMethodComponent"  title="转换对象">
+			<component name="callMethodComponent">
+				<properties>
+					<flow-property name="className" value="org.tinygroup.flowbasiccomponent.test.ComputeUtil" />
+					<flow-property name="beanName" value="" />
+					<flow-property name="methodName" value="plus" />
+					<flow-property name="params" value="i,j" />
+					<flow-property name="resultKey" value="plusResult" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

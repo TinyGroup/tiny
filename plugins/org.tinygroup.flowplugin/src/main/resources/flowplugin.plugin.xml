@@ -1,0 +1,4 @@
+<plugin-configs>
+	<plugin-config plugin-name="flowPlugin" plugin-bean="flowPlugin"
+		plugin-level="10"></plugin-config>
+</plugin-configs>

@@ -1,0 +1,14 @@
+<flow id="CustomBegin" name="aa" default-node-id="end" begin-node-id="aaa">
+	<nodes>
+
+		<node id="aaa">
+			<component name="helloflow">
+				<properties>
+					<flow-property name="name" value="luoguo" />
+					<flow-property name="resultKey" value="helloInfo" />
+				</properties>
+			</component>
+
+		</node>
+	</nodes>
+</flow>

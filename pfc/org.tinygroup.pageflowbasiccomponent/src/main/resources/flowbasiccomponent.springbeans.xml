@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+
+	<bean id="parserContext2Object" name="parserContext2Object" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.ParserContext2Object">
+	</bean>
+	<bean id="sessionOperate" name="sessionOperate" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.SessionOperate">
+	</bean>
+	<bean id="sessionRemoveOperate" name="sessionRemoveOperate" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.SessionRemoveOperate">
+	</bean>
+	<bean id="writeXmlComponent" name="writeXmlComponent" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.WriteXmlComponent">
+	</bean>
+	<bean id="writeJsonComponent" name="writeJsonComponent" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.WriteJsonComponent">
+	</bean>
+	<bean id="writeTextComponent" name="writeTextComponent" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.WriteTextComponent">
+	</bean>
+	
+	<bean id="fullContextUrlRedirectComponent" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.FullContextUrlRedirect">
+	</bean>
+	<bean id="forwardComponent" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.Forward">
+	</bean>
+	<bean id="redirectComponent" scope="prototype"
+		class="org.tinygroup.pageflowbasiccomponent.Redirect">
+	</bean>
+</beans>

@@ -1,0 +1,15 @@
+<service-components>
+	<service-component type="${package}.HelloWorldXmlService"
+		group-id="${groupId}" artifact-id="${artifactId}">
+		<service-method name="sayHello" local-name="sayHello"
+			service-id="sayHello" version="" description=""
+			method-name="sayHello">
+			<service-parameters>
+				<service-parameter name="name" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="false"
+				is-array="false" type="java.lang.String" />
+		</service-method>
+	</service-component>
+</service-components>

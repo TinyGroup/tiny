@@ -1,0 +1,40 @@
+<flow id="context2objectTest" name="business_template">
+	<parameters>
+		<parameter name="a" type="org.tinygroup.flow.bean.FlowUser"
+			scope="in" array="false" required="true"></parameter>
+
+		<parameter name="b" type="org.tinygroup.flow.bean.FlowUser"
+			scope="in" array="true" required="true"></parameter>
+
+		<parameter name="c" type="org.tinygroup.flow.bean.FlowUser"
+			collection-type="java.util.List" scope="in" array="false" required="true"></parameter>
+
+	</parameters>
+
+	<nodes>
+		<node id="node1" name="node1" title="node1">
+			<component name="keyprintflow">
+				<properties>
+					<flow-property name="key" value="a" />
+				</properties>
+			</component>
+		</node>
+
+		<node id="node2" name="node2" title="node1">
+			<component name="keyprintflow">
+				<properties>
+					<flow-property name="key" value="b" />
+				</properties>
+			</component>
+		</node>
+
+		<node id="node3" name="node3" title="node1">
+			<component name="keyprintflow">
+				<properties>
+					<flow-property name="key" value="c" />
+				</properties>
+			</component>
+		</node>
+
+	</nodes>
+</flow>

@@ -1,0 +1,6 @@
+<business-unit-info package-name="org.tinygroup"
+	name="cepcorebasicservice" version="1.0" title="cepcorebasicservice">
+	<description>cepcorebasicservice</description>
+	<dependency-business-units>
+	</dependency-business-units>
+</business-unit-info>

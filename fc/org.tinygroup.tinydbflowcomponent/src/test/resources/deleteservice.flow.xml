@@ -1,0 +1,13 @@
+<flow id="deleteService" name="deleteService" begin-node-id="deleteService"
+	default-node-id="end">
+	<nodes>
+		<node id="deleteService" name="deleteService"  title="删除服务">
+			<component name="tinydbDeleteService">
+				<properties>
+					<flow-property name="beanType" value="${beanType}" />
+					<flow-property name="resultKey" value="result" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

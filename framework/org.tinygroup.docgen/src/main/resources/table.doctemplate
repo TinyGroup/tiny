@@ -1,0 +1,141 @@
+#*
+	底纹属性
+		wval 底纹样式
+		fill 底纹填充
+		color 底纹颜色#
+*#
+#macro(shading $shading)
+#if($shading.wval)#set($wval=$shading.wval)#else#set($wval="clear")#end 
+#if($shading.color)#set($color=$shading.color)#else#set($color="auto")#end 
+#if($shading.fill)#set($fill=$shading.fill)#else#set($fill="")#end 
+#if($shading.bgcolor)#set($bgcolor=$shading.bgcolor)#else#set($bgcolor="auto")#end 
+<w:shd w:val="$wval" w:color="$color" w:fill="$fill" wx:bgcolor="$color" />
+#end
+
+
+
+#*
+	边框
+	borders
+*#
+#macro(borders $borders)
+#if($borders.wval)#set($wval=$borders.wval)#else#set($wval="single")#end
+#if($borders.size)#set($size=$borders.size)#else#set($size="4")#end
+#if($borders.width)#set($width=$borders.width)#else#set($width="10")#end
+#if($borders.space)#set($space=$borders.space)#else#set($space="0")#end
+#if($borders.color)#set($color=$borders.color)#else#set($color="auto")#end
+<w:top w:val="$wval" w:sz="$size" wx:bdrwidth="$width" w:space="$space" w:color="$color"/>
+<w:left w:val="$wval" w:sz="$size" wx:bdrwidth="$width" w:space="$space" w:color="$color"/>
+<w:bottom w:val="$wval" w:sz="$size" wx:bdrwidth="$width" w:space="$space" w:color="$color"/>
+<w:right w:val="$wval" w:sz="$size" wx:bdrwidth="$width" w:space="$space" w:color="$color"/>
+<w:insideH w:val="$wval" w:sz="$size" wx:bdrwidth="$width" w:space="$space" w:color="$color"/>
+<w:insideV w:val="$wval" w:sz="$size" wx:bdrwidth="$width" w:space="$space" w:color="$color"/>
+#end
+
+
+
+#*
+	表格边框和底纹
+	borders
+*#
+#macro(tableBorders $borders)
+<w:tblBorders>
+#borders($borders)
+</w:tblBorders>
+#end
+
+
+
+#*
+	表格
+	 
+*#
+#macro(table $info)
+<w:tbl>
+	<w:tblPr>
+		<w:tblW w:w="0" w:type="auto" />
+		#tableBorders($info.borders)
+		#shading($info.shading)
+		<w:tblLook w:val="04A0" />
+	</w:tblPr>
+	$bodyContent
+</w:tbl>
+#end
+
+ 
+ 
+
+#*
+	表的列定义
+*#
+#macro(tableColumns)
+<w:tblGrid>
+	$bodyContent
+</w:tblGrid>
+#end
+
+#*
+	定义具体的一列
+	width 列宽度
+*#
+#macro(tableColumn $width)
+	#if($width)<w:gridCol w:w="$width" />#end
+#end
+
+#*
+	定义具体的一行，包含若干单元格
+	height 行高度
+*#
+#macro(tableRow $height)
+<w:tr>
+	#if($height)
+		<w:trPr><w:trHeight w:val="$height"/></w:trPr>
+	#end
+	$bodyContent
+</w:tr>
+#end
+
+
+#*
+	定义具体的一单元格
+	span，合并信息
+	colspan表示几列合并
+	rowStart表示列合并开始
+	rowContinue表示列合并继续
+	color 单元格背景色
+	textFlow 文字方向
+	
+	span 单元格类型和宽度
+		width 单元格宽度
+		type 单元格类型
+*#
+#macro(tableCell $param $span)
+<w:tc>
+	<w:tcPr>
+		##该语句定义单元格类型和宽度，其中矿宽度需和宏tableColumn中的width参数保持一致
+		#if($param.span.width)
+			#if($param.span.type)#set($spantype=$param.span.type)#else#set($spantype="dxa")#end
+			<w:tcW w:w="$param.span.width" w:type="$spantype"/>
+		#end
+		##该if语句定义单元格边框
+		#if($param.borders)
+			<w:tcBorders>
+				#borders($param.borders)
+			</w:tcBorders>
+		#end
+		##该if语句定义单元格底纹
+		#if($param.shading)
+			#shading($param.shading)
+		#end
+		#if($span.colspan)<w:gridSpan w:val="$colspan" />#end
+		#if($span.start)<w:vmerge w:val="restart" />#end
+		#if($span.rowContinue)<w:vmerge />#end
+		#if($span.textFlow)<w:textFlow w:val="$span.textFlow"/>#end
+	</w:tcPr>
+	$bodyContent
+</w:tc>
+#end
+ 
+
+
+ 

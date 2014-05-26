@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="librarys" >
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element name="library" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" />
+							<xs:element name="layer" type="xs:int" />
+							<xs:element name="row" type="xs:int" />   
+	                    <!--<xs:element name="book" type="book"/>  -->
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

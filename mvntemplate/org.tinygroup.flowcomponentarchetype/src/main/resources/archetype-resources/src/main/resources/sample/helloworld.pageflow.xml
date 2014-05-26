@@ -1,0 +1,25 @@
+<flow id="helloworld" name="helloworld" begin-node-id="helloworld"
+	private-context="false" enable="false">
+	<nodes>
+		<node id="helloworld" name="helloworld" title="流程示例">
+			<component name="${artifactId}">
+				<properties>
+					<flow-property name="name" value="${name}" />
+					<flow-property name="resultKey" value="resultKey" />
+				</properties>
+			</component>
+		</node>
+		<node id="forward" name="forward" title="跳转页面"
+			next-node-id="end">
+			<component name="forwardComponent">
+				<properties>
+					<flow-property name="path" value="page/helloworld.page" />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node next-node-id="end">
+				</next-node>
+			</next-nodes>
+		</node>
+	</nodes>
+</flow>

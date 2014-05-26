@@ -1,0 +1,51 @@
+#@wordDocument()
+#@body()
+
+#*
+	参数说明
+	borders 表格边框参数
+		borders.wval 表格边框类型
+		borders.color 表格边框颜色
+		borders.width 表格边框宽度
+	borders 表格底纹参数
+		shading.wval 表格底纹类型
+		shading.color 表格底纹颜色 7030A0 黄色
+		shading.fill 表格底纹填充  auto 自动，没有颜色		 
+*#
+#@table({"borders":{"wval":"single","color":"7030A0","width":"120"},
+		 "shading":{"wval":"solid","color":"FFFF00","fill":"auto"},
+		 "color":"7030A0","width":"120"})
+	#@tableColumns()
+		##定义二列，宽度分别为6000,3000
+		#tableColumn("6000")  ##宽度 6000
+		#tableColumn("4000")  ##宽度 4000
+	#end
+	#@tableRow(10000) ##高度 10000 
+		#@tableCell({"shading":{"wval":"solid","color":"FFFF00","fill":"auto"},
+					 "span":{"width":"6000","type":"dxa"}})  ##宽度 6000 和tableColumn宏对应
+			#p("单元格11",{"align":"center","indent":{"left":"840"},"bold":"","strike":"","italic":"underline","":"","font":{"name":"宋体","size":"24","color":"FF0000","bold":"","incline":""}})
+		#end
+		#@tableCell({"borders":{"wval":"thin-thick-medium-gap","width":"120","color":"00B050"},
+					 "shading":{"wval":"solid","color":"FF0000","fill":"FF0000"},   
+					 "span":{"width":"4000","type":"dxa"}})   ##宽度 4000 和tableColumn宏对应
+			#p("单元格12",{"align":"center","indent":{"left":"840"},"bold":"","strike":"","italic":"underline","":"","font":{"name":"宋体","size":"24","color":"FF0000","bold":"","incline":""}})
+		#end
+	#end
+	#@tableRow(6000)  ##高度 6000 
+		#@tableCell({"borders":{"wval":"dash-dot-stroked","width":"120","color":"E36C0A"},
+					 "shading":{"wval":"solid","color":"FFFF00","fill":"auto"},
+					 "span":{"width":"6000","type":"dxa"}})   ##宽度 6000 和tableColumn宏对应
+			#p("单元格21",{"align":"center","indent":{"left":"840"},"bold":"","strike":"","italic":"underline","":"","font":{"name":"宋体","size":"24","color":"FF0000","bold":"","incline":""}})
+		#end
+		#@tableCell({"shading":{"wval":"solid","color":"FFFF00","fill":"auto"},
+					 "span":{"width":"4000","type":"dxa"}})  ##宽度 4000 和tableColumn宏对应
+			#p("单元格22",{"align":"center","indent":{"left":"840"},"bold":"","strike":"","italic":"underline","":"","font":{"name":"宋体","size":"24","color":"FF0000","bold":"","incline":""}})
+		#end
+	#end
+#end
+
+
+
+#end
+#end
+

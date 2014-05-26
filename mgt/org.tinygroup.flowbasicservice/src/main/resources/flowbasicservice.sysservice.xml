@@ -1,0 +1,56 @@
+<service-components>
+	<service-component
+		type="org.tinygroup.flow.FlowExecutor" bean="flowExecutor"
+		group-id="org.tinygroup.flow.impl" artifact-id="FlowExecutorImpl">
+
+		<service-method name="serviceGetFlow"
+			local-name="serviceGetFlow" service-id="serviceGetFlow"
+			version="" description="返回Flow" method-name="getFlow">
+			<service-parameters>
+				<service-parameter name="flowId" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="org.tinygroup.flow.config.Flow" />
+		</service-method>
+
+		<service-method name="serviceGetFlowWithVersion"
+			local-name="serviceGetFlowWithVersion" service-id="serviceGetFlowWithVersion"
+			version="" description="返回Flow" method-name="getFlow">
+			<service-parameters>
+				<service-parameter name="flowId" type="java.lang.String"
+					required="true" is-array="false" />
+				<service-parameter name="version" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="org.tinygroup.flow.config.Flow" />
+		</service-method>
+		
+		
+		<service-method name="serviceRemoveFlow"
+			local-name="serviceRemoveFlow" service-id="serviceRemoveFlow"
+			version="" description="根据id删除Flow" method-name="removeFlow">
+			<service-parameters>
+				<service-parameter name="flowId" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+
+		<service-method name="serviceRemoveFlowWithVersion"
+			local-name="serviceRemoveFlowWithVersion" service-id="serviceRemoveFlowWithVersion"
+			version="" description="根据id/verion删除Flow" method-name="removeFlow">
+			<service-parameters>
+				<service-parameter name="flowId" type="java.lang.String"
+					required="true" is-array="false" />
+				<service-parameter name="version" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+	</service-component>
+</service-components>

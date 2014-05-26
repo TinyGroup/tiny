@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:attributeGroup name="flowAttributeGroup">
+		<xs:attribute name="engine-version" type="xs:string" />
+		<xs:attribute name="extend-flow-id" type="xs:string" />
+		<xs:attribute name="extend-flow-version" type="xs:string" />
+		<xs:attribute name="id" type="xs:string" />
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+		<xs:attribute name="description" type="xs:string" />
+		<xs:attribute name="default-node-id" type="xs:string" />
+		<xs:attribute name="begin-node-id" type="xs:string" />
+		<xs:attribute name="end-node-id" type="xs:string" />
+		<xs:attribute name="private-context" type="xs:string" />
+		<xs:attribute name="enable" type="xs:string" />
+		<xs:attribute name="version" type="xs:string" />
+	</xs:attributeGroup>
+
+	<xs:element name="flow">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="nodes" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="node" type="nodeType" minOccurs="0"
+								maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="parameters" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="parameter" type="parameterType"
+								minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attributeGroup ref="flowAttributeGroup" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="nodeType">
+		<xs:all>
+			<xs:element name="component" minOccurs="0">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="properties" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="flow-property" type="flowPropertyType"
+										minOccurs="0" maxOccurs="unbounded" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="title" type="xs:string" />
+					<xs:attribute name="description" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="next-nodes" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="next-node" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="el" type="xs:string" />
+								<xs:attribute name="exception-type" type="xs:string" />
+								<xs:attribute name="next-node-id" type="xs:string" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="id" type="xs:string" />
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+		<xs:attribute name="description" type="xs:string" />
+		<xs:attribute name="default-node-id" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="parameterType">
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+		<xs:attribute name="type" type="xs:string" />
+		<xs:attribute name="collection-type" type="xs:string" />
+		<xs:attribute name="scope" type="xs:string" />
+		<xs:attribute name="array" type="xs:boolean" />
+		<xs:attribute name="required" type="xs:boolean" />
+		<xs:attribute name="description" type="xs:string" />
+		<xs:attribute name="validate-scene" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="flowPropertyType">
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="value" type="xs:string" />
+		<xs:attribute name="type" type="xs:string" />
+	</xs:complexType>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</xs:schema>

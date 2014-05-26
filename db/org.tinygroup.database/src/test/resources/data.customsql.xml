@@ -1,0 +1,14 @@
+<custom-sqls>
+	<custom-sql type="before">
+		<sql dialectTypeName="oracle" content="before"></sql>
+	</custom-sql>
+	<custom-sql type="after">
+		<sql dialectTypeName="oracle" content="after1"></sql>
+	</custom-sql>
+	<custom-sql type="after">
+		<sql dialectTypeName="oracle" content="after2"></sql>
+	</custom-sql>
+	<custom-sql type="after">
+		<sql dialectTypeName="oracle" content="after3"></sql>
+	</custom-sql>
+</custom-sqls>

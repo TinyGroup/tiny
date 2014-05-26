@@ -1,0 +1,220 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<!--servlet -->
+	<bean id="gZIPFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.gzip.GZIPFilter">
+	</bean>
+	<bean id="serviceTinyProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.ServiceTinyProcessor">
+		<property name="manager">
+			<ref bean="serviceMappingManager" />
+		</property>
+	</bean>
+	<bean id="uiEngineTinyProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.UiEngineTinyProcessor">
+		<property name="uiComponentManager">
+			<ref bean="uiComponentManager" />
+		</property>
+		<property name="fullContextFileRepository">
+			<ref bean="fullContextFileRepository" />
+		</property>
+	</bean>
+	<bean id="velocityViewServlet" scope="singleton"
+		class="org.tinygroup.weblayer.servlet.VelocityLayoutViewServlet">
+	</bean>
+	<bean id="tinyProcessorFileProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.fileresolver.TinyProcessorFileProcessor">
+	</bean>
+	<bean id="tinyFilterFileProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.fileresolver.TinyFilterFileProcessor">
+	</bean>
+	<bean id="fullContextServlet" scope="singleton"
+		class="org.tinygroup.weblayer.servlet.FullContextUrlRedirectServlet">
+	</bean>
+
+	<bean id="mappingModelManager" scope="singleton"
+		class="org.tinygroup.weblayer.mvc.impl.MappingModelManagerImpl">
+	</bean>
+
+	<bean id="handlerMapping" scope="singleton"
+		class="org.tinygroup.weblayer.mvc.handlermapping.AnnotationHandlerMapping">
+		<property name="manager">
+			<ref bean="mappingModelManager" />
+		</property>
+	</bean>
+
+	<bean id="mappingModelExecute" scope="singleton"
+		class="org.tinygroup.weblayer.mvc.impl.MappingModelExecuteImpl">
+	</bean>
+	<!--tiny processor -->
+	<bean id="tinyProcessorWapper" scope="prototype"
+		class="org.tinygroup.weblayer.tinyprocessor.TinyProcessorWapper">
+	</bean>
+
+	<bean id="mvcTinyProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.MvcTinyProcessor">
+		<property name="handler">
+			<ref bean="handlerMapping" />
+		</property>
+		<property name="execute">
+			<ref bean="mappingModelExecute" />
+		</property>
+	</bean>
+	<bean id="pageFlowTinyProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.PageFlowTinyProcessor">
+	</bean>
+	<bean id="fullContextProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.FullContextUrlRedirectTinyProcessor">
+	</bean>
+	<bean id="velocityViewProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.VelocityLayoutViewTinyProcessor">
+	</bean>
+	<!--fiter\servlet manager -->
+	<bean id="tinyProcessorManager" scope="singleton"
+		class="org.tinygroup.weblayer.impl.TinyProcessorManagerImpl">
+		<property name="configManager">
+		  <ref bean="tinyProcessorConfigManager"/>
+		</property>
+	</bean>
+
+	<bean id="tinyFilterManager" scope="singleton"
+		class="org.tinygroup.weblayer.impl.TinyFilterManagerImpl">
+		<property name="configManager">
+		  <ref bean="tinyFilterConfigManager"/>
+		</property>
+	</bean>
+	<!--tiny filter -->
+	<bean id="basicTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.BasicTinyFilter">
+	</bean>
+	<bean id="setLocaleTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.SetLocaleTinyFilter">
+	</bean>
+	<bean id="parserTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.ParserTinyFilter">
+	</bean>
+	<bean id="bufferedTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.BufferedTinyFilter">
+	</bean>
+	<bean id="lazyCommitTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.LazyCommitTinyFilter">
+	</bean>
+	<bean id="rewriteTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.RewriteTinyFilter">
+	</bean>
+	<bean id="sessionTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.SessionTinyFilter">
+	</bean>
+	<bean id="pageCacheTinyFilter" scope="singleton"
+		class="org.tinygroup.weblayer.filter.PageCacheTinyFilter">
+	</bean>
+	<bean id="uploadService" scope="singleton"
+		class="org.tinygroup.weblayer.webcontext.parser.impl.UploadServiceImpl">
+	</bean>
+	<bean id="customDateRegistrar" scope="singleton"
+		class="org.tinygroup.weblayer.webcontext.parser.propertyedit.CustomDateRegistrar">
+	</bean>
+	<bean id="customEditorConfigurer"
+		class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<!-- 类型 -->
+				<entry key="org.tinygroup.commons.tools.HumanReadableSize">
+					<!-- 内部Bean只能在此类中访问 -->
+					<bean
+						class="org.tinygroup.weblayer.webcontext.parser.propertyedit.HumanReadableSizeEditor">
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="hTMLParameterValueFilter" scope="singleton"
+		class="org.tinygroup.weblayer.webcontext.parser.impl.HTMLParameterValueFilter">
+	</bean>
+	<bean id="uploadedFileExtensionWhitelist" scope="singleton"
+		class="org.tinygroup.weblayer.webcontext.parser.impl.UploadedFileExtensionWhitelist">
+	</bean>
+	<bean id="tinyFilterWrapper" scope="singleton"
+		class="org.tinygroup.weblayer.impl.TinyFilterWrapper">
+	</bean>
+	<!--http filter -->
+	<bean id="encondingHttpFilter" scope="singleton"
+		class="org.tinygroup.weblayer.impl.EncodeingHttpFilter">
+		<property name="encoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="contentType">
+			<value>text/html; charset=UTF-8</value>
+		</property>
+	</bean>
+
+	<bean id="controllerAnnotationAction" name="controllerAnnotationAction"
+		scope="singleton"
+		class="org.tinygroup.weblayer.mvc.annotationaction.ControllerAnnotationAction">
+		<property name="manager">
+			<ref bean="mappingModelManager" />
+		</property>
+	</bean>
+	<bean id="urlNormalizer"
+		class="org.tinygroup.weblayer.webcontext.rewrite.impl.UrlNormalizer"
+		scope="singleton">
+	</bean>
+	<bean id="simpleMemoryStore"
+		class="org.tinygroup.weblayer.webcontext.session.store.impl.SimpleMemoryStoreImpl"
+		scope="singleton">
+	</bean>
+	<bean id="cookieStore"
+		class="org.tinygroup.weblayer.webcontext.session.store.impl.CookieStoreImpl"
+		scope="singleton">
+	</bean>
+	<bean id="uuid"
+		class="org.tinygroup.weblayer.webcontext.session.impl.UUIDGenerator"
+		scope="singleton">
+	</bean>
+	<bean id="sessionModelEncoderImpl"
+		class="org.tinygroup.weblayer.webcontext.session.impl.SessionModelEncoderImpl"
+		scope="singleton">
+	</bean>
+	<bean id="sessionLifecycleLogger"
+		class="org.tinygroup.weblayer.webcontext.session.impl.SessionLifecycleLogger"
+		scope="singleton">
+	</bean>
+	<bean id="sessionAttributeWhitelist"
+		class="org.tinygroup.weblayer.webcontext.session.impl.SessionAttributeWhitelist"
+		scope="singleton">
+	</bean>
+	<!-- TinyListenerPlugin -->
+	<bean id="tinyListenerProcessor"
+		class="org.tinygroup.weblayer.listener.TinyListenerProcessor"
+		scope="singleton">
+	</bean>
+	<!--页面异常处理配置加载 -->
+	<bean id="webExceptionProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.exceptionhandler.WebExceptionProcessor">
+		<property name="webHandlerManager">
+			<ref bean="webExceptionHandlerManager" />
+		</property>
+	</bean>
+	<!-- 异常处理管理接口 -->
+	<bean id="webExceptionHandlerManager" scope="singleton"
+		class="org.tinygroup.weblayer.exceptionhandler.impl.WebExceptionHandlerManagerImpl">
+	</bean>
+	
+	<!--filter\servlet 配置管理对象 -->
+	<bean id="tinyProcessorConfigManager" scope="singleton"
+		class="org.tinygroup.weblayer.configmanager.TinyProcessorConfigManager">
+	</bean>
+
+	<bean id="tinyFilterConfigManager" scope="singleton"
+		class="org.tinygroup.weblayer.configmanager.TinyFiterConfigManager">
+	</bean>
+	
+	<bean id="velocityContextConfiguration" scope="singleton"
+		class="org.tinygroup.weblayer.tinyprocessor.VelocityContextConfiguration">
+	</bean>
+</beans>

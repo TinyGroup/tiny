@@ -1,0 +1,13 @@
+<flow id="helloworld" name="helloworld" begin-node-id="helloworld"
+	private-context="false" enable="false">
+	<nodes>
+		<node id="helloworld" name="helloworld" title="流程示例">
+			<component name="${artifactId}">
+				<properties>
+					<flow-property name="name" value="${name}" />
+					<flow-property name="resultKey" value="resultKey" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

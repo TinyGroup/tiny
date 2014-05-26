@@ -1,0 +1,26 @@
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
+	<listener>
+		<listener-class>
+			org.tinygroup.weblayer.ApplicationStartupListener
+		</listener-class>
+	</listener>
+	<filter>
+		<filter-name>TinyFilter</filter-name>
+		<filter-class>org.tinygroup.weblayer.TinyHttpFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>TinyFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		 <dispatcher>REQUEST</dispatcher>  
+         <dispatcher>FORWARD</dispatcher>  
+	</filter-mapping>
+</web-app>

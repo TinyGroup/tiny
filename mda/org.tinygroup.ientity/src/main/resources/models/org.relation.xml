@@ -1,0 +1,10 @@
+<relation-configs>
+	<relation-config id="orgmgt1" type="orgmgt"
+		collection-mode="List" key-name="parentOrgId" mode="1:n">
+		<relations>
+			<relation-config id="orgmgt2" type="orgmgt"
+				collection-mode="List" key-name="orgId" main-name="parentOrgId" mode="1:n">
+			</relation-config>
+		</relations>
+	</relation-config>
+</relation-configs>

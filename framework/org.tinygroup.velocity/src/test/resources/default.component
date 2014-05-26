@@ -1,0 +1,168 @@
+#macro(add $list)
+#set($total=0)
+#foreach($item in $list)
+$item
+#set($total =$total+$item)
+#end
+--------------
+total = $total
+#end
+
+#macro(d)
+<tr><td>$!bodyContent</td></tr>
+#end
+
+
+#macro(accordion $id) 
+<div id="$id">
+ $!bodyContent
+</div>
+<script>
+$(function() {
+    $( "#$id" ).accordion();
+});
+</script>
+#end
+
+#macro(accordionSection $title)
+   <h3>$!title</h3>
+    <div>
+       $!bodyContent
+    </div>
+#end
+
+
+##*--------------------------------------2012-11-03新增宏--------------------------#
+##按钮button宏
+#macro(button $id $text)
+<button id="$!id"  type="button" icon="">$!text</button>
+#end
+
+##输入框textfield宏
+#macro(textfield $label $id $name)
+  <table>
+	<tr>
+	<td><span>$!{label}</span></td>
+	<td><input type="text" id="$!{id}" name="$!{name}"/></td>
+	</tr>
+   </table>	
+#end
+
+##密码输入框password宏
+#macro(password $label $id $name)
+  <table>
+	<tr>
+	<td><span>$!{label}</span></td>
+	<td><input type="password" id="$!{id}" name="$!{name}"/></td>
+	</tr>
+   </table>
+#end
+
+##文本框textarea宏
+#macro(textarea $label $id $name)
+<table>
+   <tr>
+	<td><span>$!{label}</span></td>
+    <td><textarea id="$!id" name="$!name" style="width: 145px; height: 60px; overflow: auto;"></textarea></td>
+   </tr>
+   </table>
+#end
+
+##下拉框combo宏
+#macro(select $label $id $options)
+<table>
+   <tr>
+	<td><span>$!{label}</span></td>
+   <td> <select id="$!{id}">
+   #foreach($item in $options)
+	  <option selected="selected" >${item}</option>
+   #end
+  </select></td>
+  </tr>
+   </table>
+#end
+
+##工具栏toolbar宏
+#macro(toolbar $id)
+<div id = "$!{id}">
+	<table>
+	     <tr> 
+	       <td>$!bodyContent</td>
+	     </tr>
+	  </table>
+</div>
+#end
+
+
+##form宏 
+#macro(form $id $name $url $title)
+   <div>
+    <div>
+      <span>$!{title}</span>
+    </div>
+	<form id="$!{id}" name="$!{name}" action="$!{url}" method="post">
+      $!bodyContent
+	</form>
+	</div>
+#end
+
+##panel宏
+#macro(panel $title $id)
+<div id="$!{id}">
+  <span>$!{title}</span>
+</div>
+$!bodyContent 
+#end
+
+##griditem宏
+#macro(griditem $id $title)
+<th id="$!id">
+   <div>
+     <span style="color:red;">$!title</span>
+   </div>
+</th>
+#end
+
+##griditemrow 
+#macro(griditemrow $id)
+<tr id="$!id">
+   $!bodyContent
+</tr>
+#end
+
+
+
+
+##griddata 数据行宏
+#macro(griddata $datas)
+  #set($cnt=1)
+  #foreach($datarow in $datas)   
+    <tr>  
+     #foreach($attr in $datarow)
+        <td>$attr</td> 
+     #end 
+    </tr> 
+  #end
+#end
+
+
+##grid宏
+#macro(grid $id $title)
+<div id="$!{id}">
+    <div>
+      <span>$!{title}</span>
+    </div>
+    <div>
+      <table border="1">
+        $!bodyContent
+      </table>
+    </div>
+</div>
+#end
+
+
+
+
+
+
+

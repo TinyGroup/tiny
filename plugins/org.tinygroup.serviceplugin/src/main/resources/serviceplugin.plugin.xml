@@ -1,0 +1,5 @@
+<plugin-configs>
+	<plugin-config plugin-name="servicePlugin" plugin-bean="servicePlugin"
+		depend-plugins="" plugin-level="10"></plugin-config>
+	
+</plugin-configs>

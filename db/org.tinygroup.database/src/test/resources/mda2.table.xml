@@ -1,0 +1,23 @@
+<tables name="jres" title="jres" package-name="com.hundsun">
+<table id="useruuid" name="user" title="用户">
+  <table-field standard-field-id="stdiduserid" primary="true" unique="true" not-null="false" id="useriduuid" auto-increase="true"/>
+  <table-field standard-field-id="stdidusername" primary="false" unique="false" not-null="false" id="usernameuuid"/>
+  <table-field standard-field-id="stdidaddress" primary="false" unique="false" not-null="false" id="addressuuid"/>
+  <table-field standard-field-id="stdidsex" primary="false" unique="false" not-null="false" id="sexuuid"/>
+  <table-field standard-field-id="stdidcompanyid" primary="false" unique="false" not-null="false" id="companyiduuid"/>
+  <index name="usernameadress" unique="true">
+    <string>addressuuid</string>
+    <string>usernameuuid</string>
+  </index>
+</table>
+<table id="companyuuid" name="company" title="公司">
+  <table-field standard-field-id="stdidcompanyid" primary="true" unique="true" not-null="false" id="companyiduuid" auto-increase="true"/>
+  <table-field standard-field-id="stdidcompanyname" primary="false" unique="false" not-null="false" id="companynameuuid"/>
+  <table-field standard-field-id="stdidaddress" primary="false" unique="false" not-null="false" id="addressuuid"/>
+  <table-field standard-field-id="stdidcontory" primary="false" unique="false" not-null="false" id="contoryuuid"/>
+  <index name="companynameadress" unique="true">
+    <string>addressuuid</string>
+    <string>companynameuuid</string>
+  </index>
+</table>
+</tables>

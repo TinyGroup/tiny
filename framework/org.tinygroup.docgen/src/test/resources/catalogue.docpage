@@ -1,0 +1,31 @@
+#@wordDocument()
+#@body()
+
+
+
+
+
+#cataHeader("目录",{"font":"宋体","color":"00B050","size":"30","bold":"on"})
+#catalogue({"begin":"","grade":"10","bookmarkNo":"_Toc374566201","pageNo":"1","content":"1. 对象入门"})
+#catalogue({"grade":"20","bookmarkNo":"_Toc374566202","pageNo":"1","content":"1.1 抽象的进步"})
+#catalogue({"grade":"30","bookmarkNo":"_Toc374566203","pageNo":"1","content":"1.1.1 注释文档"})
+#catalogue({"grade":"20","bookmarkNo":"_Toc374566204","pageNo":"1","content":"1.2 对象的接口"})
+#catalogue({"grade":"30","bookmarkNo":"_Toc374566205","pageNo":"1","content":"1.2.1 集合与继承器"})
+#catalogue({"grade":"20","bookmarkNo":"_Toc374566206","pageNo":"1","content":"1.3 方案的重复使用"})
+#cataEnd()
+
+
+
+#@outline({"grade":"1","bookmarkNO":"_Toc374566201","name":"对象入门","multilevel":{"level":"0","ilfo":"41","char":"1"}})#end
+#@outline({"grade":"2","bookmarkNO":"_Toc374566202","name":"抽象的进步","multilevel":{"level":"1","ilfo":"41","char":"1.1"}})#end
+#@outline({"grade":"3","bookmarkNO":"_Toc374566203","name":"注释文档","multilevel":{"level":"2","ilfo":"41","char":"1.1.1"}})#end
+#@outline({"grade":"2","bookmarkNO":"_Toc374566204","name":"对象的接口","multilevel":{"level":"1","ilfo":"41","char":"1.2"}})#end
+#@outline({"grade":"3","bookmarkNO":"_Toc374566205","name":"集合与继承器","multilevel":{"level":"2","ilfo":"41","char":"1.2.1"}})#end
+#@outline({"grade":"2","bookmarkNO":"_Toc374566206","name":"方案的重复使用","multilevel":{"level":"1","ilfo":"41","char":"1.3"}})#end
+
+
+
+
+#end
+#end
+

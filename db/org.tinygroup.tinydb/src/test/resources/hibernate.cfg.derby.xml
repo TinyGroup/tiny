@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<!DOCTYPE hibernate-configuration  
+PUBLIC "-//Hibernate/Hibernate Configuration DTD/EN"  
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property> 
+			<property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property> 
+			<property name="hibernate.connection.username">opensource</property> <property 
+			name="hibernate.connection.password">opensource</property> <property name="hibernate.connection.url">jdbc:derby:c:/TESTDB</property> -->
+<property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property> 
+
+		<!-- Connection Parameters -->
+		<property name="hibernate.connection.provider_class">
+			org.hibernate.connection.C3P0ConnectionProvider
+		</property>
+
+		<!-- Connection Pool -->
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+		<property name="hibernate.c3p0.acquireIncrement">3</property>
+
+		<!--两次连接中间隔时间，单位毫秒。Default: 1000 -->
+		<property name="hibernate.c3p0.acquireRetryDelay">1000</property>
+		<!--连接关闭时默认将所有未提交的操作回滚。Default: false -->
+		<property name="hibernate.c3p0.autoCommitOnClose">false</property>
+		<!--连接池中保留的最大连接数。Default: 15 -->
+		<property name="hibernate.c3p0.maxPoolSize">15</property>
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.timeout">5000</property>
+		<!--c3p0缓存Statement的数量数 -->
+		<property name="hibernate.c3p0.max_statements">50</property>
+		<property name="hibernate.c3p0.acquire_increment">5</property>
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+		<property name="hibernate.c3p0.preferredTestQuery">
+			select id from test where id=1
+		</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckin">
+			true
+		</property>
+
+
+		<!-- 启动时删数据库中的表，然后创建，退出时不删除数据表，如果没有下面的属性的话，那么要手动写sql语句来建表，才能进行数据库的操作 <property 
+			name="hbm2ddl.auto">update</property> -->
+		<!-- 为单向关联(一对一, 多对一)的外连接抓取（outer join fetch）树设置最大深度. 值为0意味着将关闭默认的外连接抓取. -->
+		<property name="hibernate.max_fetch_depth">3</property>
+		<property name="hibernate.order_updates">true</property>
+		<property name="hibernate.jdbc.fetch_size">100</property>
+		<property name="hibernate.jdbc.batch_size">0</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">true</property>
+
+		<property name="hibernate.ejb.naming_strategy">
+			DefaultComponentSafeNamingStrategy
+		</property>
+		<property name="hibernate.query.substitutions">
+			true=1, false=0
+		</property>
+		<property name="hibernate.query.factory_class">
+			org.hibernate.hql.ast.ASTQueryTranslatorFactory
+		</property>
+		<!-- 2.0 <property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</property> -->
+		<property name="hibernate.cglib.use_reflection_optimizer">
+			false
+		</property>
+		<property name="hiberante.defaultAutoCommit">false</property>
+
+		<property name="hibernate.cache.provider_class">
+			org.hibernate.cache.EhCacheProvider
+		</property>
+		<property name="cache.use_second_level_cache">true</property>
+
+		<!-- Transaction Configuration -->
+		<property name="hibernate.transaction.factory_class">
+			org.hibernate.transaction.JDBCTransactionFactory
+		</property>
+
+	</session-factory>
+
+</hibernate-configuration> 

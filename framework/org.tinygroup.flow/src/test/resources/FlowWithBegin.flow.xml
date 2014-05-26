@@ -1,0 +1,13 @@
+<flow id="FlowWithBegin" name="bb" extend-flow-id="FlowWithBegin1">
+	<nodes>
+		
+		<node id="hello">
+			<component name="helloflow">
+				<properties>
+					<flow-property name="name" value="LG" />
+					<flow-property name="resultKey" value="helloInfo" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

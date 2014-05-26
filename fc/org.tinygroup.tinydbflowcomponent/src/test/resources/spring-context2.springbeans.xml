@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                    http://www.springframework.org/schema/tx
+                    http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+                     http://www.springframework.org/schema/aop  
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<context:component-scan base-package="org.tinygroup.tinydb" />
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler"
+		lazy-init="true" />
+
+	<bean id="defaultDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>oracle.jdbc.driver.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@192.168.71.52:1521:jrestest</value>
+		</property>
+		<property name="username">
+			<value>jrestest1</value>
+		</property>
+		<property name="password">
+			<value>jrestest1</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource1" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>org.apache.derby.jdbc.EmbeddedDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:derby:TESTDB;create=true</value>
+		</property>
+		<property name="username">
+			<value>opensource</value>
+		</property>
+		<property name="password">
+			<value>opensource</value>
+		</property>
+	</bean>
+	<bean id="dataSource2" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>org.apache.derby.jdbc.EmbeddedDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:derby:TESTDB1;create=true</value>
+		</property>
+		<property name="username">
+			<value>opensource</value>
+		</property>
+		<property name="password">
+			<value>opensource</value>
+		</property>
+	</bean>
+	<bean id="dynamicDataSource" class="org.tinygroup.datasource.DynamicDataSource">
+		<property name="dataSource" ref="dataSource1" />
+	</bean>
+	
+
+	<bean id ="transactionManager" class ="org.springframework.jdbc.datasource.DataSourceTransactionManager"> 
+         <property name ="dataSource"> 
+             <ref bean ="dynamicDataSource"/> 
+         </property> 
+     </bean> 
+	<bean id="transactionTemplate"
+		class="org.springframework.transaction.support.TransactionTemplate">
+		<property name="transactionManager">
+			<ref local="transactionManager" />
+		</property>
+	</bean>
+	<!-- <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" 
+		/> -->
+
+	<!-- 在此进行自动代理配置 -->
+	<bean id="beanNameAutoProxyCreator"
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="proxyTargetClass" value="true" />
+		<property name="beanNames">
+			<list>
+				<value>*Impl</value>
+			</list>
+		</property>
+	</bean>
+	<!-- <aop:config> <aop:aspect id="deal" ref="SpringTest"> <aop:pointcut 
+		id="target" expression="execution(* org.tinygroup..*.*(..))" /> <aop:before 
+		method="test" pointcut-ref="target" /> </aop:aspect> </aop:config> -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
+		scope="singleton">
+		<property name="dataSource" ref="dynamicDataSource" />
+	</bean>
+
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*" propagation="REQUIRED"/>
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut id="allManagerMethod"
+			expression="execution(* org.tinygroup.tinydb.testcase.transaction.service.*.*(..))" />
+		<aop:advisor pointcut-ref="allManagerMethod" advice-ref="txAdvice" />
+	</aop:config>
+</beans>  

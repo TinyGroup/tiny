@@ -1,0 +1,27 @@
+<flow id="flowExceptionTest" name="flowExceptionTest">
+	<nodes>
+		<node id="begin">
+			<next-nodes>
+				<next-node component-result="begin" next-node-id="hello"/>
+			</next-nodes>
+		</node>
+		<node id="hello">
+			<component name="exceptionFlowComponent">
+			</component>
+			<next-nodes>
+				<next-node component-result="OK" exception-type="java.lang.RuntimeException" next-node-id="exceptionProcess" />
+			</next-nodes>
+		</node>
+		<node id="exceptionProcess" name="exceptionProcess" title="异常处理节点">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="专有异常节点node:exceptionProcess处理ing...." />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node component-result="OK" next-node-id="end">
+				</next-node>
+			</next-nodes>
+		</node>
+	</nodes>
+</flow>

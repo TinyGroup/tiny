@@ -1,0 +1,12 @@
+	<!--velocity 自定义类配置 -->
+<velocity-context-config>
+	<static-classes>
+		<static-class name="stringUtils" className="org.apache.commons.lang.StringUtils"></static-class>
+	</static-classes>
+	<platform-beans>
+		<!--<bean name="user" type="org.tinygroup.usermanager.bean.User"></bean> -->
+	</platform-beans>
+	<spring-beans>
+		<!--<bean name="object2Json" type="org.tinygroup.usermanager.component.Object2Json"></bean> -->
+	</spring-beans>
+</velocity-context-config>

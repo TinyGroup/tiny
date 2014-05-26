@@ -1,0 +1,3 @@
+<business-unit-processor>
+  <install-processor processor-bean-name="tableInstaller"/>
+</business-unit-processor>

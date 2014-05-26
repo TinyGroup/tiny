@@ -1,0 +1,197 @@
+#@wordDocument()
+#@body()
+
+
+
+#p("表格测试1，两行两列，单元格高度和宽度自动",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table()
+	#@tableRow()  
+		#@tableCell()  
+			#p("单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11")
+		#end
+		#@tableCell()  
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()  
+			#p("单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单")
+		#end
+	#end
+#end
+
+
+
+
+
+
+#p("表格测试2，两行两列，高度自动，单元格宽度分别为4000和2000",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table()
+	#@tableRow()  
+		#@tableCell({"span":{"width":"4000"}})   ##单元格宽度 4000
+			#p("单元格11")
+		#end
+		#@tableCell({"span":{"width":"3000"}})   ##单元格宽度 3000
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell({"span":{"width":"4000"}})   ##单元格宽度 4000
+			#p("单元格21")
+		#end
+		#@tableCell({"span":{"width":"3000"}})   ##单元格宽度 3000
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+
+#p("表格测试3，两行两列，宽度自动，单元格高度分别为5000和3000",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table()
+	#@tableRow(5000)  
+		#@tableCell()      
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow(3000)   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+#p("表格测试4，边框类型为单线，颜色为绿色，宽度为30",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"borders":{"wval":"single","color":"92D050","size":"30"}})
+	#@tableRow()  
+		#@tableCell()      
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#p("表格测试5，边框类型为双划线，颜色为紫色，宽度为20",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"borders":{"wval":"double","color":"7030A0","size":"20"}})
+	#@tableRow()  
+		#@tableCell()      
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+
+#p("表格测试6，",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"shading":{"wval":"solid","color":"92D050","fill":"auto"}})
+	#@tableRow()  
+		#@tableCell({"shading":{"wval":"solid","color":"FFFF00","fill":"auto"},
+					 "span":{"width":"6000","type":"dxa"}})
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#p("表格测试7，",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"shading":{"wval":"solid","color":"92D050","fill":"auto"}})
+	#@tableRow()  
+		#@tableCell()
+			#p("单元格11")
+		#end
+		#@tableCell({"borders":{"wval":"thin-thick-medium-gap","width":"120","color":"00B050"},
+					 "shading":{"wval":"solid","color":"FF0000","fill":"FF0000"}})
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#p("表格测试8，",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"shading":{"wval":"solid","color":"92D050","fill":"auto"}})
+	#@tableRow()  
+		#@tableCell({"borders":{"wval":"dash-dot-stroked","width":"120","color":"E36C0A"},
+					 "shading":{"wval":"solid","color":"FFFF00","fill":"auto"}})
+			#p("单元格11")  
+		#end
+		#@tableCell()
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+
+#end
+#end
+

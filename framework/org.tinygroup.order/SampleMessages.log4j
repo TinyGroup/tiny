@@ -1,0 +1,16 @@
+<log4j:event logger="org.tinygroup.order.processor.OrderProcessor" timestamp="1400331070261" level="INFO" thread="main">
+<log4j:message><![CDATA[读取对象加载顺序配置文件:<D:\git\tiny\framework\org.tinygroup.order\target\test-classes\test.order.xml>开始]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.order.processor.OrderProcessor" timestamp="1400331070266" level="INFO" thread="main">
+<log4j:message><![CDATA[读取对象加载顺序配置文件：<D:\git\tiny\framework\org.tinygroup.order\target\test-classes\test.order.xml>]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.order.processor.OrderGroup" timestamp="1400331070288" level="INFO" thread="main">
+<log4j:message><![CDATA[文件处理器加载顺序处理开始]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.order.processor.OrderGroup" timestamp="1400331070292" level="INFO" thread="main">
+<log4j:message><![CDATA[文件处理器加载顺序处理结束]]></log4j:message>
+</log4j:event>
+

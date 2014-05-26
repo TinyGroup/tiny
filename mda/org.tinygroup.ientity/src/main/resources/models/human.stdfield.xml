@@ -1,0 +1,13 @@
+<standard-fields package-name="org.tinygroup.test">
+	<standard-field id="objno" name="objno" title="员工编号" business-type-id="Varchar100" />
+	<standard-field id="workstatus" name="workstatus" title="工作状态" business-type-id="Varchar100" />
+	<standard-field id="tel1" name="tel1" title="内线电话" business-type-id="Varchar100" />
+	<standard-field id="tel2" name="tel2" title="移动电话" business-type-id="Varchar100" />
+	<standard-field id="orgid" name="orgid" title="部门" business-type-id="Varchar100" />
+	<standard-field id="exttextfield0" name="exttextfield0" title="项目信息" business-type-id="Varchar100" />
+	<standard-field id="officeaddr" name="officeaddr" title="办公地址" business-type-id="Varchar100" />
+	<standard-field id="gender" name="gender" title="性别" business-type-id="Varchar100" />
+	<standard-field id="mainstation" name="mainstation" title="岗位" business-type-id="Varchar100" />
+	<standard-field id="objname" name="objname" title="姓名" business-type-id="Varchar100" />
+	<standard-field id="tel3" name="tel3" title="公司短号" business-type-id="Varchar100" />
+</standard-fields>

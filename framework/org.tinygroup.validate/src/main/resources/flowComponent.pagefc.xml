@@ -1,0 +1,7 @@
+<components>
+	<component name="validateComponent" bean="validateComponent" title="流程校验组件" icon="" >
+		<short-description>validateComponent</short-description>
+		<long-description>validateComponent</long-description>
+	</component>
+</components>
+

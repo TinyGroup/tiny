@@ -1,0 +1,35 @@
+<routers>
+    <router id="tableMappingShard" user-name="luog" password="123456"
+             key-generator-class="org.tinygroup.dbrouter.impl.keygenerator.RouterKeyGeneratorLong">
+        <key-generator-config  increment="1" data-source-id="ds0"/>
+        <data-source-configs>
+            <data-source-config id="ds0" driver="com.mysql.jdbc.Driver" user-name="root" password="123456"
+                                url="jdbc:mysql://mysqldb:3306/test" test-sql=""/>
+        </data-source-configs>
+        <partitions>
+            <partition id="abc" mode="2">
+                <partition-rules>
+                    <partition-rule class="org.tinygroup.dbrouter.impl.partionrule.PartionRuleByTableName"
+                                    table-name="aaa"/>
+                </partition-rules>
+                <shards>
+                    <shard id="shard0" data-source-id="ds0">
+                        <table-mappings>
+                            <table-mapping table-name="aaa" shard-table-name="aaa0"/>
+                        </table-mappings>
+                    </shard>
+                    <shard id="shard1" data-source-id="ds0">
+                        <table-mappings>
+                            <table-mapping table-name="aaa" shard-table-name="aaa1"/>
+                        </table-mappings>
+                    </shard>
+                    <shard id="shard2" data-source-id="ds0">
+                        <table-mappings>
+                            <table-mapping table-name="aaa" shard-table-name="aaa2"/>
+                        </table-mappings>
+                    </shard>
+                </shards>
+            </partition>
+        </partitions>
+    </router>
+</routers>

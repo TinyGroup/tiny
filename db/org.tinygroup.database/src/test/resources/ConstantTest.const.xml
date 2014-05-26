@@ -1,0 +1,29 @@
+<constants package-name="aa">
+	<constant name="a1" title="AA" value="1.02">
+		<description>float</description>
+	</constant>
+	<constant name="a2" title="AA" value="112.1">
+		<description>double</description>
+	</constant>
+	<constant name="a3" title="AA" value="65">
+		<description>byte</description>
+	</constant>
+	<constant name="a4" title="AA" value="12">
+		<description>short</description>
+	</constant>
+	<constant name="a5" title="AA" value="122">
+		<description>int</description>
+	</constant>
+	<constant name="a6" title="AA" value="11231">
+		<description>long</description>
+	</constant>
+	<constant name="a7" title="AA" value="中">
+		<description>char</description>
+	</constant>
+	<constant name="a8" title="AA" value="true">
+		<description>boolean</description>
+	</constant>
+	<constant name="a9" title="AA" value="true">
+		<description>String</description>
+	</constant>
+</constants>

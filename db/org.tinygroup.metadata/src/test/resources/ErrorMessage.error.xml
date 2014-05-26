@@ -1,0 +1,4 @@
+<error-messages package-name="">
+	<error-message error-id="aa" error-message-i18n-key="111"
+		resolution-i18n-key="aa" />
+</error-messages>

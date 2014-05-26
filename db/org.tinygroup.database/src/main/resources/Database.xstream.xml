@@ -1,0 +1,14 @@
+<xstream-configuration package-name="database">
+	<xstream-annotation-classes>
+		<xstream-annotation-class
+			class-name="org.tinygroup.database.config.table.Tables" />
+			<xstream-annotation-class
+			class-name="org.tinygroup.database.config.customsql.CustomSqls" />
+			<xstream-annotation-class
+			class-name="org.tinygroup.database.config.procedure.Procedures" />
+			<xstream-annotation-class
+			class-name="org.tinygroup.database.config.dialectfunction.DialectFunctions">
+			</xstream-annotation-class>
+	</xstream-annotation-classes>
+</xstream-configuration>
+

@@ -1,0 +1,26 @@
+<standard-fields package-name="org.tinygroup.test">
+	<standard-field id="user_id" name="user_id" title="用户编号"
+		business-type-id="Varchar32">
+	</standard-field>
+	<standard-field id="user_name" name="user_name" title="姓名"
+		business-type-id="Varchar32">
+	</standard-field>
+	<standard-field id="user_age" name="user_age" title="年龄"
+		business-type-id="Int">
+	</standard-field>
+	<standard-field id="user_gender" name="user_gender" title="性别"
+		business-type-id="Int">
+	</standard-field>
+	<standard-field id="org_id" name="org_id" title="组织编号"
+		business-type-id="Varchar32">
+	</standard-field>
+	<standard-field id="org_name" name="org_name" title="组织名称"
+		business-type-id="Varchar32">
+	</standard-field>
+	<standard-field id="org_info" name="org_info" title="相关信息"
+		business-type-id="Varchar100">
+	</standard-field>
+	<standard-field id="parent_org_id" name="parent_org_id" title="父组织编号"
+		business-type-id="Varchar32">
+	</standard-field>
+</standard-fields>

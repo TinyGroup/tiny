@@ -1,0 +1,12 @@
+<tables package-name="org.tinygroup.test">
+	<table id="test_user" name="user" title="用户">
+		<table-field standard-field-id="test_name" primary="true"
+			unique="true" not-null="true" id="user_name" />
+		<table-field standard-field-id="test_age" primary="false"
+			unique="false" not-null="false" id="user_age" />
+		<table-field standard-field-id="test_short_info" primary="false"
+			unique="false" not-null="false" id="user_short_info" />
+		<table-field standard-field-id="test_create_time" primary="false"
+			unique="false" not-null="false" id="user_create_time" />
+	</table>
+</tables>

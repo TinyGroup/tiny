@@ -1,0 +1,13 @@
+<h1>Tiny project.</h1>
+
+你好，Tiny工程已经运行。<br />
+Accept-Encoding:$Accept-Encoding<br />
+Accept-Language:$Accept-Language<br />
+Accept-Charset:$Accept-Charset<br />
+User-Agent:$User-Agent<br />
+Accept:$Accept<br />
+
+name:#i("name")<br />
+sex:#i("sex")<br />
+name:$name<br />
+title:$!title<br />

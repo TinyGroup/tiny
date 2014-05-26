@@ -1,0 +1,9 @@
+<components>
+	<component name="${artifactId}" bean="${artifactId}"
+		title="${artifactId} Component" icon="/icon/component.gif">
+		<short-description>${artifactId} component</short-description>
+		<long-description>${artifactId} component long description
+		</long-description>
+	</component>
+</components>
+

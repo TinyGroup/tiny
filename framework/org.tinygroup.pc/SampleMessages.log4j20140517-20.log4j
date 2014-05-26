@@ -1,0 +1,2203 @@
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342875" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342888" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329342900" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342965" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342966" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329342969" level="DEBUG" thread="Thread-5">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342978" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342978" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329342979" level="DEBUG" thread="Thread-8">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342985" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342985" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329342986" level="DEBUG" thread="Thread-11">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342992" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329342993" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329342998" level="DEBUG" thread="Thread-14">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343003" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343003" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343005" level="DEBUG" thread="Thread-17">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343010" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343011" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343012" level="DEBUG" thread="Thread-20">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343019" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343020" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343021" level="DEBUG" thread="Thread-23">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343031" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343031" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343032" level="DEBUG" thread="Thread-26">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343043" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343044" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343045" level="DEBUG" thread="Thread-29">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343052" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343052" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343053" level="DEBUG" thread="Thread-32">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343060" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343061" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343062" level="DEBUG" thread="Thread-35">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343070" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343071" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343072" level="DEBUG" thread="Thread-38">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343083" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343084" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343086" level="DEBUG" thread="Thread-41">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343093" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343094" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343095" level="DEBUG" thread="Thread-44">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343101" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343102" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343123" level="DEBUG" thread="Thread-47">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343134" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343136" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343137" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343241" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343241" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343251" level="DEBUG" thread="Thread-53">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343354" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343355" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343357" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象加入注册列表:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343358" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343358" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343358" level="DEBUG" thread="Thread-56">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343364" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343471" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[获取对象Name:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343492" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象加入注册列表:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343492" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343492" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343497" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343597" level="DEBUG" thread="main">
+<log4j:message><![CDATA[获取对象Name:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343600" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343601" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343601" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343602" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343701" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343702" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343702" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343704" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343706" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343707" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343707" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343730" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343731" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343732" level="DEBUG" thread="Thread-59">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343734" level="ERROR" thread="Thread-55">
+<log4j:message><![CDATA[注销对象:hello1时发生异常:hello1！]]></log4j:message>
+<log4j:throwable><![CDATA[java.rmi.NotBoundException: hello1
+	at sun.rmi.registry.RegistryImpl.unbind(RegistryImpl.java:170)
+	at sun.rmi.registry.RegistryImpl_Skel.dispatch(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.oldDispatch(UnicastServerRef.java:409)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:267)
+	at sun.rmi.transport.Transport$1.run(Transport.java:177)
+	at sun.rmi.transport.Transport$1.run(Transport.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:173)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:553)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:808)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:667)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:273)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:251)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:377)
+	at sun.rmi.registry.RegistryImpl_Stub.unbind(Unknown Source)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.unregisterObject(AbstractRmiServer.java:234)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.run(AbstractRmiServer.java:296)
+	at java.lang.Thread.run(Thread.java:722)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343843" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343845" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343847" level="DEBUG" thread="Thread-62">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343953" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329343954" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329343954" level="DEBUG" thread="Thread-65">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344062" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344063" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344075" level="DEBUG" thread="Thread-68">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344178" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344179" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344179" level="DEBUG" thread="Thread-71">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344287" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344287" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344289" level="DEBUG" thread="Thread-74">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344398" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344407" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344414" level="DEBUG" thread="Thread-77">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344515" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344516" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344517" level="DEBUG" thread="Thread-80">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344622" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344623" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344624" level="DEBUG" thread="Thread-83">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344731" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344732" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344734" level="DEBUG" thread="Thread-86">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344840" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344840" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344846" level="DEBUG" thread="Thread-89">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344951" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329344952" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329344956" level="DEBUG" thread="Thread-92">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329345058" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400329345059" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400329345059" level="DEBUG" thread="Thread-95">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181792" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181802" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181807" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181857" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181857" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181861" level="DEBUG" thread="Thread-5">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181867" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181867" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181868" level="DEBUG" thread="Thread-8">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181872" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181873" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181874" level="DEBUG" thread="Thread-11">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181878" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181879" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181880" level="DEBUG" thread="Thread-14">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181885" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181885" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181886" level="DEBUG" thread="Thread-17">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181891" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181891" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181892" level="DEBUG" thread="Thread-20">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181896" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181897" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181898" level="DEBUG" thread="Thread-23">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181904" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181905" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181906" level="DEBUG" thread="Thread-26">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181910" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181911" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181911" level="DEBUG" thread="Thread-29">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181916" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181917" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181917" level="DEBUG" thread="Thread-32">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181921" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181922" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181922" level="DEBUG" thread="Thread-35">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181930" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181931" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181933" level="DEBUG" thread="Thread-38">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181936" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181937" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181937" level="DEBUG" thread="Thread-41">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181941" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181941" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181942" level="DEBUG" thread="Thread-44">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181945" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181946" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181947" level="DEBUG" thread="Thread-47">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181968" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331181969" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331181970" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182074" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182075" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182077" level="DEBUG" thread="Thread-53">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182183" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182184" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182185" level="DEBUG" thread="Thread-56">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182188" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象加入注册列表:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182189" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182189" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182197" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182294" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[获取对象Name:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182306" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象加入注册列表:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182306" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182307" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182310" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182416" level="DEBUG" thread="main">
+<log4j:message><![CDATA[获取对象Name:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182422" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182423" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182423" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182426" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182524" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182524" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182525" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182524" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182526" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182527" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182527" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182534" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182535" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182539" level="DEBUG" thread="Thread-59">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182552" level="ERROR" thread="Thread-55">
+<log4j:message><![CDATA[注销对象:hello1时发生异常:hello1！]]></log4j:message>
+<log4j:throwable><![CDATA[java.rmi.NotBoundException: hello1
+	at sun.rmi.registry.RegistryImpl.unbind(RegistryImpl.java:170)
+	at sun.rmi.registry.RegistryImpl_Skel.dispatch(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.oldDispatch(UnicastServerRef.java:409)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:267)
+	at sun.rmi.transport.Transport$1.run(Transport.java:177)
+	at sun.rmi.transport.Transport$1.run(Transport.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:173)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:553)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:808)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:667)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:273)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:251)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:377)
+	at sun.rmi.registry.RegistryImpl_Stub.unbind(Unknown Source)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.unregisterObject(AbstractRmiServer.java:234)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.run(AbstractRmiServer.java:296)
+	at java.lang.Thread.run(Thread.java:722)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182641" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182642" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182643" level="DEBUG" thread="Thread-62">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182749" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182749" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182750" level="DEBUG" thread="Thread-65">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182856" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182857" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182859" level="DEBUG" thread="Thread-68">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182965" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331182965" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331182967" level="DEBUG" thread="Thread-71">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183082" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183089" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183090" level="DEBUG" thread="Thread-74">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183198" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183199" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183200" level="DEBUG" thread="Thread-77">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183311" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183311" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183312" level="DEBUG" thread="Thread-80">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183420" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183421" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183422" level="DEBUG" thread="Thread-83">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183531" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183532" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183533" level="DEBUG" thread="Thread-86">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183637" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183637" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183644" level="DEBUG" thread="Thread-89">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183748" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183748" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183750" level="DEBUG" thread="Thread-92">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183853" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331183853" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331183855" level="DEBUG" thread="Thread-95">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214834" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214839" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214846" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214911" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214912" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214917" level="DEBUG" thread="Thread-5">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214926" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214927" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214929" level="DEBUG" thread="Thread-8">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214935" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214936" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214937" level="DEBUG" thread="Thread-11">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214944" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214944" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214952" level="DEBUG" thread="Thread-14">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214955" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214956" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214957" level="DEBUG" thread="Thread-17">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214963" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214964" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214965" level="DEBUG" thread="Thread-20">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214971" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214972" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214972" level="DEBUG" thread="Thread-23">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214978" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214979" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214980" level="DEBUG" thread="Thread-26">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214987" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214987" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214988" level="DEBUG" thread="Thread-29">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214994" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331214994" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331214995" level="DEBUG" thread="Thread-32">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215001" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215002" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215003" level="DEBUG" thread="Thread-35">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215016" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215017" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215018" level="DEBUG" thread="Thread-38">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215024" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215025" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215025" level="DEBUG" thread="Thread-41">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215032" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215033" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215034" level="DEBUG" thread="Thread-44">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215043" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215045" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215049" level="DEBUG" thread="Thread-47">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215076" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215077" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215077" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215183" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215184" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215187" level="DEBUG" thread="Thread-53">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215293" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215293" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215297" level="DEBUG" thread="Thread-56">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215297" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象加入注册列表:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215298" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215298" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215305" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215402" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[获取对象Name:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215406" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象加入注册列表:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215406" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215406" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215409" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215510" level="DEBUG" thread="main">
+<log4j:message><![CDATA[获取对象Name:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215512" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215512" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215512" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215513" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215613" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215614" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215614" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215615" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215620" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215623" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215624" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215624" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[结束注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215625" level="DEBUG" thread="Thread-55">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215629" level="DEBUG" thread="Thread-59">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215633" level="ERROR" thread="Thread-55">
+<log4j:message><![CDATA[注销对象:hello1时发生异常:hello1！]]></log4j:message>
+<log4j:throwable><![CDATA[java.rmi.NotBoundException: hello1
+	at sun.rmi.registry.RegistryImpl.unbind(RegistryImpl.java:170)
+	at sun.rmi.registry.RegistryImpl_Skel.dispatch(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.oldDispatch(UnicastServerRef.java:409)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:267)
+	at sun.rmi.transport.Transport$1.run(Transport.java:177)
+	at sun.rmi.transport.Transport$1.run(Transport.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:173)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:553)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:808)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:667)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:273)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:251)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:377)
+	at sun.rmi.registry.RegistryImpl_Stub.unbind(Unknown Source)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.unregisterObject(AbstractRmiServer.java:234)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.run(AbstractRmiServer.java:296)
+	at java.lang.Thread.run(Thread.java:722)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215729" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215730" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215731" level="DEBUG" thread="Thread-62">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215842" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215844" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215847" level="DEBUG" thread="Thread-65">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215954" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331215954" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331215963" level="DEBUG" thread="Thread-68">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216065" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216065" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216066" level="DEBUG" thread="Thread-71">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216172" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216172" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216175" level="DEBUG" thread="Thread-74">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216281" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216282" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216290" level="DEBUG" thread="Thread-77">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216404" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216406" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216409" level="DEBUG" thread="Thread-80">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216516" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216517" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216518" level="DEBUG" thread="Thread-83">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216632" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216633" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216637" level="DEBUG" thread="Thread-86">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216739" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216740" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216747" level="DEBUG" thread="Thread-89">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216851" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216851" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216853" level="DEBUG" thread="Thread-92">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216957" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331216957" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331216958" level="DEBUG" thread="Thread-95">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331302950" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331302957" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331302961" level="DEBUG" thread="Thread-3">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303016" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象加入注册列表:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303016" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303016" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303018" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[结束注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303121" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[获取对象Name:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303130" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象加入注册列表:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303131" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303131" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303133" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[结束注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303236" level="DEBUG" thread="main">
+<log4j:message><![CDATA[获取对象Name:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303238" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303239" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303239" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303239" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[结束注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303339" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303339" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303339" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303340" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303340" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[结束注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331303341" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322011" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322016" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322039" level="DEBUG" thread="Thread-2">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322081" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322082" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322083" level="DEBUG" thread="Thread-5">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322091" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322092" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322093" level="DEBUG" thread="Thread-8">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322097" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322098" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322100" level="DEBUG" thread="Thread-11">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322106" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322106" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322108" level="DEBUG" thread="Thread-14">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322113" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322113" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322114" level="DEBUG" thread="Thread-17">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322118" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322119" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322119" level="DEBUG" thread="Thread-20">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322123" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322124" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322124" level="DEBUG" thread="Thread-23">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322129" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322130" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322130" level="DEBUG" thread="Thread-26">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322134" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322135" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322135" level="DEBUG" thread="Thread-29">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322139" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322139" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322140" level="DEBUG" thread="Thread-32">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322144" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322144" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322145" level="DEBUG" thread="Thread-35">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322152" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322152" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322155" level="DEBUG" thread="Thread-38">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322159" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322159" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322160" level="DEBUG" thread="Thread-41">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322163" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322164" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322165" level="DEBUG" thread="Thread-44">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322169" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322170" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322170" level="DEBUG" thread="Thread-47">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322189" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322190" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331322191" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322193" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象加入注册列表:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322194" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322194" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[开始注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322211" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[结束注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322297" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[获取对象Name:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322301" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象加入注册列表:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322301" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322301" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[开始注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322304" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[结束注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322411" level="DEBUG" thread="main">
+<log4j:message><![CDATA[获取对象Name:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322415" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322416" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322416" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322420" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[结束注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322518" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322519" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322520" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322521" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322528" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[开始注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322529" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[结束注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322530" level="DEBUG" thread="Thread-49">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331322542" level="ERROR" thread="Thread-49">
+<log4j:message><![CDATA[注销对象:hello1时发生异常:hello1！]]></log4j:message>
+<log4j:throwable><![CDATA[java.rmi.NotBoundException: hello1
+	at sun.rmi.registry.RegistryImpl.unbind(RegistryImpl.java:170)
+	at sun.rmi.registry.RegistryImpl_Skel.dispatch(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.oldDispatch(UnicastServerRef.java:409)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:267)
+	at sun.rmi.transport.Transport$1.run(Transport.java:177)
+	at sun.rmi.transport.Transport$1.run(Transport.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:173)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:553)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:808)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:667)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:273)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:251)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:377)
+	at sun.rmi.registry.RegistryImpl_Stub.unbind(Unknown Source)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.unregisterObject(AbstractRmiServer.java:234)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.run(AbstractRmiServer.java:296)
+	at java.lang.Thread.run(Thread.java:722)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546427" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546431" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546432" level="DEBUG" thread="Thread-3">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546472" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546472" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546473" level="DEBUG" thread="Thread-6">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546476" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546476" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546477" level="DEBUG" thread="Thread-9">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546481" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546481" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546482" level="DEBUG" thread="Thread-12">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546486" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546486" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546489" level="DEBUG" thread="Thread-15">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546493" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546493" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546494" level="DEBUG" thread="Thread-18">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546498" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546498" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546499" level="DEBUG" thread="Thread-21">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546503" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546503" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546503" level="DEBUG" thread="Thread-24">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546508" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546508" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546509" level="DEBUG" thread="Thread-27">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546513" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546514" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546514" level="DEBUG" thread="Thread-30">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546518" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546518" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546519" level="DEBUG" thread="Thread-33">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546524" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546525" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546532" level="DEBUG" thread="Thread-36">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546533" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546534" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546543" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546543" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546544" level="DEBUG" thread="Thread-39">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546546" level="DEBUG" thread="Thread-42">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546548" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546548" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546549" level="DEBUG" thread="Thread-45">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546553" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546554" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546554" level="DEBUG" thread="Thread-48">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546569" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546570" level="INFO" thread="main">
+<log4j:message><![CDATA[启动对象注册列表线程完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.RmiServerRemote" timestamp="1400331546570" level="DEBUG" thread="Thread-51">
+<log4j:message><![CDATA[开始检测已注册对象的可用性]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546572" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象加入注册列表:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546572" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546572" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546578" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[结束注册对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546675" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[获取对象Name:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546679" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象加入注册列表:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546679" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注册列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546679" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546683" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[结束注册对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546781" level="DEBUG" thread="main">
+<log4j:message><![CDATA[获取对象Name:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546783" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546783" level="DEBUG" thread="RMI TCP Connection(2)-192.168.211.1">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546783" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546785" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[结束注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546884" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546884" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546884" level="DEBUG" thread="main">
+<log4j:message><![CDATA[将对象:hello1加入注销列表]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546885" level="DEBUG" thread="main">
+<log4j:message><![CDATA[对象:hello1加入注销列表完成]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546885" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546886" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[结束注销对象:hello]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546886" level="DEBUG" thread="Thread-50">
+<log4j:message><![CDATA[开始注销对象:hello1]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.rmi.impl.AbstractRmiServer" timestamp="1400331546891" level="ERROR" thread="Thread-50">
+<log4j:message><![CDATA[注销对象:hello1时发生异常:hello1！]]></log4j:message>
+<log4j:throwable><![CDATA[java.rmi.NotBoundException: hello1
+	at sun.rmi.registry.RegistryImpl.unbind(RegistryImpl.java:140)
+	at sun.rmi.registry.RegistryImpl_Skel.dispatch(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.oldDispatch(UnicastServerRef.java:375)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:240)
+	at sun.rmi.transport.Transport$1.run(Transport.java:153)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:149)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:466)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:707)
+	at java.lang.Thread.run(Thread.java:595)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:247)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:223)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:343)
+	at sun.rmi.registry.RegistryImpl_Stub.unbind(Unknown Source)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.unregisterObject(AbstractRmiServer.java:234)
+	at org.tinygroup.rmi.impl.AbstractRmiServer.run(AbstractRmiServer.java:296)
+	at java.lang.Thread.run(Thread.java:595)
+]]></log4j:throwable>
+</log4j:event>
+

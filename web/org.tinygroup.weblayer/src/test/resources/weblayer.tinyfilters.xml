@@ -1,0 +1,7 @@
+<tiny-filters>
+	<tiny-filter id="myTinyFilter" class="myTinyFilter">
+		<init-param name="name" value="xuanxuan"></init-param>
+		<init-param name="age" value="1"></init-param>
+		<filter-mapping url-pattern=".*\.my"></filter-mapping>
+	</tiny-filter>
+</tiny-filters>

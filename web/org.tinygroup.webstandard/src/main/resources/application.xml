@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 测试 -->
+<application>
+    <application-properties>
+        <property name="BASE_PACKAGE" value="org.tinygroup"/>
+        <property name="DEBUG_MODE" value="true"/>
+        <property name="TINY_THEME" value="default"/>
+        <property name="wholeWidth" value="200pt"/>
+        <property name="labelWidth" value="80pt"/>
+        <property name="fieldWidth" value="120pt"/>
+        <property name="cardWidth" value="200pt"/>
+        <!-- 如果没有指定语言或指定语言的内容找不到，则从默认语言查找 -->
+        <property name="TINY_DEFAULT_LOCALE" value="zh_CN"/>
+    </application-properties>
+    <!-- config-processors节点由 ProcessorLoader处理器处理，如何配置请参考config-processors配置手册，本段配置如果不配置，则应用系统啥也不干 -->
+    <!-- greetings信息由org.tinygroup.application.processor.GreetingProcessor处理器处理，如何配置请参考
+        GreetingProcessor配置手册 -->
+    <greetings>
+        **********************************************
+        * 欢迎进入Tiny
+        Server *
+        * *
+        * 如果有任何问题，请联系luoguo@hundsun.com *
+        **********************************************
+
+    </greetings>
+
+    <application-processors>
+        <application-processor bean="fileResolverProcessor"></application-processor>
+        <application-processor bean="PluginMgtProcessor"></application-processor>
+        <application-processor bean="CEPProcessor"></application-processor>
+        <application-processor bean="dictLoadProcessor"></application-processor>
+        <application-processor bean="tinyListenerProcessor"></application-processor>
+        <application-processor bean="fileMonitorProcessor"></application-processor>
+    </application-processors>
+
+    <!-- 这里是文件搜索器相关配置，如果配置请参考file-resolver-configuration配置手册 -->
+    <file-resolver-configuration
+            resolve-classpath="true">
+        <class-paths>
+            <!-- <class-path path="{TINY_WEBROOT}\WEB-INF\lib" /> -->
+        </class-paths>
+        <include-patterns>
+            <include-pattern pattern="org\.tinygroup\.(.)*\.jar"/>
+        </include-patterns>
+        <full-context-file-finder>
+            <file ext-name="evy" content-type="application/envoy"/>
+            <file ext-name="fif" content-type="application/fractals"/>
+            <file ext-name="spl" content-type="application/futuresplash"/>
+            <file ext-name="hta" content-type="application/hta"/>
+            <file ext-name="acx" content-type="application/internet-property-stream"/>
+            <file ext-name="hqx" content-type="application/mac-binhex40"/>
+            <file ext-name="doc" content-type="application/msword"/>
+            <file ext-name="dot" content-type="application/msword"/>
+            <file ext-name="bin" content-type="application/octet-stream"/>
+            <file ext-name="dms" content-type="application/octet-stream"/>
+            <file ext-name="exe" content-type="application/octet-stream"/>
+            <file ext-name="lha" content-type="application/octet-stream"/>
+            <file ext-name="lzh" content-type="application/octet-stream"/>
+            <file ext-name="oda" content-type="application/oda"/>
+            <file ext-name="axs" content-type="application/olescript"/>
+            <file ext-name="pdf" content-type="application/pdf"/>
+            <file ext-name="prf" content-type="application/pics-rules"/>
+            <file ext-name="p10" content-type="application/pkcs10"/>
+            <file ext-name="crl" content-type="application/pkix-crl"/>
+            <file ext-name="ai" content-type="application/postscript"/>
+            <file ext-name="eps" content-type="application/postscript"/>
+            <file ext-name="ps" content-type="application/postscript"/>
+            <file ext-name="rtf" content-type="application/rtf"/>
+            <file ext-name="setpay" content-type="application/set-payment-initiation"/>
+            <file ext-name="setreg" content-type="application/set-registration-initiation"/>
+            <file ext-name="xla" content-type="application/vnd.ms-excel"/>
+            <file ext-name="xlc" content-type="application/vnd.ms-excel"/>
+            <file ext-name="xlm" content-type="application/vnd.ms-excel"/>
+            <file ext-name="xls" content-type="application/vnd.ms-excel"/>
+            <file ext-name="xlt" content-type="application/vnd.ms-excel"/>
+            <file ext-name="xlw" content-type="application/vnd.ms-excel"/>
+            <file ext-name="msg" content-type="application/vnd.ms-outlook"/>
+            <file ext-name="sst" content-type="application/vnd.ms-pkicertstore"/>
+            <file ext-name="cat" content-type="application/vnd.ms-pkiseccat"/>
+            <file ext-name="stl" content-type="application/vnd.ms-pkistl"/>
+            <file ext-name="pot" content-type="application/vnd.ms-powerpoint"/>
+            <file ext-name="pps" content-type="application/vnd.ms-powerpoint"/>
+            <file ext-name="ppt" content-type="application/vnd.ms-powerpoint"/>
+            <file ext-name="mpp" content-type="application/vnd.ms-project"/>
+            <file ext-name="wcm" content-type="application/vnd.ms-works"/>
+            <file ext-name="wdb" content-type="application/vnd.ms-works"/>
+            <file ext-name="wks" content-type="application/vnd.ms-works"/>
+            <file ext-name="wps" content-type="application/vnd.ms-works"/>
+            <file ext-name="hlp" content-type="application/winhlp"/>
+            <file ext-name="bcpio" content-type="application/x-bcpio"/>
+            <file ext-name="cdf" content-type="application/x-cdf"/>
+            <file ext-name="z" content-type="application/x-compress"/>
+            <file ext-name="tgz" content-type="application/x-compressed"/>
+            <file ext-name="cpio" content-type="application/x-cpio"/>
+            <file ext-name="csh" content-type="application/x-csh"/>
+            <file ext-name="dcr" content-type="application/x-director"/>
+            <file ext-name="dir" content-type="application/x-director"/>
+            <file ext-name="dxr" content-type="application/x-director"/>
+            <file ext-name="dvi" content-type="application/x-dvi"/>
+            <file ext-name="gtar" content-type="application/x-gtar"/>
+            <file ext-name="gz" content-type="application/x-gzip"/>
+            <file ext-name="hdf" content-type="application/x-hdf"/>
+            <file ext-name="ins" content-type="application/x-internet-signup"/>
+            <file ext-name="isp" content-type="application/x-internet-signup"/>
+            <file ext-name="iii" content-type="application/x-iphone"/>
+            <file ext-name="js" content-type="application/x-javascript"/>
+            <file ext-name="latex" content-type="application/x-latex"/>
+            <file ext-name="mdb" content-type="application/x-msaccess"/>
+            <file ext-name="crd" content-type="application/x-mscardfile"/>
+            <file ext-name="clp" content-type="application/x-msclip"/>
+            <file ext-name="dll" content-type="application/x-msdownload"/>
+            <file ext-name="m13" content-type="application/x-msmediaview"/>
+            <file ext-name="m14" content-type="application/x-msmediaview"/>
+            <file ext-name="mvb" content-type="application/x-msmediaview"/>
+            <file ext-name="wmf" content-type="application/x-msmetafile"/>
+            <file ext-name="mny" content-type="application/x-msmoney"/>
+            <file ext-name="pub" content-type="application/x-mspublisher"/>
+            <file ext-name="scd" content-type="application/x-msschedule"/>
+            <file ext-name="trm" content-type="application/x-msterminal"/>
+            <file ext-name="wri" content-type="application/x-mswrite"/>
+            <file ext-name="cdf" content-type="application/x-netcdf"/>
+            <file ext-name="nc" content-type="application/x-netcdf"/>
+            <file ext-name="pma" content-type="application/x-perfmon"/>
+            <file ext-name="pmc" content-type="application/x-perfmon"/>
+            <file ext-name="pml" content-type="application/x-perfmon"/>
+            <file ext-name="pmr" content-type="application/x-perfmon"/>
+            <file ext-name="pmw" content-type="application/x-perfmon"/>
+            <file ext-name="p12" content-type="application/x-pkcs12"/>
+            <file ext-name="pfx" content-type="application/x-pkcs12"/>
+            <file ext-name="p7b" content-type="application/x-pkcs7-certificates"/>
+            <file ext-name="spc" content-type="application/x-pkcs7-certificates"/>
+            <file ext-name="p7r" content-type="application/x-pkcs7-certreqresp"/>
+            <file ext-name="p7c" content-type="application/x-pkcs7-mime"/>
+            <file ext-name="p7m" content-type="application/x-pkcs7-mime"/>
+            <file ext-name="p7s" content-type="application/x-pkcs7-signature"/>
+            <file ext-name="sh" content-type="application/x-sh"/>
+            <file ext-name="shar" content-type="application/x-shar"/>
+            <file ext-name="swf" content-type="application/x-shockwave-flash"/>
+            <file ext-name="sit" content-type="application/x-stuffit"/>
+            <file ext-name="sv4cpio" content-type="application/x-sv4cpio"/>
+            <file ext-name="sv4crc" content-type="application/x-sv4crc"/>
+            <file ext-name="tar" content-type="application/x-tar"/>
+            <file ext-name="tcl" content-type="application/x-tcl"/>
+            <file ext-name="tex" content-type="application/x-tex"/>
+            <file ext-name="texi" content-type="application/x-texinfo"/>
+            <file ext-name="texinfo" content-type="application/x-texinfo"/>
+            <file ext-name="roff" content-type="application/x-troff"/>
+            <file ext-name="t" content-type="application/x-troff"/>
+            <file ext-name="tr" content-type="application/x-troff"/>
+            <file ext-name="man" content-type="application/x-troff-man"/>
+            <file ext-name="me" content-type="application/x-troff-me"/>
+            <file ext-name="ms" content-type="application/x-troff-ms"/>
+            <file ext-name="ustar" content-type="application/x-ustar"/>
+            <file ext-name="src" content-type="application/x-wais-source"/>
+            <file ext-name="cer" content-type="application/x-x509-ca-cert"/>
+            <file ext-name="crt" content-type="application/x-x509-ca-cert"/>
+            <file ext-name="der" content-type="application/x-x509-ca-cert"/>
+            <file ext-name="pko" content-type="application/ynd.ms-pkipko"/>
+            <file ext-name="zip" content-type="application/zip"/>
+            <file ext-name="au" content-type="audio/basic"/>
+            <file ext-name="snd" content-type="audio/basic"/>
+            <file ext-name="mid" content-type="audio/mid"/>
+            <file ext-name="rmi" content-type="audio/mid"/>
+            <file ext-name="mp3" content-type="audio/mpeg"/>
+            <file ext-name="aif" content-type="audio/x-aiff"/>
+            <file ext-name="aifc" content-type="audio/x-aiff"/>
+            <file ext-name="aiff" content-type="audio/x-aiff"/>
+            <file ext-name="m3u" content-type="audio/x-mpegurl"/>
+            <file ext-name="ra" content-type="audio/x-pn-realaudio"/>
+            <file ext-name="ram" content-type="audio/x-pn-realaudio"/>
+            <file ext-name="wav" content-type="audio/x-wav"/>
+            <file ext-name="bmp" content-type="image/bmp"/>
+            <file ext-name="cod" content-type="image/cis-cod"/>
+            <file ext-name="gif" content-type="image/gif"/>
+            <file ext-name="ief" content-type="image/ief"/>
+            <file ext-name="jpe" content-type="image/jpeg"/>
+            <file ext-name="jpeg" content-type="image/jpeg"/>
+            <file ext-name="jpg" content-type="image/jpeg"/>
+            <file ext-name="jfif" content-type="image/pipeg"/>
+            <file ext-name="svg" content-type="image/svg+xml"/>
+            <file ext-name="tif" content-type="image/tiff"/>
+            <file ext-name="tiff" content-type="image/tiff"/>
+            <file ext-name="ras" content-type="image/x-cmu-raster"/>
+            <file ext-name="cmx" content-type="image/x-cmx"/>
+            <file ext-name="ico" content-type="image/x-icon"/>
+            <file ext-name="pnm" content-type="image/x-portable-anymap"/>
+            <file ext-name="pbm" content-type="image/x-portable-bitmap"/>
+            <file ext-name="pgm" content-type="image/x-portable-graymap"/>
+            <file ext-name="ppm" content-type="image/x-portable-pixmap"/>
+            <file ext-name="rgb" content-type="image/x-rgb"/>
+            <file ext-name="xbm" content-type="image/x-xbitmap"/>
+            <file ext-name="xpm" content-type="image/x-xpixmap"/>
+            <file ext-name="xwd" content-type="image/x-xwindowdump"/>
+            <file ext-name="mht" content-type="message/rfc822"/>
+            <file ext-name="mhtml" content-type="message/rfc822"/>
+            <file ext-name="nws" content-type="message/rfc822"/>
+            <file ext-name="css" content-type="text/css"/>
+            <file ext-name="323" content-type="text/h323"/>
+            <file ext-name="htm" content-type="text/html"/>
+            <file ext-name="html" content-type="text/html"/>
+            <file ext-name="stm" content-type="text/html"/>
+            <file ext-name="uls" content-type="text/iuls"/>
+            <file ext-name="bas" content-type="text/plain"/>
+            <file ext-name="c" content-type="text/plain"/>
+            <file ext-name="h" content-type="text/plain"/>
+            <file ext-name="txt" content-type="text/plain"/>
+            <file ext-name="rtx" content-type="text/richtext"/>
+            <file ext-name="sct" content-type="text/scriptlet"/>
+            <file ext-name="tsv" content-type="text/tab-separated-values"/>
+            <file ext-name="htt" content-type="text/webviewhtml"/>
+            <file ext-name="htc" content-type="text/x-component"/>
+            <file ext-name="etx" content-type="text/x-setext"/>
+            <file ext-name="vcf" content-type="text/x-vcard"/>
+            <file ext-name="mp2" content-type="video/mpeg"/>
+            <file ext-name="mpa" content-type="video/mpeg"/>
+            <file ext-name="mpe" content-type="video/mpeg"/>
+            <file ext-name="mpeg" content-type="video/mpeg"/>
+            <file ext-name="mpg" content-type="video/mpeg"/>
+            <file ext-name="mpv2" content-type="video/mpeg"/>
+            <file ext-name="mov" content-type="video/quicktime"/>
+            <file ext-name="qt" content-type="video/quicktime"/>
+            <file ext-name="lsf" content-type="video/x-la-asf"/>
+            <file ext-name="lsx" content-type="video/x-la-asf"/>
+            <file ext-name="asf" content-type="video/x-ms-asf"/>
+            <file ext-name="asr" content-type="video/x-ms-asf"/>
+            <file ext-name="asx" content-type="video/x-ms-asf"/>
+            <file ext-name="avi" content-type="video/x-msvideo"/>
+            <file ext-name="movie" content-type="video/x-sgi-movie"/>
+            <file ext-name="flr" content-type="x-world/x-vrml"/>
+            <file ext-name="vrml" content-type="x-world/x-vrml"/>
+            <file ext-name="wrl" content-type="x-world/x-vrml"/>
+            <file ext-name="wrz" content-type="x-world/x-vrml"/>
+            <file ext-name="xaf" content-type="x-world/x-vrml"/>
+            <file ext-name="xof" content-type="x-world/x-vrml"/>
+
+
+        </full-context-file-finder>
+    </file-resolver-configuration>
+
+    <!-- 数据库安装处理器 -->
+    <database-install-processor>
+        <database-installer>
+            <database type="mysql"/>
+        </database-installer>
+    </database-install-processor>
+
+    <plugin-management>
+        <plugin-configs>
+            <plugin-config plugin-id="service" plugin-version="1.0">
+                <aop-config position="before" bean="serviceParamValidate"
+                            enable="false"/>
+            </plugin-config>
+        </plugin-configs>
+    </plugin-management>
+    <!-- cep远程调用配置 -->
+    <cep-node-config>
+        <node-config ip="192.168.84.57" port="8888" name="chenjiaopmclient"
+                     enable-remote="false"></node-config>
+        <node-sc-breath interval="4000"/>
+        <node-sc-check interval="2000"/>
+        <remote-bean bean="CEPCoreRMIRemoteImpl"/>
+        <!-- mananger-bean="cepCoreManagerCentral" -->
+        <node-strategy bean="nodeWeightPloyStrategy"/>
+        <sc ip="192.168.84.57" port="8808" name="chenjiaocentral"/>
+    </cep-node-config>
+
+    <!-- aop配置 -->
+    <cepcore-aop-config>
+        <!-- <aop-config position="before-local" bean="requestParamValidate"></aop-config> -->
+    </cepcore-aop-config>
+
+    <!-- 异常处理配置 -->
+    <exception-config>
+        <exception-handlers>
+            <!--<exception-handler exception="异常类名全路径" handler="异常对应的ExceptionHandler的beanId"/> -->
+        </exception-handlers>
+    </exception-config>
+
+    <!--注解加载规则配置 -->
+    <annotation-configuration>
+        <annotation-mapping id="service" value="(.)*Service"></annotation-mapping>
+        <annotation-mapping id="service" value="(.)*ServiceAdapter"></annotation-mapping>
+        <annotation-mapping id="validate" value="org\.tiny\..*"></annotation-mapping>
+    </annotation-configuration>
+
+    <!-- beanmanager配置信息  schema为表模式, bean-name为beanoperate的bean名称,table-name-pattern配置加载的表名称模式，key-type：表主键类型，现有increase和uuid-->
+    <bean-manager-config default-schema="netshop">
+        <bean-opertate-config schema="netshop"
+                              table-name-pattern="" bean-name="beanStringOperator" key-type="uuid">
+        </bean-opertate-config>
+    </bean-manager-config>
+
+    <!--tiny-processor实现 -->
+    <tiny-processors>
+        <tiny-processor id="uiEngineTinyProcessor" class="uiEngineTinyProcessor">
+            <servlet-mapping url-pattern=".*/uiengine\.uijs"></servlet-mapping>
+            <servlet-mapping url-pattern=".*/uiengine\.uicss"></servlet-mapping>
+        </tiny-processor>
+        <tiny-processor id="serviceTinyProcessor" class="serviceTinyProcessor">
+            <servlet-mapping url-pattern=".*\.servicexml"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.servicejson"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.servicepage"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.servicepagelet"></servlet-mapping>
+        </tiny-processor>
+        <tiny-processor id="mvcTinyProcessor" class="mvcTinyProcessor">
+            <servlet-mapping url-pattern=".*\.do"></servlet-mapping>
+        </tiny-processor>
+        <tiny-processor id="pageFlowTinyProcessor" class="pageFlowTinyProcessor">
+            <servlet-mapping url-pattern=".*\.pageflow"></servlet-mapping>
+        </tiny-processor>
+        <tiny-processor id="fullContextProcessor" class="fullContextProcessor">
+            <servlet-mapping url-pattern=".*\.evy"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.fif"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.spl"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.hta"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.acx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.hqx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.doc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dot"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.bin"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dms"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.exe"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.lha"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.lzh"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.oda"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.axs"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pdf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.prf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p10"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.crl"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ai"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.eps"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ps"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.rtf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.setpay"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.setreg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xla"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xlc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xlm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xls"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xlt"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xlw"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.msg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.sst"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cat"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.stl"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pot"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pps"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ppt"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mpp"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wcm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wdb"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wks"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wps"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.hlp"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.bcpio"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cdf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.z"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tgz"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cpio"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.csh"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dcr"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dir"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dxr"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dvi"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.gtar"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.gz"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.hdf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ins"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.isp"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.iii"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.js"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.latex"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mdb"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.crd"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.clp"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.dll"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.m13"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.m14"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mvb"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wmf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mny"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pub"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.scd"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.trm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wri"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cdf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.nc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pma"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pmc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pml"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pmr"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pmw"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p12"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pfx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p7b"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.spc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p7r"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p7c"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p7m"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.p7s"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.sh"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.shar"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.swf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.sit"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.sv4cpio"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.sv4crc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tar"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tcl"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tex"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.texi"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.texinfo"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.roff"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.t"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tr"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.man"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.me"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ms"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ustar"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.src"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cer"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.crt"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.der"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pko"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.zip"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.au"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.snd"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mid"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.rmi"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mp3"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.aif"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.aifc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.aiff"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.m3u"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ra"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ram"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wav"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.bmp"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cod"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.gif"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ief"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.jpe"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.jpeg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.jpg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.jfif"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.svg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tif"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tiff"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ras"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.cmx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ico"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pnm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pbm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pgm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.ppm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.rgb"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xbm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xpm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xwd"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mht"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mhtml"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.nws"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.css"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.323"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.htm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.html"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.stm"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.uls"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.bas"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.c"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.h"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.txt"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.rtx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.sct"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.tsv"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.htt"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.htc"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.etx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.vcf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mp2"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mpa"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mpe"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mpeg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mpg"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mpv2"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.mov"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.qt"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.lsf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.lsx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.asf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.asr"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.asx"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.avi"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.movie"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.flr"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.vrml"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wrl"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.wrz"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xaf"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.xof"></servlet-mapping>
+        </tiny-processor>
+        <tiny-processor id="velocityViewProcessor" class="velocityViewProcessor">
+            <init-param name="templeteWithLayoutExtFileName" value=".page"></init-param>
+            <init-param name="templateExtFileName" value=".pagelet"></init-param>
+            <servlet-mapping url-pattern=".*\.page"></servlet-mapping>
+            <servlet-mapping url-pattern=".*\.pagelet"></servlet-mapping>
+        </tiny-processor>
+        <tiny-processor id="jspProcessor" class="tinyProcessorWapper">
+            <init-param
+                    name="servlet_bean" value="jspServlet"></init-param>
+            <servlet-mapping url-pattern=".*\.jsp"></servlet-mapping>
+            <init-param name="fork" value="false"></init-param>
+            <init-param name="xpoweredBy" value="false"></init-param>
+        </tiny-processor>
+    </tiny-processors>
+
+    <!--tiny-filters配置 -->
+    <tiny-filters>
+        <tiny-wrapper-filter id="tinyFilterWrapper" class="tinyFilterWrapper">
+            <init-param name="filter_beans" value="gZIPFilter"></init-param>
+            <filter-mapping url-pattern=".*"></filter-mapping>
+        </tiny-wrapper-filter>
+        <tiny-filter id="basicTinyFilter" class="basicTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+            <init-param name="maxCookieSize" value="5K"></init-param>
+        </tiny-filter>
+        <tiny-filter id="setLocaleTinyFilter" class="setLocaleTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+            <init-param name="defaultLocale" value="zh_CN"></init-param>
+            <init-param name="defaultCharset" value="UTF-8"></init-param>
+            <init-param name="inputCharset" value="_input_charset"></init-param>
+            <init-param name="outputCharset" value="_output_charset"></init-param>
+            <init-param name="paramKey" value="_lang"></init-param>
+            <init-param name="sessionKey" value="_lang"></init-param>
+        </tiny-filter>
+        <tiny-filter id="parserTinyFilter" class="parserTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+            <init-param name="converterQuietParam" value="true"></init-param>
+            <init-param name="caseFolding" value="lower_with_underscores"></init-param>
+            <init-param name="autoUpload" value="true"></init-param>
+            <init-param name="unescapeParameters" value="true"></init-param>
+            <init-param name="useServletEngineParser" value="false"></init-param>
+            <init-param name="useBodyEncodingForUri" value="true"></init-param>
+            <init-param name="uriEncoding" value="UTF-8"></init-param>
+            <init-param name="trimming" value="true"></init-param>
+            <init-param name="htmlFieldSuffix" value=".~html"></init-param>
+        </tiny-filter>
+        <tiny-filter id="bufferedTinyFilter" class="bufferedTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+        </tiny-filter>
+        <tiny-filter id="lazyCommitTinyFilter" class="lazyCommitTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+        </tiny-filter>
+        <tiny-filter id="rewriteTinyFilter" class="rewriteTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+        </tiny-filter>
+        <tiny-filter id="sessionTinyFilter" class="sessionTinyFilter">
+            <filter-mapping url-pattern=".*"></filter-mapping>
+        </tiny-filter>
+        <!--<tiny-wrapper-filter id="tinyFilterWrapper" class="tinyFilterWrapper">
+            value值可以是多个实现http filter接口的bean名称，多个以","分隔开 <init-param name="filter_beans"
+            value="encondingHttpFilter"></init-param> <filter-mapping url-pattern=".*"></filter-mapping>
+            </tiny-wrapper-filter> -->
+    </tiny-filters>
+    <!--tiny listener 配置 -->
+    <tiny-listener>
+        <!--<listener-bean name=""></listener-bean> -->
+        <!--<context-param name="" value=""></context-param> -->
+    </tiny-listener>
+    <!--velocity 自定义类配置 -->
+    <velocity-context-config>
+        <static-classes>
+            <static-class name="stringUtils" className="org.apache.commons.lang.StringUtils"></static-class>
+
+        </static-classes>
+        <platform-beans>
+            <bean name="pluginManager" type="org.tinygroup.plugin.impl.PluginManagerImpl"></bean>
+            <!--<bean name="user" type="org.tinygroup.usermanager.bean.User"></bean> -->
+        </platform-beans>
+        <spring-beans>
+            <!--<bean name="object2Json" type="org.tinygroup.usermanager.component.Object2Json"></bean> -->
+        </spring-beans>
+    </velocity-context-config>
+
+    <parser>
+        <property-editors>
+            <property-editor bean-name="customDateRegistrar">
+                <property name="format" value="yyyy-MM-dd"></property>
+                <property name="locale" value="zh_CN"></property>
+                <property name="timeZone" value="GMT+8"></property>
+            </property-editor>
+        </property-editors>
+        <param-parser-filters>
+            <param-parser-filter bean-name="hTMLParameterValueFilter"></param-parser-filter>
+            <!-- <param-parser-filter bean-name="paramValueEncryptFilter"></param-parser-filter> -->
+        </param-parser-filters>
+        <upload-service bean-name="uploadService">
+            <property name="sizeMax" value="-1"></property>
+            <property name="fileSizeMax" value="-1"></property>
+            <property name="repository" value="C:\temp"></property>
+            <property name="sizeThreshold" value="1024"></property>
+            <property name="keepFormFieldInMemory" value="true"></property>
+            <property name="saveInFile" value="false"></property>
+        </upload-service>
+    </parser>
+    <rewrite>
+        <!-- <rule pattern="/hello/(\w+)\.page">
+            <condition test="%{QUERY:name}" pattern="xuanxuan" flags="ornext" />
+            <condition test="%{QUERY:id}" pattern="!1" />
+            <substitution uri="/hello/new_helloworld\.page" flags="L,R,QSA">
+                <parameter key="sex" value="男" />
+                <parameter key="address" value="ninghai" />
+                <parameter key="count">
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                </parameter>
+            </substitution>
+            <handlers>
+                <rewrite-handler bean-name="urlNormalizer" />
+            </handlers>
+        </rule> -->
+    </rewrite>
+    <session>
+        <id cookieEnabled="true" urlEncodeEnabled="false">
+            <cookie path="/" name="tinyjsessionid"></cookie>
+            <url-encode name="tinyjsessionid"></url-encode>
+            <!-- 默认就是uuid方式 -->
+            <sessionid-generator bean-name="uuid"></sessionid-generator>
+        </id>
+        <stores>
+            <session-store bean-name="cookieStore"/>
+        </stores>
+        <store-mappings>
+            <match name="name" store="cookieStore"/>
+            <matchRegex pattern=".*" store="cookieStore"/>
+        </store-mappings>
+        <!-- 如果没有配置默认为SessionModelEncoderImpl -->
+        <session-model-encoders>
+            <session-model-encoder bean-name="sessionModelEncoderImpl"></session-model-encoder>
+        </session-model-encoders>
+        <!--<interceptors> <interceptor bean-name="sessionLifecycleLogger"></interceptor>
+            <interceptor bean-name="sessionAttributeWhitelist"></interceptor> </interceptors> -->
+    </session>
+    <jcs-config enable="false">
+    </jcs-config>
+
+    <!--文件监控器配置参数，具体参见FileMonitorProcessor配置管理手册，interrupt扫描间隔时间，单位秒 -->
+    <file-monitor interval="10" enable="false"/>
+    
+    <gzip-filter max-content-length="0">
+        <!-- 多个content-type已分号隔开 -->
+       <!-- <exclude-content-type>text/javascript;text/css</exclude-content-type> -->
+    </gzip-filter>
+
+</application>

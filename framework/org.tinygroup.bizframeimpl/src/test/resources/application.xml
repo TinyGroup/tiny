@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 测试 -->
+<application>
+	<application-processors>
+		<application-processor bean="fileResolverProcessor"></application-processor>
+	    <application-processor bean="beanOperatorApplicationProcessor"></application-processor>
+	</application-processors>
+     <!-- beanmanager配置信息  属性shema值为数据库shema，多个shema以逗号分隔-->
+    <bean-manager-config default-schema="opensource">
+       <bean-opertate-config schema="opensource" table-name-pattern="" bean-name="beanStringOperator" key-type="increase">
+       </bean-opertate-config>
+    </bean-manager-config>
+</application>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="service-components">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="service-component" minOccurs="0"
+					maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="service-method" type="serviceMethodType"
+								minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+						<xs:attribute name="type" type="xs:string" />
+						<xs:attribute name="bean" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="serviceMethodType">
+		<xs:all>
+			<xs:element name="service-parameters" type="serviceParametersType"
+				minOccurs="0" />
+			<xs:element name="service-result" minOccurs="0">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="required" type="xs:boolean" />
+					<xs:attribute name="is-array" type="xs:boolean" />
+					<xs:attribute name="type" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="local-name" type="xs:string" />
+		<xs:attribute name="service-id" type="xs:string" />
+		<xs:attribute name="description" type="xs:string" />
+		<xs:attribute name="method-name" type="xs:string" />
+		<xs:attribute name="cacheable" type="xs:boolean" />
+	</xs:complexType>
+
+	<xs:complexType name="serviceParametersType">
+		<xs:sequence>
+			<xs:element name="service-parameter" minOccurs="0"
+				maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="type" type="xs:string" />
+					<xs:attribute name="collection-type" type="xs:string" />
+					<xs:attribute name="required" type="xs:boolean" />
+					<xs:attribute name="is-array" type="xs:boolean" />
+					<xs:attribute name="validate-scene" type="xs:boolean" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

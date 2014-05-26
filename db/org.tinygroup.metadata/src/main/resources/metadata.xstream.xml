@@ -1,0 +1,15 @@
+<xstream-configuration package-name="metadata">
+	<xstream-annotation-classes>
+		<xstream-annotation-class
+			class-name="org.tinygroup.metadata.config.constants.Constants" />
+		<xstream-annotation-class
+			class-name="org.tinygroup.metadata.config.errormessage.ErrorMessages" />
+		<xstream-annotation-class
+			class-name="org.tinygroup.metadata.config.stddatatype.StandardTypes" />
+		<xstream-annotation-class
+			class-name="org.tinygroup.metadata.config.bizdatatype.BusinessTypes" />
+		<xstream-annotation-class
+			class-name="org.tinygroup.metadata.config.stdfield.StandardFields" />
+	</xstream-annotation-classes>
+</xstream-configuration>
+

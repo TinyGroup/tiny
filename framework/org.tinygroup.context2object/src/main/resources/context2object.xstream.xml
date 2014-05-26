@@ -1,0 +1,5 @@
+<xstream-configuration package-name="context2object">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.context2object.config.GeneratorConfig" />
+	</xstream-annotation-classes>
+</xstream-configuration>

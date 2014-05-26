@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 测试 -->
+<application>
+	<!-- config-processors节点由 ProcessorLoader处理器处理，如何配置请参考config-processors配置手册，本段配置如果不配置，则应用系统啥也不干 -->
+	<!-- greetings信息由org.tinygroup.application.processor.GreetingProcessor处理器处理，如何配置请参考 
+		GreetingProcessor配置手册 -->
+	<greetings>
+		**********************************************
+		* 欢迎进入Tiny		Server                   *
+		*
+		* 如果有任何问题，请联系luoguo@hundsun.com *
+		**********************************************
+
+	</greetings>
+	<!-- 这里是文件搜索器相关配置，如果配置请参考file-resolver-configuration配置手册 -->
+	<file-resolver-configuration resolve-classpath="true">
+		<class-paths>
+			<!-- <class-path path="J:\open\trunk\Source\framework\web\webframework\target\classes" 
+				/> -->
+			<class-path path="E:\SVN\Open\Source\framework\web\webframework\target\classes" />
+			<class-path
+				path="E:\SVN\Open\Source\framework\web\webframework\target\webframework\WEB-INF\lib" />
+		</class-paths>
+		<!--忽略正则表达式列表  
+			<skip-patterns>
+				<skip-pattern pattern=""></skip-pattern>
+			</skip-patterns>
+			-->
+		<full-context-file-finder>
+			<file ext-name="gif" content-type="image/gif" />
+			<file ext-name="png" content-type="image/png" />
+			<file ext-name="jpg" content-type="image/jpeg" />
+			<file ext-name="page" content-type="text/html" />
+			<file ext-name="js" content-type="text/javascript" />
+			<file ext-name="css" content-type="text/css" />
+			<file ext-name="htm" content-type="text/html" />
+			<file ext-name="html" content-type="text/html" />
+			<file ext-name="component" content-type="text/html" />
+		</full-context-file-finder>
+	</file-resolver-configuration>
+	<bu-management level=""
+		bu-path="E:\SVN\Open\Source\framework\web\webframework\target\webframework\WEB-INF\lib">
+		<file-processors>
+			<file-processor
+				class-name="org.tinygroup.bu.fileresolver.BusinessUnitFileProcessor" />
+			<file-processor
+				class-name="org.tinygroup.metadata.fileresolver.StandardTypeFileResolver" />	
+			<file-processor
+				class-name="org.tinygroup.metadata.fileresolver.BusinessTypeFileResolver" />	
+			<file-processor
+				class-name="org.tinygroup.metadata.fileresolver.StandardFieldFileResolver" />
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.ProcessorFileResolver" />	
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.TableFileResolver" />
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.ViewFileResolver" />
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.InitDataFileResolver" />
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.ProcedureFileResolver" />
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.FunctionlFileResolver" />
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.CustomSqlFileResolver" />	
+			<file-processor
+				class-name="org.tinygroup.database.fileresolver.CustomSqlFileResolver" />	
+					  
+			<!-- 这里的几个其实可以取消的，因为会被外面的总扫描器扫到 <file-processor class-name="org.tinygroup.fileresolver.impl.XStreamFileProcessor" 
+				/> <file-processor class-name="org.tinygroup.factory.fileresolver.BeansFileProcessor" 
+				/> <file-processor class-name="org.tinygroup.application.fileresolver.FullContextFileFinder"> 
+				<full-context-file-finder> <file ext-name="png" content-type="image/png" 
+				/> <file ext-name="gif" content-type="image/gif" /> <file ext-name="jpg" 
+				content-type="image/jpg" /> <file ext-name="view" content-type="text/html" 
+				/> <file ext-name="layout" content-type="text/html" /> <file ext-name="component" 
+				content-type="text/html" /> </full-context-file-finder> </file-processor> 
+				<file-processor class-name="org.tinygroup.command.fileresolver.CommandFileProcessor" 
+				/> <file-remove-processors> <file-processor class-name="org.tinygroup.factory.fileresolver.BeansFileRemoveProcessor" 
+				/> </file-remove-processors> -->
+		</file-processors>
+	</bu-management>
+
+	<plugin-management level=""
+		plugin-path="E:\SVN\Open\Source\framework\web\webframework\target\webframework\WEB-INF\plugins">
+		<plugin-resolver-configuration>
+			<file-processors>
+				<file-processor
+					class-name="org.tinygroup.fileresolver.impl.XStreamFileProcessor" />
+				<file-processor
+					class-name="org.tinygroup.factory.fileresolver.BeansFileProcessor" />
+				<file-processor
+					class-name="org.tinygroup.command.fileresolver.CommandFileProcessor" />
+
+			</file-processors>
+			<file-remove-processors>
+				<file-processor
+					class-name="org.tinygroup.factory.fileresolver.BeansFileRemoveProcessor" />
+			</file-remove-processors>
+		</plugin-resolver-configuration>
+		<plugin-configs>
+			<plugin-config plugin-id="flow" plugin-version="1.0">
+				<ResourcePath
+					value="E:\SVN\Open\Source\framework\web\webframework\target\webframework\WEB-INF\flow" />
+				<RouteItems>
+					<route-item name="flow(.)*" service-id="flow(.)*"
+						version=""></route-item>
+				</RouteItems>
+
+			</plugin-config>
+			<plugin-config plugin-id="service" plugin-version="1.0">
+				<ResourcePath
+					value="E:\SVN\Open\Source\framework\web\webframework\target\webframework\WEB-INF\service" />
+				<RouteItems>
+					<route-item name="service(.)*" service-id="service(.)*"
+						version=""></route-item>
+					<route-item name="bu(.)*" service-id="service(.)*"
+						version=""></route-item>
+				</RouteItems>
+			</plugin-config>
+			<!-- <plugin-config plugin-id="bu" plugin-version="1.0" bu-path="E:\SVN\Open\Source\framework\web\webframework\target\webframework\WEB-INF\bus"> 
+				<file-processors> <file-processor class-name="org.tinygroup.fileresolver.impl.XStreamFileProcessor" 
+				/> <file-processor class-name="org.tinygroup.factory.fileresolver.BeansFileProcessor" 
+				/> <file-processor class-name="org.tinygroup.application.fileresolver.FullContextFileFinder"> 
+				<full-context-file-finder> <file ext-name="png" content-type="image/png" 
+				/> <file ext-name="gif" content-type="image/gif" /> <file ext-name="jpg" 
+				content-type="image/jpg" /> <file ext-name="view" content-type="text/html" 
+				/> <file ext-name="layout" content-type="text/html" /> <file ext-name="component" 
+				content-type="text/html" /> </full-context-file-finder> </file-processor> 
+				<file-processor class-name="org.tinygroup.command.fileresolver.CommandFileProcessor" 
+				/> <file-processor class-name="org.tinygroup.springutil.fileresolver.SpringBeansFileProcessor" 
+				/> </file-processors> <file-remove-processors> <file-processor class-name="org.tinygroup.factory.fileresolver.BeansFileRemoveProcessor" 
+				/> </file-remove-processors> </plugin-config> <plugin-config plugin-id=simplechannel 
+				plugin-version="1.0"> <RouteItems> </RouteItems> </plugin-config> -->
+
+		</plugin-configs>
+	</plugin-management>
+
+    <!--注解加载规则配置-->
+	<annotation-configuration>
+	    <annotation-mapping id="service" value="(.)*Service"></annotation-mapping>
+	    <annotation-mapping id="service" value="(.)*ServiceAdapter"></annotation-mapping>
+	</annotation-configuration>
+	
+	<tiny-processors>
+		<tiny-processor id="myTinyProcessor" class="myTinyProcessor">
+		    <init-param name="sex" value="男"></init-param>
+		    <servlet-mapping url-pattern=".*\.test"></servlet-mapping>
+	    </tiny-processor>
+	</tiny-processors>
+
+
+
+	<!--文件监控器配置参数，具体参见FileMonitorProcessor配置管理手册，interrupt扫描间隔时间，单位秒 -->
+	<file-monitor interval="10" />
+
+</application>

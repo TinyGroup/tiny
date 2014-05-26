@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="i18nMessageContextImpl" class="org.tinygroup.i18n.I18nMessageContextImpl">
+		<property name="formater">
+			<ref bean="formater" />
+		</property>
+	</bean>
+	<bean id="springMessage" class="org.tinygroup.i18n.SpringMessage"></bean>
+	<bean id="i18nMessages" class="org.tinygroup.i18n.I18nMessages">
+		<property name="i18nMessageStandards">
+			<list>
+				<ref bean="springMessage"></ref>
+			</list>
+		</property>
+		<property name="i18nMessageContexts">
+			<list>
+				<ref bean="i18nMessageContextImpl"></ref>
+			</list>
+		</property>
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<value>i18n/info</value>
+		</property>
+	</bean>
+
+	<bean name="contextFormatProvider" class="org.tinygroup.format.impl.ContextFormater">
+	</bean>
+	<bean name="patternHandle"
+		class="org.tinygroup.format.impl.DefaultPatternDefine">
+		<property name="prefixPatternString">
+			<value>${</value>
+		</property>
+		<property name="postfixPatternString">
+			<value>}</value>
+		</property>
+		<property name="patternString">
+			<value><![CDATA[([$]+[{]+[a-zA-Z0-9[.[_[:[/[#]]]]]]+[}])]]></value>
+		</property>
+	</bean>
+	<bean name="formater" class="org.tinygroup.format.impl.FormaterImpl">
+		<property name="patternHandle">
+			<ref bean="patternHandle" />
+		</property>
+		<property name="formatProviders">
+			<map>
+				<entry key="context" value-ref="contextFormatProvider" />
+				<entry key="" value-ref="contextFormatProvider" />
+			</map>
+		</property>
+	</bean>
+</beans>	

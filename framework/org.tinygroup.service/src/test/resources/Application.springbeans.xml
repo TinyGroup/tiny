@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean id="fileResolver" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.FileResolverImpl">
+		<property name="fileProcessorList">
+			<list>
+				<ref bean="i18nFileProcessor" />
+				<ref bean="xStreamFileProcessor" />
+				<ref bean="xmlServiceFileProcessor" />
+				<ref bean="annotationFileProcessor" />
+				<ref bean="annotationClassFileProcessor" />
+				<ref bean="generatorFileProcessor" />
+				<ref bean="validateFileProcessor" />
+			</list>
+		</property>
+	</bean>
+	<bean id="fileResolverProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.applicationprocessor.FileResolverProcessor">
+		<property name="fileResolver" ref="fileResolver"></property>
+	</bean>
+	<!-- 
+	<bean id="classNameObjectGenerator" name="classNameObjectGenerator" scope="singleton"
+		class="org.tinygroup.context2object.impl.ClassNameObjectGenerator">
+	</bean>
+	<bean id="generatorFileProcessor" name="generatorFileProcessor" scope="singleton"
+		class="org.tinygroup.context2object.fileresolver.GeneratorFileProcessor">
+	</bean>
+	<bean id="i18nFileProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.XStreamFileProcessor">
+	</bean>
+	<bean id="xStreamFileProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.I18nFileProcessor">
+	</bean>
+	<bean id="xmlServiceFileProcessor" scope="singleton"
+		class="org.tinygroup.service.fileresolver.XmlServiceFileProcessor">
+	</bean>
+	<bean id="annotationFileProcessor" scope="singleton"
+		class="org.tinygroup.annotation.fileresolver.AnnotationFileProcessor">
+	</bean>
+	<bean id="annotationClassFileProcessor" scope="singleton"
+		class="org.tinygroup.annotation.fileresolver.AnnotationClassFileProcessor">
+	</bean>
+	 -->
+</beans>

@@ -1,0 +1,18 @@
+<i18n-configuration>
+	<i18n-message-standards>
+		<i18n-message class-name="org.tinygroup.i18n.impl.I18nMessageImpl" />
+	</i18n-message-standards>
+	<i18n-message-contexts>
+		<i18n-message class-name="org.tinygroup.i18n.impl.I18nMessageContextImpl" />
+	</i18n-message-contexts>
+	<formater class-name="org.tinygroup.format.impl.FormaterImpl">
+		<formatPatternDefine prefix-pattern-string="${"
+			postfix-pattern-string="}" pattern-string="([$]+[{]+[a-zA-Z0-9[.[_[:[/[#]]]]]]+[}])" />
+		<format-providers>
+			<format-provider area=""
+				class-name="org.tinygroup.format.impl.ContextFormater" />
+			<format-provider area="context"
+				class-name="org.tinygroup.format.impl.ContextFormater" />
+		</format-providers>
+	</formater>
+</i18n-configuration>

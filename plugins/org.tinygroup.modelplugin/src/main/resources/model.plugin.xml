@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin-configs>
+	<plugin-config plugin-name="modelPlugin" plugin-bean="modelPlugin"
+		depend-plugins="" plugin-level="10" plugin-title="模型数据生成插件"></plugin-config>
+</plugin-configs>

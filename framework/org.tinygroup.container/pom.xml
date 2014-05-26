@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.tinygroup</groupId>
+    <artifactId>framework</artifactId>
+    <version>1.2.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>org.tinygroup.container</artifactId>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <scm>
+    <connection>scm:svn:https://svn.code.sf.net/p/tinyorg/code/tags/tiny-0.0.8-SNAPSHOT/trunk/opensource/container</connection>
+    <developerConnection>scm:svn:https://svn.code.sf.net/p/tinyorg/code/tags/tiny-0.0.8-SNAPSHOT/trunk/opensource/container</developerConnection>
+    <url>scm:svn:http://https://svn.code.sf.net/p/tinyorg/code/tags/tiny-0.0.8-SNAPSHOT/trunk/opensource/container</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

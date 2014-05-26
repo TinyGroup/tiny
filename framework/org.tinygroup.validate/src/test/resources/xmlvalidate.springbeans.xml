@@ -1,0 +1,62 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:ehcache="http://www.springmodules.org/schema/ehcache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd  
+    http://www.springframework.org/schema/tx  
+    http://www.springframework.org/schema/tx/spring-tx-2.5.xsd  
+    http://www.springmodules.org/schema/ehcache  
+    http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd  
+    http://www.directwebremoting.org/schema/spring-dwr  
+    http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd
+    http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="fileResolver" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.FileResolverImpl">
+		<property name="fileProcessorList">
+			<list>
+				<ref bean="i18nFileProcessor" />
+				<ref bean="xStreamFileProcessor" />
+				<ref bean="validateMapFileProcessor" />
+				<ref bean="validateFileProcessor" />
+				<ref bean="flowComponentProcessor" />
+				<ref bean="flowFileProcessor" />
+			</list>
+		</property>
+	</bean>
+	<bean id="fileResolverProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.applicationprocessor.FileResolverProcessor">
+		<property name="fileResolver" ref="fileResolver"></property>
+	</bean>
+	<!--  
+	<bean id="i18nFileProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.I18nFileProcessor">
+	</bean>
+	<bean id="xstreamFileProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.XStreamFileProcessor">
+	</bean>
+	<bean id="validateMapFileProcessor" scope="singleton"
+		class="org.tinygroup.validate.fileresolver.ValidateMapFileProcessor">
+	</bean>
+	<bean id="validateFileProcessor" scope="singleton"
+		class="org.tinygroup.validate.fileresolver.ValidateFileProcessor">
+	</bean>
+	<bean id="annotationFileProcessor" scope="singleton"
+		class="org.tinygroup.annotation.fileresolver.AnnotationFileProcessor">
+	</bean>
+	<bean id="annotationClassFileProcessor" scope="singleton"
+		class="org.tinygroup.annotation.fileresolver.AnnotationClassFileProcessor">
+	</bean>
+	<bean id="flowComponentProcessor" scope="singleton"
+		class="org.tinygroup.flow.fileresolver.FlowComponentProcessor">
+	</bean>
+	<bean id="flowFileProcessor" scope="singleton"
+		class="org.tinygroup.flow.fileresolver.FlowFileProcessor">
+	</bean>
+	-->
+</beans>

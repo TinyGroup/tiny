@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="tinyDBService" name="tinyDBService" scope="singleton"
+		class="org.tinygroup.tinydb.service.impl.TinyDBServiceImpl">
+	</bean>
+	
+	<bean id="dataSourceProxy"
+		class="org.tinygroup.tinydb.util.DataSourceProxy">
+		<property name="datasource" ref="dynamicDataSource" />
+		<property name="transactionTemplate" ref="transactionTemplate" />
+	</bean>
+
+	<bean id="beanOperatorManager"
+		class="org.tinygroup.tinydb.impl.BeanOperatorManagerImpl">
+	</bean>
+	
+	<bean id="relationFileProcessor" scope="singleton"
+		class="org.tinygroup.tinydb.fileresolver.RelationFileProcessor">
+	</bean>
+	
+	<bean id="beanOperatorApplicationProcessor" scope="singleton"
+		class="org.tinygroup.tinydb.applicationprocessor.BeanOperatorApplicationProcessor">
+	</bean>
+	
+</beans>

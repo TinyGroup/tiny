@@ -1,0 +1,79 @@
+<annotation-class-matchers>
+	<annotation-class-matcher class-name=".*\.annotation\.Annotation.*"
+		annotation-type=".*Test">
+		<processor-beans>
+			<processor-bean enable="true" name="classAction">
+			</processor-bean>
+		</processor-beans>
+		<annotation-method-matchers>
+			<annotation-method-matcher method-name="method.*"
+				annotation-type=".*Test">
+				<processor-beans>
+					<processor-bean enable="true" name="methodAction">
+					</processor-bean>
+				</processor-beans>
+			</annotation-method-matcher>
+		</annotation-method-matchers>
+		<annotation-property-matchers>
+			<annotation-property-matcher
+				property-name="field.*" annotation-type=".*Test">
+				<processor-beans>
+					<processor-bean enable="true" name="propertyAction">
+					</processor-bean>
+				</processor-beans>
+			</annotation-property-matcher>
+		</annotation-property-matchers>
+	</annotation-class-matcher>
+	<annotation-class-matcher class-name=".*\.annotation\.config.*"
+		annotation-type=".*XStreamAlias">
+		<processor-beans>
+			<processor-bean enable="true" name="classAction">
+			</processor-bean>
+		</processor-beans>
+		<annotation-method-matchers>
+			<annotation-method-matcher method-name="method.*"
+				annotation-type=".*XStreamAlias">
+				<processor-beans>
+					<processor-bean enable="true" name="methodAction">
+					</processor-bean>
+				</processor-beans>
+			</annotation-method-matcher>
+		</annotation-method-matchers>
+		<annotation-property-matchers>
+			<annotation-property-matcher
+				property-name="className.*" annotation-type=".*XStreamAlias">
+				<processor-beans>
+					<processor-bean enable="true" name="propertyAction">
+					</processor-bean>
+				</processor-beans>
+			</annotation-property-matcher>
+		</annotation-property-matchers>
+	</annotation-class-matcher>
+
+	<annotation-class-matcher class-name=".*\.config\.Bean.*"
+		annotation-type=".*XStreamAlias">
+		<processor-beans>
+			<processor-bean enable="true" name="classAction">
+			</processor-bean>
+		</processor-beans>
+		<annotation-method-matchers>
+			<annotation-method-matcher method-name="method.*"
+				annotation-type=".*XStreamAlias">
+				<processor-beans>
+					<processor-bean enable="true" name="methodAction">
+					</processor-bean>
+				</processor-beans>
+			</annotation-method-matcher>
+		</annotation-method-matchers>
+		<annotation-property-matchers>
+			<annotation-property-matcher
+				property-name="autowire.*" annotation-type=".*XStreamAsAttribute">
+				<processor-beans>
+					<processor-bean enable="true" name="propertyAction">
+					</processor-bean>
+				</processor-beans>
+			</annotation-property-matcher>
+		</annotation-property-matchers>
+	</annotation-class-matcher>
+
+</annotation-class-matchers>

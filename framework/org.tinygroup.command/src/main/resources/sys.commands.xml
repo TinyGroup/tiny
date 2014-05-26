@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands package-name="commands">
+	<command name="help">
+		<short-description>帮助命令</short-description>
+		<description>用于显示命令的用法</description>
+		<command-goals>
+			<command-goal name="h" default-parameter=""
+				class-name="org.tinygroup.command.help.HelpHelpGoalExecutor">
+				<short-description>列出所有的命令</short-description>
+				<description>列出所有的命令</description>
+			</command-goal>
+			<command-goal name="help" default-parameter=""
+				class-name="org.tinygroup.command.help.HelpHelpGoalExecutor">
+				<short-description>列出所有的命令</short-description>
+				<description>列出所有的命令</description>
+				<parameters>
+					<parameter name="showGoal" default-value="true"
+						necessary="false">
+						<short-description>列出子命令</short-description>
+						<description>列出名字的所有子命令</description>
+					</parameter>
+					<parameter name="showDetail" default-value="true"
+						necessary="false">
+						<short-description>显示详细信息</short-description>
+						<description>显示命令的详细信息</description>
+					</parameter>
+					<parameter name="showParameter" default-value="true"
+						necessary="false">
+						<short-description>显示子命令参数</short-description>
+						<description>显示子命令参数</description>
+					</parameter>
+					<parameter name="goal" necessary="false">
+						<short-description>显示指定子命令的信息</short-description>
+						<description>显示指定子命令的信息</description>
+					</parameter>
+					<parameter name="command" necessary="false">
+						<short-description>显示指定命令的信息</short-description>
+						<description>显示指定命令的信息</description>
+					</parameter>
+				</parameters>
+			</command-goal>
+		</command-goals>
+	</command>
+</commands>

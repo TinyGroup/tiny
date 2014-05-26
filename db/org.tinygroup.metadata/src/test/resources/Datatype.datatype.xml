@@ -1,0 +1,258 @@
+<standard-types package-name="org.tinygroup.demo">
+	<standard-type type="TinyText" id="type_tiny_text">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="VARCHAR2(255)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="TINYTEXT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="String"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Text" id="type_text">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="CLUB"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="TEXT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="String"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="MediumText" id="type_medium_text">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="CLOB"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="MEDIUMTEXT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="String"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="LongText" id="type_long_text">
+		<placeholder-list>
+			<placeholder name="l" title="长度">
+				<description>字符串的长度</description>
+			</placeholder>
+		</placeholder-list>
+		<dialect-type-list>
+			<dialect-type language="oracle" type="CLOB"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="LONGTEXT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="String"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Blob" id="type_blob">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="BLOB"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="BLOB"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="byte[]"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Char" id="type_char">
+		<placeholder-list>
+			<placeholder name="length" title="长度">
+				<description>字符串的长度</description>
+			</placeholder>
+		</placeholder-list>
+		<dialect-type-list>
+			<dialect-type language="oracle" type="CHAR(${length})"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="CHAR(${length})"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="String"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Varchar" id="type_varchar">
+		<placeholder-list>
+			<placeholder name="length" title="长度">
+				<description>字符串的长度</description>
+			</placeholder>
+		</placeholder-list>
+		<dialect-type-list>
+			<dialect-type language="oracle" type="VARCHAR2(${length})"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="VARCHAR(${length})"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="String"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="TinyInt" id="type_tiny_int">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="number(3,0)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="TINYINT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Boolean"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="SmallInt" id="type_small_int">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="number(5,0)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="SMALLINT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Integer"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="BigInt" id="type_big_int">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="number(19,0)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="BIGINT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Long"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Date" id="type_date">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="DATE"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="DATE"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="java.sql.Date"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Datatime" id="type_datetime">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="RAW(10)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="DATETIME"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="java.sql.Timestamp"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Decimal" id="type_decimal">
+		<placeholder-list>
+			<placeholder name="precision" title="精度">
+				<description>字符串的长度</description>
+			</placeholder>
+			<placeholder name="scale" title="小数位后数字">
+				<description>字符串的长度</description>
+			</placeholder>
+		</placeholder-list>
+		<dialect-type-list>
+			<dialect-type language="oracle" type="NUMBER(${precision},${scale})"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="DECIMAL(${precision},${scale})"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="java.math.BigDecimal"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Double" id="type_double">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="FLOAT(24)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="DOUBLE"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Double"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Float" id="type_float">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="FLOAT(24)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="FLOAT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Float"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Int" id="type_int">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="number(10,0)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="INT" default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Integer"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Integer" id="type_integer">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="number(10,0)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="INTEGER"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Integer"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+	<standard-type type="Long" id="type_long">
+		<dialect-type-list>
+			<dialect-type language="oracle" type="number(19,0)"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="mysql" type="BIGINT"
+				default-value="">
+			</dialect-type>
+			<dialect-type language="java" type="Long"
+				default-value="">
+			</dialect-type>
+		</dialect-type-list>
+	</standard-type>
+</standard-types>

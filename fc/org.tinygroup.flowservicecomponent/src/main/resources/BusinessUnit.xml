@@ -1,0 +1,7 @@
+<!-- 作为bu添加，方便flow/service等资源的扫描注册 -->
+<business-unit-info package-name="org.tinygroup"
+	name="flowservicecomponent" version="1.0" title="flowservicecomponent">
+	<description>flowbasiccomponent</description>
+	<dependency-business-units>
+	</dependency-business-units>
+</business-unit-info>

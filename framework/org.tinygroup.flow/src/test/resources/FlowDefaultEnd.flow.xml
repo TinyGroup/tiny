@@ -1,0 +1,20 @@
+<flow id="FlowDefaultEnd" name="aa" begin-node-id="begin" default-node-id="end">
+	<nodes>
+		<node id="begin">
+			<next-nodes>
+				<next-node  next-node-id="hello" >
+				<el>1==1
+				</el></next-node>
+			</next-nodes>
+		</node>
+		<node id="hello">
+			<component  name="helloflow">
+				<properties>
+					<flow-property name="name" value="luoguo" />
+					<flow-property name="resultKey" value="helloInfo" />
+				</properties>
+			</component>
+
+		</node>
+	</nodes>
+</flow>

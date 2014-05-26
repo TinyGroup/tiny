@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:attributeGroup name="baseObjectAttributeGroup">
+		<xs:attribute name="id" type="xs:string" />
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+		<xs:attribute name="description" type="xs:string" />
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name="fieldAttributeGroup">
+		<xs:attribute name="standard-field-id" type="xs:string" />
+		<xs:attribute name="primary" type="xs:boolean" />
+		<xs:attribute name="unique" type="xs:boolean" />
+		<xs:attribute name="not-null" type="xs:boolean" />
+		<xs:attribute name="id" type="xs:string" />
+	</xs:attributeGroup>
+
+	<xs:element name="tables">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="table" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="table-field" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attributeGroup ref="fieldAttributeGroup" />
+									<xs:attribute name="auto-increase" type="xs:boolean" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="index" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="string" minOccurs="0" maxOccurs="unbounded" />
+									</xs:sequence>
+									<xs:attributeGroup ref="baseObjectAttributeGroup" />
+									<xs:attribute name="unique" type="xs:string" />
+									<xs:attribute name="reverse" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="schema" type="xs:string" />
+						<xs:attribute name="packageName" type="xs:string" />
+						<xs:attributeGroup ref="baseObjectAttributeGroup" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="package-name" type="xs:string" />
+			<xs:attributeGroup ref="baseObjectAttributeGroup" />
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

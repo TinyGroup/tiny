@@ -1,0 +1,55 @@
+<flow id="NextNodeByEl" name="NextNodeByEl">
+	<nodes>
+		<node id="compute1">
+			<component name="computeComponent">
+				<properties>
+					<flow-property name="key" value="a" />
+					<flow-property name="key2" value="b" />
+					<flow-property name="resultKey" value="c" />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node  next-node-id="compute2">
+					<el>c&lt;30</el>
+				</next-node>
+				<next-node  next-node-id="end">
+					<el>c==30</el>
+				</next-node>
+				<next-node  next-node-id="compute3">
+					<el>c>30</el>
+				</next-node>
+			</next-nodes>
+		</node>
+
+		<node id="compute2">
+			<component name="computeComponent">
+				<properties>
+					<flow-property name="key" value="a" />
+					<flow-property name="key2" value="c" />
+					<flow-property name="resultKey" value="c" />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node next-node-id="compute2">
+					<el>c&lt;30</el>
+				</next-node>
+			</next-nodes>
+		</node>
+
+		<node id="compute3">
+			<component name="computeComponent">
+				<properties>
+					<flow-property name="key" value="b" />
+					<flow-property name="key2" value="c" />
+					<flow-property name="resultKey" value="c" />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node next-node-id="end">
+					<el>1==1</el>
+				</next-node>
+			</next-nodes>
+		</node>
+
+	</nodes>
+</flow>

@@ -1,0 +1,6 @@
+<business-unit-info package-name="org.tinygroup"
+	name="pluginbasicservice" version="1.0" title="pluginbasicservice">
+	<description>pluginbasicservice</description>
+	<dependency-business-units>
+	</dependency-business-units>
+</business-unit-info>

@@ -1,0 +1,57 @@
+<views>
+	<view name="view1">
+		<view-tables>
+			<view-table id="aaviewtable" table-id="aatable"
+				table-alias="aaa"></view-table>
+		</view-tables>
+		<view-fields>
+			<view-field id="aa1viewfield" tableFieldId="tablebb" view-table-id="aaviewtable" alias="aa1"></view-field>
+			<view-field id="bb1viewfield" tableFieldId="tablebb" view-table-id="aaviewtable" alias="bb1"></view-field>
+		</view-fields>
+		<view-conditions>
+			<view-condition operator="=" value="'1'">
+				<key-field view-table-id="" table-field-id="" view-field-id="aa1viewfield"></key-field>
+				<value-field view-table-id="" table-field-id="" view-field-id="bb1viewfield"></value-field>
+				<view-conditions>
+					<view-condition operator="=" value="'1'">
+						<key-field view-table-id="" table-field-id="" view-field-id="aa1viewfield"></key-field>
+						<value-field view-table-id="aaviewtable" table-field-id="tabled" view-field-id=""></value-field>
+					</view-condition>
+					<view-condition operator="=" value="'1'">
+						<key-field view-table-id="aaviewtable" table-field-id="tablee" view-field-id=""></key-field>
+					</view-condition>
+					<view-condition operator="=" value="'1'">
+						<key-field view-table-id="aaviewtable" table-field-id="tablec" view-field-id=""></key-field>
+					</view-condition>
+				</view-conditions>
+			</view-condition>
+		</view-conditions>
+		
+		<order-by-fields>
+			<order-by-field direction="ASC">
+				<field view-table-id="aaviewtable" table-field-id="tablec" view-field-id=""></field>
+			</order-by-field>
+			<order-by-field direction="DESC">
+				<field view-table-id="" table-field-id="" view-field-id="aa1viewfield"></field>
+			</order-by-field>
+		</order-by-fields>
+		
+		<view-havings>
+			<view-having operator="=" value="">
+				<key-having aggregate-function="sum">
+					<field view-table-id="aaviewtable" table-field-id="tablec" view-field-id=""></field>
+				</key-having>
+				<value-having aggregate-function="conut">
+					<field view-table-id="" table-field-id="" view-field-id="aa1viewfield"></field>
+				</value-having>
+			</view-having>
+			<view-having operator=">" value="'1'">
+				<key-having aggregate-function="sum">
+					<field view-table-id="" table-field-id="" view-field-id="aa1viewfield"></field>
+				</key-having>
+			</view-having>
+		</view-havings>
+
+	</view>
+	
+</views>

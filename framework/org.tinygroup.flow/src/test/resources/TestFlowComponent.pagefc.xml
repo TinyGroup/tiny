@@ -1,0 +1,31 @@
+<components>
+	<component name="helloflow" bean="helloflow" title="hello组件" icon="" >
+		<short-description>hello</short-description>
+		<long-description>hello,how are you</long-description>
+	</component>
+	<component name="printflow" bean="printflow" title="print组件" icon="" >
+		<short-description>print</short-description>
+		<long-description>print infomation</long-description>
+	</component>
+	<component name="keyprintflow" bean="keyprintflow" title="print组件" icon="" >
+		<short-description>print</short-description>
+		<long-description>print infomation</long-description>
+	</component>
+	<component name="exceptionFlowComponent" bean="exceptionFlowComponent" title="异常处理组件" icon="" >
+		<short-description>print</short-description>
+		<long-description>print infomation</long-description>
+	</component>
+	<component name="ExceptionDealComponent" bean="ExceptionDealComponent" title="" icon="" >
+		<short-description>print</short-description>
+		<long-description>print infomation</long-description>
+	</component>
+	<component name="computeComponent" bean="computeComponent"
+		title="加法计算组件" icon="">
+		<short-description></short-description>
+		<long-description></long-description>
+		<parameter name="key" title="加法参数1" type="java.lang.String"></parameter>
+		<parameter name="key2" title="加法参数2" type="java.lang.String"></parameter>
+		<parameter name="resultKey" title="转换获取的对象实例在context中的key" type="java.lang.String"></parameter>
+	</component>
+</components>
+

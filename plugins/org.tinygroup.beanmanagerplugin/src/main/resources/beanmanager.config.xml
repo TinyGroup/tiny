@@ -1,0 +1,3 @@
+<!-- beanmanager配置信息 schema为表模式, bean-name为beanoperate的bean名称,table-name-pattern配置加载的表名称模式，key-type：表主键类型，现有increase和uuid -->
+<bean-manager-config default-schema="TINY">
+</bean-manager-config>

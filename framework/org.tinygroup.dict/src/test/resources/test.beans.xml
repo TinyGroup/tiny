@@ -1,0 +1,8 @@
+<beans>
+	<bean id="simpleDictLoader" scope="singleton"
+		class="org.tinygroup.dict.SimpleDictLoader">
+	</bean>
+	<bean id="simpleDictFilter" scope="singleton"
+		class="org.tinygroup.dict.SimpleDictFilter">
+	</bean>
+</beans>

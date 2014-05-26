@@ -1,0 +1,34 @@
+<!--tiny-processor实现 -->
+<!-- <tiny-processors>
+	<tiny-processor id="uiEngineTinyProcessor" bean-name="uiEngineTinyProcessor">
+		<servlet-mapping url-pattern=".*/uiengine\.uijs"></servlet-mapping>
+		<servlet-mapping url-pattern=".*/uiengine\.uicss"></servlet-mapping>
+	</tiny-processor>
+	<tiny-processor id="serviceTinyProcessor" bean-name="serviceTinyProcessor">
+		<servlet-mapping url-pattern=".*\.servicexml"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.servicejson"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.servicepage"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.servicepagelet"></servlet-mapping>
+	</tiny-processor>
+	<tiny-processor id="pageFlowTinyProcessor" bean-name="pageFlowTinyProcessor">
+		<servlet-mapping url-pattern=".*\.pageflow"></servlet-mapping>
+	</tiny-processor>
+	<tiny-processor id="fullContextProcessor" bean-name="fullContextProcessor">
+		<servlet-mapping url-pattern=".*\.css"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.jpg"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.png"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.html"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.js"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.gif"></servlet-mapping>
+	</tiny-processor>
+	<tiny-processor id="velocityViewProcessor" bean-name="velocityViewProcessor">
+		<init-param name="templeteWithLayoutExtFileName" value=".page"></init-param>
+		<init-param name="templateExtFileName" value=".pagelet"></init-param>
+		<servlet-mapping url-pattern=".*\.page"></servlet-mapping>
+		<servlet-mapping url-pattern=".*\.pagelet"></servlet-mapping>
+	</tiny-processor>
+	<tiny-processor id="jspProcessor" bean-name="tinyProcessorWapper"> <init-param 
+		name="servlet_bean" value="jspServlet"></init-param> <servlet-mapping url-pattern=".*\.jsp"></servlet-mapping> 
+		<init-param name="fork" value="false"></init-param> <init-param name="xpoweredBy" 
+		value="false"></init-param> </tiny-processor> 
+</tiny-processors> -->

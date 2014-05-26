@@ -1,0 +1,24 @@
+<service-components>
+	<service-component
+		type="org.tinygroup.service.registry.ServiceRegistry"
+		group-id="org.tinygroup.service.registry.impl" artifact-id="ServiceRegistryImpl">
+		
+		<service-method name="serviceGetServiceCount" local-name="serviceGetServiceCount"
+			service-id="serviceGetServiceCount" version="" description="获取服务注册项的数量"
+			method-name="size">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="int" />
+		</service-method>
+
+		<service-method name="serviceGetServiceRegistryItems"
+	local-name="serviceGetServiceRegistryItems" service-id="serviceGetServiceRegistryItems"
+	version="" description="获取所有服务注册项" method-name="getServiceRegistryItems">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="java.util.Collection" />
+		</service-method>
+	</service-component>
+</service-components>

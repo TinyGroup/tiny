@@ -1,0 +1,6 @@
+<business-unit-info package-name="org.tinygroup"
+	name="flowbasicservice" version="1.0" title="flowbasicservice">
+	<description>flowbasicservice</description>
+	<dependency-business-units>
+	</dependency-business-units>
+</business-unit-info>

@@ -1,0 +1,277 @@
+
+#*
+Word文档
+*#
+#macro(wordDocument)
+<?xml version="1.0" encoding="UTF-8" standalone="true"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xml:space="preserve" w:ocxPresent="no"
+	w:embeddedObjPresent="no" w:macrosPresent="no"
+	xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core"
+	xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2"
+	xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+	xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint"
+	xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml"
+	xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+	xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+	xmlns:aml="http://schemas.microsoft.com/aml/2001/core">
+$bodyContent
+</w:wordDocument>
+#end
+#*
+文档属性，只能放在wordDocument中
+*#
+#macro(documentProperties)
+<o:DocumentProperties>
+	$bodyContent
+</o:DocumentProperties>
+#end
+#*
+作者，只能放在documentProperties中
+*#
+#macro(author $author)
+<o:Author>$author</o:Author>
+#end
+#*
+最后作者，只能放在documentProperties中
+*#
+#macro(lastAuthor $author)
+<o:LastAuthor>$author</o:LastAuthor>
+#end
+#*
+defaultFont有如下属性
+name:字体名称
+ansi:ansi字体名称
+fareast：远东字体名称
+ascii：ascii字体名称
+*#
+#macro(fonts $defaultFont)
+<w:defaultFonts w:cs="$font.name" w:h-ansi="$font.ansi"
+	w:fareast="$font.fareast" w:ascii="$font.ascii" />
+$bodyContent
+#end
+#*
+
+*#
+#*
+字体预定义，只能放在fonts标签下
+*#
+#macro(fontPredefine
+$fontInfo)
+
+<w:font w:name="$fontInfo.name">
+	#if($fontInfo.panose)
+	<w:panose-1 w:val="$fontInfo.panose" />
+	#end
+	#if($fontInfo.charset)
+	<w:charset w:val="$fontInfo.charset" />
+	#end
+	#if($fontInfo.family)
+	<w:family w:val="$fontInfo.family" />
+	#end
+	#if($fontInfo.pitch)
+	<w:pitch w:val="$fontInfo.pitch" />
+	#end
+</w:font>
+#end
+
+#*
+文档主体
+*#
+#macro(body)
+<w:body>
+	$bodyContent
+</w:body>
+#end
+
+#macro(table)
+<w:tbl>
+	<w:tblPr>
+		<w:tblW w:w="0" w:type="auto" />
+		<w:tblBorders>
+			<w:top w:space="0" w:val="single" w:color="auto" wx:bdrwidth="10"
+				w:sz="4" />
+			<w:left w:space="0" w:val="single" w:color="auto" wx:bdrwidth="10"
+				w:sz="4" />
+			<w:bottom w:space="0" w:val="single" w:color="auto"
+				wx:bdrwidth="10" w:sz="4" />
+			<w:right w:space="0" w:val="single" w:color="auto"
+				wx:bdrwidth="10" w:sz="4" />
+			<w:insideH w:space="0" w:val="single" w:color="auto"
+				wx:bdrwidth="10" w:sz="4" />
+			<w:insideV w:space="0" w:val="single" w:color="auto"
+				wx:bdrwidth="10" w:sz="4" />
+		</w:tblBorders>
+		<w:tblLook w:val="04A0" />
+	</w:tblPr>
+
+	$bodyContent
+</w:tbl>
+#end
+#*
+表的列定义
+*#
+#macro(tableColumns)
+<w:tblGrid>
+	$bodyContent
+</w:tblGrid>
+#end
+#*
+定义具体的一列的宽度
+*#
+#macro(tableColumn $width)
+<w:gridCol w:w="$width" />
+#end
+
+#*
+定义具体的一行
+*#
+#macro(tr)
+<w:tr>
+	$bodyContent
+</w:tr>
+#end
+#*
+span，合并信息
+colspan表示几列合并
+rowStart表示列合并开始
+rowContinue表示列合并开始
+*#
+#macro(td $span)
+<w:tc>
+	<w:tcPr>
+		#if($span.colspan)
+		<w:gridSpan w:val="$colspan" />
+		#end
+		#if($span.start)
+		<w:vmerge w:val="restart" />
+		#end
+		#if($span.rowContinue)
+		<w:vmerge />
+		#end
+	</w:tcPr>
+	$bodyContent
+</w:tc>
+#end
+
+#*
+段落
+content是指段落的内容
+style是段落的格式
+indent:缩进
+bold加粗
+strike删除线
+italic斜线
+underline下划线
+font字体
+headingSize第几号标题
+align对齐方式
+*#
+#macro(paragraph
+$content
+$style)
+<w:p wsp:rsidR="00FD72A1" wsp:rsidRDefault="00C12EB6">
+	<w:r>
+		<w:pPr>
+			#if($style.align)
+			#align($style.align)
+			#end
+			#if($style.indent)
+			#indent($style.indent)
+			#end
+		</w:pPr>
+		<w:rPr>
+			<w:rFonts w:hint="fareast" />
+			#if(style.bold)
+			<w:b />
+			#end
+			#if(style.strike)
+			<w:strike />
+			#end
+			#if(style.font)
+			#font(style.font)
+			#end
+			#if(style.italic)
+			<w:i />
+			#end
+			#if(style.underline)
+			<w:u />
+			#end
+			#if($style.headingSize)
+			#headerMap($style.headingSize)
+			#end
+		</w:rPr>
+		<w:t>$content</w:t>
+	</w:r>
+</w:p>
+#end
+
+#macro(align $alignInfo)
+<w:jc w:val="$alignInfo" />
+#end
+
+#*
+fontInfo包含以下内容
+name:字体名字
+size字体大小
+*#
+#macro(font $fontInfo)
+#if($font.name)
+<w:rFonts w:fareast="$fontInfo.name" w:ascii="$fontInfo.name"
+	w:hint="fareast" />
+<wx:font wx:val="$fontInfo.name" />
+#end
+#if($font.size)
+<w:sz w:val="$font.size" />
+<w:sz-cs w:val="$font.size" />
+#end
+#end
+
+#*
+listInfo包含两个内容：
+index序号
+char紧跟的字符
+font编号字体
+*#
+#macro(list
+$listInfo)
+<w:listPr>
+	<w:ilvl w:val="0" />
+	<w:ilfo w:val="1" />
+	<wx:t wx:val="$listInfo.index$listInfo.char" />
+	<wx:font wx:val="Times New Roman" />
+</w:listPr>
+#end
+
+#*
+bullets包含两个内容：
+index序号
+char紧跟的字符
+font编号字体
+*#
+#macro(bullets
+$bulletsInfo)
+<w:listPr>
+	<w:ilvl w:val="0" />
+	<w:ilfo w:val="1" />
+	<wx:t wx:val="$listInfo.char" />
+	<wx:t wx:val="$listInfo.index />
+	<wx:font wx:val=" Times New
+		Roman " />
+</w:listPr>
+#end
+#*
+缩进
+left:表示左缩进
+firstLine:表示首行缩进
+*#
+#macro(indent $indentInfo)
+<w:ind # if ( indentInfo.left ) w:left="$indentInfo.left" # end #
+	if ( indentInfo.firstLine ) w:first-line="$indentInfo.firstLine" # end />
+#end
+
+#macro(headerMap $size)
+<w:pStyle w:val="$$size" />
+#end

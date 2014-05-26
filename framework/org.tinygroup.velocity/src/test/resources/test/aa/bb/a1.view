@@ -1,0 +1,8 @@
+姓名：$name
+abc1
+
+Output:
+#set ($list = [1, 2, 2])
+#add1($list)
+
+#foo(2 3)

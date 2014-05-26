@@ -1,0 +1,50 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+
+	
+	<bean id="tableInstallProcessor" scope="singleton"
+		class="org.tinygroup.databasebuinstaller.impl.TableInstallProcessor">
+		<property name="tableProcessor">
+			<ref bean="tableProcessor" />
+		</property>
+	</bean>
+	
+	<bean id="viewInstallProcessor" scope="singleton"
+		class="org.tinygroup.databasebuinstaller.impl.ViewInstallProcessor">
+		<property name="viewProcessor">
+			<ref bean="viewProcessor" />
+		</property>
+	</bean>
+	
+	<bean id="initDataInstallProcessor" scope="singleton"
+		class="org.tinygroup.databasebuinstaller.impl.InitDataInstallProcessor">
+		<property name="initDataProcessor">
+			<ref bean="initDataProcessor" />
+		</property>
+	</bean>
+	
+	<bean id="procedureInstallProcessor" scope="singleton"
+		class="org.tinygroup.databasebuinstaller.impl.ProcedureInstallProcessor">
+		<property name="procedureProcessor">
+			<ref bean="procedureProcessor" />
+		</property>
+	</bean>
+	
+	<bean id="databaseInstallerProcessor" scope="singleton"
+		class="org.tinygroup.databasebuinstaller.DatabaseInstallerProcessor">
+		<property name="installProcessors">
+		   <list>
+		       <ref bean="tableInstallProcessor"/>
+		       <ref bean="viewInstallProcessor"/>
+		       <ref bean="initDataInstallProcessor"/>
+		       <ref bean="procedureInstallProcessor"/>
+ 		   </list>
+		</property>
+	</bean>
+	
+</beans>

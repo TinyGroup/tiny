@@ -1,0 +1,29 @@
+<service-components>
+	<service-component bean="InterfaceDefImpl"
+		type="org.tinygroup.service.test.service.InterfaceDef"
+		group-id="org.tinygroup.service.test.service" artifact-id="InterfaceDef">
+		<service-method name="serviceTestInterface" local-name="serviceTestInterface"
+			service-id="serviceTestInterface" version="" description="测试获取接口bean"
+			method-name="test">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true" is-array="false"
+				type="java.lang.String" />
+		</service-method>
+	
+	</service-component>
+	
+	<service-component
+		type="org.tinygroup.service.test.service.InterfaceDef2"
+		group-id="org.tinygroup.service.test.service" artifact-id="InterfaceDef2">
+		<service-method name="serviceTestInterface2" local-name="serviceTestInterface2"
+			service-id="serviceTestInterface2" version="" description="测试获取接口bean"
+			method-name="test">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true" is-array="false"
+				type="java.lang.String" />
+		</service-method>
+	
+	</service-component>
+</service-components>

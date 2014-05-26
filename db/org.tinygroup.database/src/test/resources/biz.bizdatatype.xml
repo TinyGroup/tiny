@@ -1,0 +1,17 @@
+<business-types name="aa.bb" title="基础模块" package-name="aa.bb">
+	<business-type id="aabusid" name="aa" title="AA" standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="l" value="112" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="bbbusid" name="bb" title="AA" standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="112" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="increaseuuid" name="bb" title="AA" standard-type-id="type_int">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="112" />
+		</placeholder-value-list>
+	</business-type>
+</business-types>

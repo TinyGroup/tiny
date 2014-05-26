@@ -1,0 +1,99 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="fileResolver" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.FileResolverImpl">
+		<property name="fileProcessorList">
+			<list>
+				<ref bean="i18nFileProcessor" />
+				<ref bean="xStreamFileProcessor" />
+				<ref bean="tinyProcessorFileProcessor" />
+			</list>
+		</property>
+	</bean>
+	<bean id="xStreamFileProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.XStreamFileProcessor">
+	</bean>
+	<bean id="i18nFileProcessor" scope="singleton"
+		class="org.tinygroup.fileresolver.impl.I18nFileProcessor">
+	</bean>
+	<bean id="tinyProcessorFileProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.fileresolver.TinyProcessorFileProcessor">
+	</bean>
+	
+	<!--<bean id="fullContextFileRepository" scope="singleton"
+		class="org.tinygroup.application.impl.FullContextFileRepositoryImpl">
+		<property name="application">
+			<ref id="application" />
+		</property>
+	</bean>
+	<bean id="velocityHelper" scope="singleton"
+		class="org.tinygroup.velocity.impl.VelocityHelperImpl">
+		<property name="fullContextFileRepository">
+			<ref id="fullContextFileRepository" />
+		</property>
+	</bean>
+	<bean id="responseEncoding" scope="singleton"
+		class="org.tinygroup.weblayer.impl.ResponseEncoding">
+		<property name="encoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="encoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="contentType">
+			<value>text/html; charset=UTF-8</value>
+		</property>
+	</bean>-->
+	<bean id="greetingProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.GreetingProcessor">
+	</bean>
+	
+	<bean id="tinyApplicationProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.TinyApplicationProcessor">
+		<property name="configManger">
+			<ref bean="tinyProcessorConfigManager" />
+		</property>
+	</bean>
+	<bean id="beanFactoryProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.BeanFactoryProcessor">
+	</bean>
+	<bean id="printSystemPropertiesProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.PrintSystemPropertiesProcessor">
+	</bean>
+	<bean id="fileResolverProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.FileResolverProcessor">
+		<property name="fileResolver">
+			<ref bean="fileResolver" />
+		</property>
+	</bean>
+    <bean id="appConfigManager" scope="singleton"
+		class="org.tinygroup.appconfig.impl.AppConfigManagerImpl">
+	</bean>
+	 <bean id="tinyProcessorConfigManager" scope="singleton"
+		class="org.tinygroup.applicationprocessor.configmanager.TinyProcessorConfigManager">
+	</bean>
+
+	<bean id="application" scope="singleton"
+		class="org.tinygroup.application.impl.ApplicationDefault">
+		<property name="appConfigManager">
+			<ref bean="appConfigManager" />
+		</property>
+		<property name="applicationProcessors">
+			<list>
+				<ref bean="greetingProcessor" />
+				<ref bean="printSystemPropertiesProcessor" />
+				<ref bean="tinyApplicationProcessor" />
+			
+			</list>
+		</property>
+	</bean>
+		<bean id="myTinyProcessor" scope="singleton"
+		class="org.tinygroup.weblayer.processor.MyTinyProcessor">
+	</bean>
+	
+</beans>

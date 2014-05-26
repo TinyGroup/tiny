@@ -1,0 +1,6 @@
+<xstream-configuration  package-name="validate">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.validate.config.Validators" />
+		<xstream-annotation-class class-name="org.tinygroup.validate.config.ObjectValidators" />
+	</xstream-annotation-classes>
+</xstream-configuration>

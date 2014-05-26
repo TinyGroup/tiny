@@ -1,0 +1,50 @@
+<flow id="myTestException2" name="myTestException2">
+	<nodes>
+		<node id="node1">
+			<component name="myExceptionComponent">
+				<properties>
+					<flow-property name="key" value="1" />
+				</properties>
+			</component>
+			<next-nodes>
+			</next-nodes>
+		</node>
+		<node id="node2">
+			<component name="myExceptionComponent">
+				<properties>
+					<flow-property name="key" value="1" />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node exception-type="java.lang.RuntimeException" next-node-id="e1"/>
+				<next-node next-node-id="node3"/>
+			</next-nodes>
+		</node>
+		
+		<node id="node3">
+			<component name="myExceptionComponent">
+				<properties>
+					<flow-property name="key" value="2" />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node next-node-id="end"/>
+			</next-nodes>
+		</node>
+		<node id="e1">
+			<component name="myExceptionComponent">
+				<properties>
+					<flow-property name="key" value="3"/>
+				</properties>
+			</component>
+		</node>
+		<node id="node4">
+			<component name="myExceptionComponent">
+				<properties>
+					<flow-property name="key" value="4" />
+				</properties>
+			</component>
+		</node>
+
+	</nodes>
+</flow>

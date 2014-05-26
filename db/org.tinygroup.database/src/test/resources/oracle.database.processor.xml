@@ -1,0 +1,7 @@
+<processors language="oracle">
+	<processor name="table" bean="oracleSqlProcessor"></processor>
+	<processor name="initData" bean="initDataSqlProcessor"></processor>
+	<processor name="view" bean="viewSqlProcessor"></processor>
+	<processor name="procedure" bean="oracleProcedureSqlProcessor"></processor>
+
+</processors>

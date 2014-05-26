@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="xstream-configuration">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="xstream-class-aliases" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="class-alias" type="classAliasType"
+								minOccurs="0" maxOccurs="unbounded">
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="xstream-annotation-classes" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="xstream-annotation-class" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="class-name" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="package-name" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="classAliasType">
+		<xs:all>
+			<xs:element name="proper-aliases" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="xstream-property-alias" minOccurs="0"
+							maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="attribute-name" type="xs:string" />
+								<xs:attribute name="alias-name" type="xs:string" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="property-implicits" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="xstream-property-implicit" minOccurs="0"
+							maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="attribute-name" type="xs:string" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="property-omits" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="xstream-property-omit" minOccurs="0"
+							maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="attribute-name" type="xs:string" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="alias-name" type="xs:string" />
+		<xs:attribute name="type" type="xs:string" />
+	</xs:complexType>
+
+</xs:schema>

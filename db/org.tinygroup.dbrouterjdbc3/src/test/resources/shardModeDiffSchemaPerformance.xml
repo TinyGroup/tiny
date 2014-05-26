@@ -1,0 +1,121 @@
+<routers>
+	<router id="shardModeDiffSchemaPerformance" user-name="luog"
+		password="123456"
+		key-generator-class="org.tinygroup.dbrouter.impl.keygenerator.RouterKeyGeneratorLong">
+		<key-generator-config increment="1"
+			data-source-id="ds0" />
+		<data-source-configs>
+			<data-source-config id="ds0" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test0"
+				test-sql="" />
+			<data-source-config id="ds1" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test1"
+				test-sql="" />
+			<data-source-config id="ds2" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test2"
+				test-sql="" />
+			<data-source-config id="ds3" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test3"
+				test-sql="" />
+			<data-source-config id="ds4" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test4"
+				test-sql="" />
+			<data-source-config id="ds5" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test5"
+				test-sql="" />
+			<data-source-config id="ds6" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test6"
+				test-sql="" />
+			<data-source-config id="ds7" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test7"
+				test-sql="" />
+			<data-source-config id="ds8" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test8"
+				test-sql="" />
+			<data-source-config id="ds9" driver="com.mysql.jdbc.Driver"
+				user-name="root" password="123456" url="jdbc:mysql://mysqldb:3306/test9"
+				test-sql="" />
+		</data-source-configs>
+		<partitions>
+			<partition id="abc" mode="2">
+				<partition-rules>
+					<partition-rule
+						class="org.tinygroup.dbrouter.impl.partionrule.PartionRuleByTableName"
+						table-name="student" />
+				</partition-rules>
+				<shards>
+					<shard id="shard0" data-source-id="ds0">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="0" />
+						</shard-rules>
+					</shard>
+					<shard id="shard1" data-source-id="ds1">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="1" />
+						</shard-rules>
+					</shard>
+					<shard id="shard2" data-source-id="ds2">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="2" />
+						</shard-rules>
+					</shard>
+					<shard id="shard3" data-source-id="ds3">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="3" />
+						</shard-rules>
+					</shard>
+					<shard id="shard4" data-source-id="ds4">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="4" />
+						</shard-rules>
+					</shard>
+					<shard id="shard5" data-source-id="ds5">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="5" />
+						</shard-rules>
+					</shard>
+					<shard id="shard6" data-source-id="ds6">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="6" />
+						</shard-rules>
+					</shard>
+					<shard id="shard7" data-source-id="ds7">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="7" />
+						</shard-rules>
+					</shard>
+					<shard id="shard8" data-source-id="ds8">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="8" />
+						</shard-rules>
+					</shard>
+					<shard id="shard9" data-source-id="ds9">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="id" remainder="9" />
+						</shard-rules>
+					</shard>
+				</shards>
+			</partition>
+		</partitions>
+	</router>
+</routers>

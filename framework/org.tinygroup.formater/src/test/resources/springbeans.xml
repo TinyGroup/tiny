@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean name="constFormatProvider" class="org.tinygroup.format.ConstFormatProvider">
+		<property name="constMap">
+			<map>
+				<entry key="1" value="v1" />
+				<entry key="2" value="v2" />
+				<entry key="3" value="v3" />
+				<entry key="4" value="v4" />
+			</map>
+		</property>
+	</bean>
+	<bean name="contextFormatProvider" class="org.tinygroup.format.impl.ContextFormater">
+	</bean>
+	<bean name="patternHandle" class="org.tinygroup.format.impl.DefaultPatternDefine">
+		<property name="prefixPatternString">
+			<value>${</value>
+		</property>
+		<property name="postfixPatternString">
+			<value>}</value>
+		</property>
+		<property name="patternString">
+			<value><![CDATA[([$]+[{]+[a-zA-Z0-9[.[_[:[/[#]]]]]]+[}])]]></value>
+		</property>
+	</bean>
+	<bean name="formater" class="org.tinygroup.format.impl.FormaterImpl">
+		<property name="patternHandle">
+			<ref bean="patternHandle" />
+		</property>
+		<property name="formatProviders">
+			<map>
+				<entry key="const" value-ref="constFormatProvider" />
+				<entry key="context" value-ref="contextFormatProvider" />
+			</map>
+		</property>
+
+	</bean>
+</beans>	

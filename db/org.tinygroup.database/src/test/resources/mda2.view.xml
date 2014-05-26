@@ -1,0 +1,43 @@
+<views>
+	<view name="usercompanyview">
+  <view-fields>
+    <view-field view-table-id="companyrefuuid" alias="conpanyname" tableFieldId="companynameuuid" id="companynamerefuuid"/>
+    <view-field view-table-id="userrefuuid" alias="username" tableFieldId="usernameuuid" id="usernamerefuuid"/>
+    <view-field view-table-id="userrefuuid" alias="userid" tableFieldId="useriduuid" id="useridrefuuid"/>
+  </view-fields>
+  <view-conditions>
+    <view-condition operator="=">
+      <key-field view-table-id="userrefuuid" table-field-id="companyiduuid"/>
+      <value-field view-table-id="companyrefuuid" table-field-id="companyiduuid"/>
+    </view-condition>
+  </view-conditions>
+  <order-by-fields>
+    <order-by-field direction="desc">
+      <field view-field-id="companynamerefuuid"/>
+    </order-by-field>
+    <order-by-field direction="asc">
+      <field view-field-id="useridrefuuid"/>
+    </order-by-field>
+  </order-by-fields>
+  <view-tables>
+    <view-table table-alias="company" table-id="companyuuid" id="companyrefuuid"/>
+    <view-table table-alias="user" table-id="useruuid" id="userrefuuid"/>
+  </view-tables>
+  <view-havings>
+    <view-having operator="comparemode" value="1">
+      <key-having aggregate-function="count">
+        <field view-field-id="useridrefuuid"/>
+      </key-having>
+    </view-having>
+    <view-having operator="comparemode">
+      <key-having aggregate-function="count">
+        <field view-field-id="useridrefuuid"/>
+      </key-having>
+      <value-having>
+        <field view-table-id="userrefuuid" table-field-id="usernameuuid"/>
+      </value-having>
+    </view-having>
+  </view-havings>
+</view>
+
+</views>

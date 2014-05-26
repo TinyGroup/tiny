@@ -1,0 +1,9 @@
+<xstream-configuration package-name="dbrouter">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.dbrouter.config.Routers" />
+		<xstream-annotation-class class-name="org.tinygroup.dbrouter.impl.partionrule.PartionRuleByTableName" />
+		<xstream-annotation-class class-name="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByFieldValue" />
+		<xstream-annotation-class class-name="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdSameSchema" />
+		<xstream-annotation-class class-name="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema" />
+	</xstream-annotation-classes>
+</xstream-configuration>

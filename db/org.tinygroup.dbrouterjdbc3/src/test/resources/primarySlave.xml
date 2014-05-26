@@ -1,0 +1,27 @@
+<routers>
+	<router id="primarySlave" user-name="luog" password="123456"
+		key-generator-class="org.tinygroup.dbrouter.impl.keygenerator.RouterKeyGeneratorLong">
+		<key-generator-config increment="1"
+			data-source-id="ds0" />
+		<data-source-configs>
+			<data-source-config id="ds0"
+				driver="org.apache.derby.jdbc.EmbeddedDriver" url="jdbc:derby:derbydb/db01;create=true" />
+			<data-source-config id="ds1"
+				driver="org.apache.derby.jdbc.EmbeddedDriver" url="jdbc:derby:derbydb/db02;create=true" />
+			<data-source-config id="ds2"
+				driver="org.apache.derby.jdbc.EmbeddedDriver" url="jdbc:derby:derbydb/db03;create=true" />
+		</data-source-configs>
+		<partitions>
+			<partition id="abc" mode="1">
+				<shards>
+					<shard id="shard0" data-source-id="ds0" read-weight="8"
+						write-able="true" />
+					<shard id="shard1" data-source-id="ds1" read-weight="4"
+						write-able="true" />
+					<shard id="shard2" data-source-id="ds2" read-weight="2"
+						write-able="true" />
+				</shards>
+			</partition>
+		</partitions>
+	</router>
+</routers>

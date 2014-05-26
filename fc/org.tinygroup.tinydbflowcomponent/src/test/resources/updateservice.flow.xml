@@ -1,0 +1,13 @@
+<flow id="updateService" name="updateService" begin-node-id="updateService"
+	default-node-id="end">
+	<nodes>
+		<node id="updateService" name="updateService"  title="更新服务">
+			<component name="tinydbUpdateService">
+				<properties>
+					<flow-property name="beanType" value="${beanType}" />
+					<flow-property name="resultKey" value="result" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

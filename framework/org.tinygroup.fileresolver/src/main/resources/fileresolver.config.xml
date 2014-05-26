@@ -1,0 +1,6 @@
+<!-- 这里是文件搜索器相关配置，如果配置请参考file-resolver-configuration配置手册 -->
+<file-resolver-configuration>
+	<class-paths>
+		<!-- <class-path path="{TINY_WEBROOT}\WEB-INF\lib" /> -->
+	</class-paths>
+</file-resolver-configuration>

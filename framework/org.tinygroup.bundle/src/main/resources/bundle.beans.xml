@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
+       default-autowire="byName" default-lazy-init="true">
+	
+	<!-- bundle相关 -->
+	<bean id="bundleFileProcessor" scope="singleton"
+		class="org.tinygroup.bundle.fileprocessor.BundleFileProcessor">
+		<property name="bundleManager">
+			<ref bean="bundleManager" />
+		</property>
+	</bean>
+	<bean id="bundleManager" scope="singleton"
+		class="org.tinygroup.bundle.impl.BundleManagerDefault">
+	</bean>
+	
+</beans>

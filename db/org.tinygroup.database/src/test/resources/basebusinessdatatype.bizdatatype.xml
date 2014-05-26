@@ -1,0 +1,118 @@
+<business-types title="基准类型" package-name="org.tinygroup">
+	<business-type id="TinyText" name="TinyText" title="短文本255长度"
+		standard-type-id="type_tiny_text">
+	</business-type>
+	<business-type id="Text" name="Text" title="中文本65536长度"
+		standard-type-id="type_text">
+	</business-type>
+	<business-type id="MediumText" name="MediumText" title="长文本16777215长度"
+		standard-type-id="type_medium_text">
+	</business-type>
+	<business-type id="LongText" name="LongText" title="巨文本4294967295长度"
+		standard-type-id="type_long_text">
+	</business-type>
+	<business-type id="Blob" name="Blob" title="Blob"
+		standard-type-id="type_blob">
+	</business-type>
+	<business-type id="Varchar20" name="Varchar20" title="Char20"
+		standard-type-id="type_char">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="20" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Char30" name="Char30" title="Char30"
+		standard-type-id="type_char">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="30" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Char50" name="Char50" title="Char50"
+		standard-type-id="type_char">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="50" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Char100" name="Char100" title="Char100"
+		standard-type-id="type_char">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="100" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Char255" name="Char255" title="Char255"
+		standard-type-id="type_char">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="255" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Varchar20" name="Varchar20" title="Varchar20"
+		standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="20" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Varchar30" name="Varchar30" title="Varchar30"
+		standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="30" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Varchar50" name="Varchar50" title="Varchar50"
+		standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="50" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Varchar100" name="Varchar100" title="Varchar100"
+		standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="100" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Varchar255" name="Varchar255" title="Varchar255"
+		standard-type-id="type_varchar">
+		<placeholder-value-list>
+			<placeholder-value name="length" value="255" />
+		</placeholder-value-list>
+	</business-type>
+
+	<business-type id="TinyInt" name="TinyInt" title="布尔"
+		standard-type-id="type_tiny_int">
+	</business-type>
+	<business-type id="SmallInt" name="SmallInt" title="小整数"
+		standard-type-id="type_small_int">
+	</business-type>
+	<business-type id="MediumInt" name="MediumInt" title="小整数"
+		standard-type-id="type_medium_int">
+	</business-type>
+	<business-type id="BigInt" name="BigInt" title="长整数"
+		standard-type-id="type_big_int">
+	</business-type>
+	<business-type id="Date" name="Date" title="日期"
+		standard-type-id="type_date">
+	</business-type>
+	<business-type id="Datetime" name="Datetime" title="日期时间"
+		standard-type-id="type_datetime">
+	</business-type>
+	<business-type id="Decimal" name="Decimal" title="数字"
+		standard-type-id="type_datetime">
+		<placeholder-value-list>
+			<placeholder-value name="precision" value="30" />
+			<placeholder-value name="24" value="6" />
+		</placeholder-value-list>
+	</business-type>
+	<business-type id="Double" name="Double" title="双精度"
+		standard-type-id="type_double">
+	</business-type>
+	<business-type id="Float" name="Float" title="单精度"
+		standard-type-id="type_float">
+	</business-type>
+	<business-type id="Int" name="Int" title="整数"
+		standard-type-id="type_int">
+	</business-type>
+	<business-type id="Integer" name="Integer" title="整数"
+		standard-type-id="type_integer">
+	</business-type>
+	<business-type id="Long" name="Long" title="长整数"
+		standard-type-id="type_long">
+	</business-type>
+</business-types>

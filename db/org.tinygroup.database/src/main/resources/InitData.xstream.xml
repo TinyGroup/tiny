@@ -1,0 +1,8 @@
+<xstream-configuration package-name="initdata">
+	
+	<xstream-annotation-classes>
+		<xstream-annotation-class
+			class-name="org.tinygroup.database.config.initdata.InitDatas" />
+	</xstream-annotation-classes>
+</xstream-configuration>
+

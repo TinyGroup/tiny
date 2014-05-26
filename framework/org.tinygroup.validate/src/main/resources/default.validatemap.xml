@@ -1,0 +1,14 @@
+<validator-configs>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertEnum" validator-bean-name="enumValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertEquals" validator-bean-name="equalsValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertFalse" validator-bean-name="falseValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertNotEquals" validator-bean-name="notEqualsValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertNotNull" validator-bean-name="notNullValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertNull" validator-bean-name="nullValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.AssertTrue" validator-bean-name="trueValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.IntegerRange" validator-bean-name="integerRangeValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.FloatRange" validator-bean-name="floatRangeValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.DoubleRange" validator-bean-name="doubleRangeValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.Pattern" validator-bean-name="patternValidator"></validator-config>
+	<validator-config annotation-class-name="org.tinygroup.validate.annotation.Size" validator-bean-name="sizeValidator"></validator-config>
+</validator-configs>

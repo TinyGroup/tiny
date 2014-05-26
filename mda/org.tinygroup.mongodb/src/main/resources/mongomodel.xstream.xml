@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xstream-configuration package-name="mongodb">
+	<xstream-annotation-classes>
+	    <xstream-annotation-class class-name="org.tinygroup.mongodb.common.TreeInputMode" />
+		<xstream-annotation-class class-name="org.tinygroup.mongodb.common.DictInputMode" />
+		<xstream-annotation-class class-name="org.tinygroup.mongodb.common.OptionInputMode" />
+		<xstream-annotation-class class-name="org.tinygroup.mongodb.model.MongoDBModel" />
+		<xstream-annotation-class class-name="org.tinygroup.mongodb.common.OperationReference" />
+	</xstream-annotation-classes>
+</xstream-configuration>

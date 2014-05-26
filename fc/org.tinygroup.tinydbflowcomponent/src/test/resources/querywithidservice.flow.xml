@@ -1,0 +1,14 @@
+<flow id="queryWithIdService" name="queryWithIdService" begin-node-id="queryWithIdService"
+	default-node-id="end">
+	<nodes>
+		<node id="queryWithIdService" name="queryWithIdService"  title="根据主键查询服务">
+			<component name="tinydbQueryServiceWithId">
+				<properties>
+					<flow-property name="beanType" value="${beanType}" />
+					<flow-property name="primaryKey" value="${primaryKey}" />
+					<flow-property name="resultKey" value="result" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

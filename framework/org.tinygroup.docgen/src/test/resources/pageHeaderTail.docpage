@@ -1,0 +1,29 @@
+#@wordDocument()
+#@body()
+
+ 
+ 
+#*
+	添加页眉
+*#
+#pageHeader("恒生电子股份有限公司",{"name":"宋体","size":"28","color":"FF0000","bold":""})
+
+
+ 
+#*
+	添加页脚
+*#
+#pageTail("恒生电子版权所有",{"name":"宋体","size":"34","color":"FF0000","bold":""})
+
+
+ 
+#*
+	添加页脚
+*#
+#footnote("3")
+ 
+ 
+
+#end
+#end
+

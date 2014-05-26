@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="model-define">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="model-processor-defines" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="model-processor-define" type="modelProcessorDefineType"
+								minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="id" type="xs:string" />
+			<xs:attribute name="name" type="xs:string" />
+			<xs:attribute name="title" type="xs:string" />
+			<xs:attribute name="model-permission-checker-bean" type="xs:string" />
+			<xs:attribute name="error-page" type="xs:string" />
+			<xs:attribute name="validate-error-page" type="xs:string" />
+			<xs:attribute name="model-class" type="xs:string" />
+			<xs:attribute name="model-loader-bean" type="xs:string" />
+			<xs:attribute name="model-infomation-getter" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="modelProcessorDefineType">
+		<xs:sequence>
+			<xs:element name="page-config" minOccurs="0" type="pageConfigType" />
+			<xs:element name="model-processor-stage" type="processorStageType"
+				minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="record-mode" type="xs:string" />
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="pageConfigType">
+		<xs:attribute name="confirm" type="xs:boolean" />
+		<xs:attribute name="message" type="xs:string" />
+		<xs:attribute name="stage-name" type="xs:string" />
+	</xs:complexType>
+
+
+	<xs:complexType name="processorStageType">
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+		<xs:attribute name="service-processor" type="xs:string" />
+		<xs:attribute name="parameter-builder" type="xs:string" />
+		<xs:attribute name="view-processor" type="xs:string" />
+		<xs:attribute name="need-validate" type="xs:boolean" />
+	</xs:complexType>
+</xs:schema>

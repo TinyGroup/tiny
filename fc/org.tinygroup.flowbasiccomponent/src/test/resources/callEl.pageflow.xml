@@ -1,0 +1,13 @@
+<flow id="callEl" name="callEl" begin-node-id="callEl"
+	default-node-id="end">
+	<nodes>
+		<node id="callEl" name="callEl"  title="转换对象">
+			<component name="callElComponent">
+				<properties>
+					<flow-property name="expression" value="age=age+1;return age;" />
+					<flow-property name="resultKey" value="elResult" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

@@ -1,0 +1,4 @@
+<log4j:event logger="org.tinygroup.threadgroup.MultiThreadProcessorTest" timestamp="1400331072361" level="INFO" thread="main">
+<log4j:message><![CDATA[]]></log4j:message>
+</log4j:event>
+

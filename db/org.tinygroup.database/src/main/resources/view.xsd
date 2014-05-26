@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:attributeGroup name="baseObjectAttributeGroup">
+		<xs:attribute name="id" type="xs:string" />
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="title" type="xs:string" />
+		<xs:attribute name="description" type="xs:string" />
+	</xs:attributeGroup>
+
+	<xs:element name="views">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="view" type="viewType" minOccurs="0"
+					maxOccurs="unbounded">
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="baseObjectAttributeGroup" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="viewType">
+		<xs:sequence>
+			<xs:element name="view-fields" minOccurs="0" type="viewFieldsType" />
+			<xs:element name="view-conditions" minOccurs="0"
+				type="viewConditionsType" />
+			<xs:element name="order-by-fields" minOccurs="0"
+				type="orderByFieldsType" />
+			<xs:element name="view-tables" minOccurs="0" type="viewTablesType" />
+			<xs:element name="view-havings" minOccurs="0"
+				type="viewHavingsType" />
+		</xs:sequence>
+		<xs:attributeGroup ref="baseObjectAttributeGroup" />
+		<xs:attribute name="schema" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="viewFieldsType">
+		<xs:sequence>
+			<xs:element name="view-field" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="view-table-id" type="xs:string" />
+					<xs:attribute name="alias" type="xs:string" />
+					<xs:attribute name="tableFieldId" type="xs:string" />
+					<xs:attribute name="id" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="viewConditionsType">
+		<xs:sequence>
+			<xs:element name="view-condition" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="key-field" type="viewFieldRefType"
+							minOccurs="0" />
+						<xs:element name="value-field" type="viewFieldRefType"
+							minOccurs="0" />
+						<xs:element name="view-conditions" type="viewConditionsType"
+							minOccurs="0" />
+					</xs:all>
+					<xs:attribute name="operator" type="xs:string" />
+					<xs:attribute name="value" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="orderByFieldsType">
+		<xs:sequence>
+			<xs:element name="order-by-field" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="field" type="viewFieldRefType"
+							minOccurs="0" />
+					</xs:all>
+					<xs:attribute name="direction" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="viewTablesType">
+		<xs:sequence>
+			<xs:element name="view-table" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="table-alias" type="xs:string" />
+					<xs:attribute name="table-id" type="xs:string" />
+					<xs:attribute name="id" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="viewHavingsType">
+		<xs:sequence>
+			<xs:element name="view-having" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="key-having" type="havingType"
+							minOccurs="0" />
+						<xs:element name="value-having" type="havingType"
+							minOccurs="0" />
+					</xs:all>
+					<xs:attribute name="operator" type="xs:string" />
+					<xs:attribute name="value" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="havingType">
+		<xs:all>
+			<xs:element name="field" type="viewFieldRefType"
+				minOccurs="0" />
+		</xs:all>
+		<xs:attribute name="aggregate-function" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="viewFieldRefType">
+		<xs:attribute name="view-table-id" type="xs:string" />
+		<xs:attribute name="table-field-id" type="xs:string" />
+		<xs:attribute name="view-field-id" type="xs:string" />
+	</xs:complexType>
+
+</xs:schema>

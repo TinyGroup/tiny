@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="people2" scope="prototype" class="org.tinygroup.context2object.test.bean.People2"></bean>
+	<bean id="people" scope="prototype" class="org.tinygroup.context2object.test.bean.People"></bean>
+	<bean id="cat" scope="prototype" class="org.tinygroup.context2object.test.bean.SmallCat"></bean>
+	<bean id="part" scope="prototype" class="org.tinygroup.context2object.test.bean.PartMent"></bean>
+	<bean id="part2" scope="prototype" class="org.tinygroup.context2object.test.bean.PartMent2"></bean>
+	
+	<bean id="cat2" scope="prototype" class="org.tinygroup.context2object.CatChild"></bean>
+	<bean id="cat1" scope="prototype" class="org.tinygroup.context2object.Cat"></bean>
+	<bean id="user" scope="prototype" class="org.tinygroup.context2object.User"></bean>
+	<bean id="newcat" scope="prototype" class="org.tinygroup.context2object.impl.NewCat"></bean>
+	<bean id="newuser" scope="prototype" class="org.tinygroup.context2object.impl.NewUser"></bean>
+	
+</beans>

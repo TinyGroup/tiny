@@ -1,0 +1,6 @@
+<business-unit-info package-name="org.tinygroup"
+	name="databasebuinstaller" version="1.0" title="databasebuinstaller">
+	<description>databasebuinstaller</description>
+	<dependency-business-units>
+	</dependency-business-units>
+</business-unit-info>

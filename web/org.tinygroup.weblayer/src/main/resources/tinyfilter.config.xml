@@ -1,0 +1,49 @@
+<!--tiny-filters配置 -->
+<!-- 
+<tiny-filters>
+	<tiny-wrapper-filter id="tinyFilterWrapper" bean-name="tinyFilterWrapper">
+		<init-param name="filter_beans" value="gZIPFilter"></init-param>
+		<filter-mapping url-pattern=".*"></filter-mapping>
+	</tiny-wrapper-filter>
+	<tiny-filter id="basicTinyFilter" bean-name="basicTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+		<init-param name="maxCookieSize" value="5K"></init-param>
+	</tiny-filter>
+	<tiny-filter id="setLocaleTinyFilter" bean-name="setLocaleTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+		<init-param name="defaultLocale" value="zh_CN"></init-param>
+		<init-param name="defaultCharset" value="UTF-8"></init-param>
+		<init-param name="inputCharset" value="_input_charset"></init-param>
+		<init-param name="outputCharset" value="_output_charset"></init-param>
+		<init-param name="paramKey" value="_lang"></init-param>
+		<init-param name="sessionKey" value="_lang"></init-param>
+	</tiny-filter>
+	<tiny-filter id="parserTinyFilter" bean-name="parserTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+		<init-param name="converterQuietParam" value="true"></init-param>
+		<init-param name="caseFolding" value="lower_with_underscores"></init-param>
+		<init-param name="autoUpload" value="true"></init-param>
+		<init-param name="unescapeParameters" value="true"></init-param>
+		<init-param name="useServletEngineParser" value="false"></init-param>
+		<init-param name="useBodyEncodingForUri" value="true"></init-param>
+		<init-param name="uriEncoding" value="UTF-8"></init-param>
+		<init-param name="trimming" value="true"></init-param>
+		<init-param name="htmlFieldSuffix" value=".~html"></init-param>
+	</tiny-filter>
+	<tiny-filter id="bufferedTinyFilter" bean-name="bufferedTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+	</tiny-filter>
+	<tiny-filter id="lazyCommitTinyFilter" bean-name="lazyCommitTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+	</tiny-filter>
+	<tiny-filter id="rewriteTinyFilter" bean-name="rewriteTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+	</tiny-filter>
+	<tiny-filter id="sessionTinyFilter" bean-name="sessionTinyFilter">
+		<filter-mapping url-pattern=".*"></filter-mapping>
+	</tiny-filter>
+	<tiny-wrapper-filter id="tinyFilterWrapper" bean-name="tinyFilterWrapper"> 
+		value值可以是多个实现http filter接口的bean名称，多个以","分隔开 <init-param name="filter_beans" 
+		value="encondingHttpFilter"></init-param> <filter-mapping url-pattern=".*"></filter-mapping> 
+		</tiny-wrapper-filter>
+</tiny-filters> -->

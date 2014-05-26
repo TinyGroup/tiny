@@ -1,0 +1,54 @@
+2014-05-24 08:57:22,003 -0    [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象:RmiServer
+2014-05-24 08:57:23,133 -1130 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注册对象:RmiServer
+2014-05-24 08:57:23,244 -1241 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 将对象加入注册列表:hello
+2014-05-24 08:57:23,246 -1243 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 对象:hello加入注册列表完成
+2014-05-24 08:57:23,246 -1243 [Thread-1] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象hello..
+2014-05-24 08:57:23,246 -1243 [Thread-1] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注册对象hello。
+2014-05-24 08:57:23,347 -1344 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 获取对象Name:hello
+2014-05-24 08:57:23,350 -1347 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 将对象加入注册列表:hello1
+2014-05-24 08:57:23,350 -1347 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 对象:hello1加入注册列表完成
+2014-05-24 08:57:23,350 -1347 [Thread-1] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象hello1..
+2014-05-24 08:57:23,351 -1348 [Thread-1] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注册对象hello1。
+2014-05-24 08:57:23,451 -1448 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 获取对象Name:hello1
+2014-05-24 08:57:23,452 -1449 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象:hello1
+2014-05-24 08:57:23,452 -1449 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注销对象:hello1
+2014-05-24 08:57:23,452 -1449 [Thread-1] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象hello1..
+2014-05-24 08:57:23,453 -1450 [Thread-1] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注销对象hello1。
+2014-05-24 08:57:23,472 -1469 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象:RmiServer
+2014-05-24 08:57:23,472 -1469 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注销对象:RmiServer
+2014-05-24 08:57:23,494 -1491 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象:RmiServer
+2014-05-24 08:57:23,498 -1495 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注册对象:RmiServer
+2014-05-24 08:57:23,500 -1497 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 将对象加入注册列表:hello
+2014-05-24 08:57:23,501 -1498 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 对象:hello加入注册列表完成
+2014-05-24 08:57:23,503 -1500 [Thread-3] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象hello..
+2014-05-24 08:57:23,504 -1501 [Thread-3] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注册对象hello。
+2014-05-24 08:57:23,602 -1599 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 获取对象Name:hello
+2014-05-24 08:57:23,604 -1601 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 将对象加入注册列表:hello1
+2014-05-24 08:57:23,605 -1602 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 对象:hello1加入注册列表完成
+2014-05-24 08:57:23,606 -1603 [Thread-3] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象hello1..
+2014-05-24 08:57:23,607 -1604 [Thread-3] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注册对象hello1。
+2014-05-24 08:57:23,707 -1704 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 获取对象Name:hello1
+2014-05-24 08:57:23,708 -1705 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象:hello1
+2014-05-24 08:57:23,708 -1705 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注销对象:hello1
+2014-05-24 08:57:23,709 -1706 [Thread-3] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象hello1..
+2014-05-24 08:57:23,710 -1707 [Thread-3] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注销对象hello1。
+2014-05-24 08:57:23,729 -1726 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象:RmiServer
+2014-05-24 08:57:23,730 -1727 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注销对象:RmiServer
+2014-05-24 08:57:23,750 -1747 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象:RmiServer
+2014-05-24 08:57:23,753 -1750 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注册对象:RmiServer
+2014-05-24 08:57:23,754 -1751 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 将对象加入注册列表:hello
+2014-05-24 08:57:23,754 -1751 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 对象:hello加入注册列表完成
+2014-05-24 08:57:23,755 -1752 [Thread-5] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象hello..
+2014-05-24 08:57:23,756 -1753 [Thread-5] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注册对象hello。
+2014-05-24 08:57:23,858 -1855 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 获取对象Name:hello
+2014-05-24 08:57:23,860 -1857 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 将对象加入注册列表:hello1
+2014-05-24 08:57:23,860 -1857 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 对象:hello1加入注册列表完成
+2014-05-24 08:57:23,861 -1858 [Thread-5] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注册对象hello1..
+2014-05-24 08:57:23,862 -1859 [Thread-5] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注册对象hello1。
+2014-05-24 08:57:23,962 -1959 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 获取对象Name:hello1
+2014-05-24 08:57:23,963 -1960 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象:hello1
+2014-05-24 08:57:23,963 -1960 [RMI TCP Connection(2)-192.168.60.162] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注销对象:hello1
+2014-05-24 08:57:23,964 -1961 [Thread-5] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象hello1..
+2014-05-24 08:57:23,965 -1962 [Thread-5] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 完成注销对象hello1。
+2014-05-24 08:57:23,984 -1981 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 开始注销对象:RmiServer
+2014-05-24 08:57:23,985 -1982 [main] DEBUG org.tinygroup.rmi.impl.RmiServerLocal  - 结束注销对象:RmiServer

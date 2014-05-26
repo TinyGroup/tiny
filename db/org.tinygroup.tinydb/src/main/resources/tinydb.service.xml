@@ -1,0 +1,67 @@
+<service-components>
+	<service-component type="org.tinygroup.tinydb.service.TinyDBService"
+		group-id="org.tinygroup.tinydb.service" artifact-id="TinyDBService">
+
+		<service-method name="getTableConfig" local-name="getTableConfig"
+			service-id="getTableConfig" version="" description="" method-name="getTableConfig">
+			<service-parameters>
+				<service-parameter name="tableName" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="table" required="true" is-array="false"
+				type="org.tinygroup.tinydb.config.TableConfiguration" />
+		</service-method>
+
+		<service-method name="getTableConfigByBean" local-name="getTableConfigByBean"
+			service-id="getTableConfigByBean" version="" description=""
+			method-name="getTableConfigByBean">
+			<service-parameters>
+				<service-parameter name="beanType" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="table" required="true" is-array="false"
+				type="org.tinygroup.tinydb.config.TableConfiguration" />
+		</service-method>
+
+		<service-method name="getBeanProperties" local-name="getBeanProperties"
+			service-id="getBeanProperties" version="" description=""
+			method-name="getBeanProperties">
+			<service-parameters>
+				<service-parameter name="beanType" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="properties" required="true"
+				is-array="false" type="java.util.List" />
+		</service-method>
+
+	<!--  
+		<service-method name="context2Bean" local-name="context2Bean"
+			service-id="context2Bean" version="" description="" method-name="context2Bean">
+			<service-parameters>
+				<service-parameter name="context"
+					type="org.tinygroup.context.Context" required="true" is-array="false" />
+				<service-parameter name="beanType" type="java.lang.String"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="bean" required="true" is-array="false"
+				type="org.tinygroup.tinydb.Bean" />
+		</service-method>
+
+		<service-method name="context2BeanWithProperties"
+			local-name="context2BeanWithProperties" service-id="context2BeanWithProperties"
+			version="" description="" method-name="context2Bean">
+			<service-parameters>
+				<service-parameter name="context"
+					type="org.tinygroup.context.Context" required="true" is-array="false" />
+				<service-parameter name="beanType" type="java.lang.String"
+					required="true" is-array="false" />
+				<service-parameter name="properties" type="java.lang.String" conllection-type="java.util.List"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="bean" required="true" is-array="false"
+				type="org.tinygroup.tinydb.Bean" />
+		</service-method>
+-->
+	</service-component>
+
+</service-components>

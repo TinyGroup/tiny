@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="serviceRegistry" name="serviceRegistry" scope="singleton"
+		class="org.tinygroup.service.registry.impl.ServiceRegistryImpl">
+	</bean>
+	<bean id="service" name="service" scope="singleton"
+		class="org.tinygroup.service.impl.ServiceProviderImpl">
+		<property name="serviceRegistory">
+			<ref bean="serviceRegistry"></ref>
+		</property>
+	</bean>
+	<bean id="annotationLoader" name="annotationLoader" scope="singleton"
+		class="org.tinygroup.service.annotation.AnnotationLoader">
+	</bean>
+	<bean id="serviceComponentClassAction" name="serviceComponentClassAction"
+		scope="singleton" class="org.tinygroup.service.annotation.ServiceComponentClassAction">
+		<property name="annotationLoader">
+			<ref bean="annotationLoader"></ref>
+		</property>
+	</bean>
+
+	<bean id="xmlSysServiceFileProcessor" name="xmlSysServiceFileProcessor"
+		scope="singleton"
+		class="org.tinygroup.service.sysservice.fileresolver.XmlSysServiceFileProcessor">
+	</bean>
+	<bean id="xmlServiceFileProcessor" name="xmlServiceFileProcessor"
+		scope="singleton" class="org.tinygroup.service.fileresolver.XmlServiceFileProcessor">
+	</bean>
+	<bean id="serviceParamValidate" name="serviceParamValidate"
+		scope="prototype" class="org.tinygroup.service.aop.impl.ServiceParamValidate">
+	</bean>
+	<bean id="serviceMappingManager" scope="singleton"
+		class="org.tinygroup.service.impl.ServiceMappingManagerImpl">
+	</bean>
+	<bean id="serviceMappingFileProcessor" scope="singleton"
+		class="org.tinygroup.service.fileresolver.ServiceMappingFileProcessor">
+	</bean>
+
+</beans>

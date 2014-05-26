@@ -1,0 +1,196 @@
+#*
+	字体
+	fontInfo 包含以下内容
+		name 字体名字
+		size 字体大小
+		color 字体颜色
+		bold 是否加粗
+		incline 是否斜体
+		strike 删除线
+		u 下划线样式
+		highlight 高亮
+*#
+#macro(font $fontInfo)
+<w:rPr>
+	#if($fontInfo.name)<w:rFonts w:fareast="$fontInfo.name" w:ascii="$fontInfo.name" w:hint="fareast" /><wx:font wx:val="$fontInfo.name" />#end  
+	#if($fontInfo.size)<w:sz w:val="$fontInfo.size" /><w:sz-cs w:val="$fontInfo.size" />#end 
+	#if($fontInfo.color)<w:color w:val="$fontInfo.color" />#end
+	#if($fontInfo.bold)<w:b/>#end
+	#if($fontInfo.incline)<w:i/>#end  
+	#if($fontInfo.strike)<w:strike/>#end  
+	#if($fontInfo.u)<w:u w:val="$fontInfo.u"/>#end  
+	#if($fontInfo.highlight)<w:highlight w:val="$fontInfo.highlight"/>#end  
+	##if(${style.rStyle})<w:rStyle w:val="${style.rStyle}"/>#end
+	##if(${style.rFonts})<w:rFonts w:hint="{$style.rFonts}"/>#end
+	##if($!{style.webHidden}=="on")<w:webHidden/>#end
+	##if($!{style.noProof}=="on")<w:noProof/>#end
+</w:rPr>  	
+#end
+
+#*
+	文字内容
+		content 段落的内容
+		font 字体
+*#
+#macro(wr $content $font)
+<w:r>
+	#if($font)#font($font)#end
+	<w:t>$content</w:t>
+</w:r>
+#end
+ 
+ 
+#*
+	对齐方式
+*#
+#macro(align $alignInfo)
+<w:jc w:val="$alignInfo" />
+#end
+ 
+  
+#*
+	缩进
+		left 左缩进
+		firstLine 首行缩进
+*#
+#macro(indent $indentInfo)
+<w:ind #if($indentInfo.left)w:left="$indentInfo.left"#end #if($indentInfo.firstLine)w:first-line="$indentInfo.firstLine"#end />
+#end
+ 
+
+#*
+	标题
+*#
+#macro(heading $size)
+<w:pStyle w:val="$size" />
+#end
+
+ 
+#*
+	项目编号
+	listInfo
+		grade 等级
+		char 紧跟的字符样式
+*#
+#macro(bullets $listInfo)
+<w:pPr>
+	<w:listPr>
+		<w:ilvl w:val="$listInfo.grade" />
+		<w:ilfo w:val="$listInfo.i" />
+		<wx:t wx:val="$listInfo.char" />
+		<wx:font wx:val="Wingdings" />
+	</w:listPr>
+</w:pPr>
+#end
+
+
+#*
+	段落样式
+	style 段落格式
+		align 对齐方式
+		indent 缩进方式
+		headingSize 第几号标题
+*#
+#macro(pPattern $style)
+<w:pPr>
+	#if($style.align)#align($style.align)#end
+	#if($style.indent)#indent($style.indent)#end
+	#if($style.headingSize)#heading($style.headingSize)#end
+</w:pPr>
+#end
+ 
+
+#*
+	段落
+		content 段落的内容
+		style 段落格式
+			align 对齐方式
+			indent 缩进方式
+			headingSize 第几号标题
+			bullets 项目编号
+			font 字体
+*#
+#macro(p $content $style)
+<w:p>
+	#pPattern($style)
+	#if($style.bullets)#bullets($style.bullets)#end
+	#wr($content $style.font)
+</w:p>
+#end
+
+ 
+
+#*
+	段落
+	style 段落格式
+*#
+#macro(paragraph $style)
+<w:p>
+	#pPattern($style)
+	#if($style.bullets)#bullets($style.bullets)#end
+	$bodyContent
+</w:p>
+#end
+
+
+
+#*
+	段落
+	text 内容
+	style 格式
+*#
+#macro(h $text $style)
+#p($text $style)
+#end
+ 
+ 
+
+
+#*
+	链接
+		url 跳转的url地址
+*#
+#macro(link $url)
+<w:hlink w:dest="$url">
+$bodyContent
+</w:hlink>
+#end
+
+
+
+
+#*
+	书签
+		name 书签名称
+*#
+#macro(bookmark $name)
+<aml:annotation w:name="$name" w:type="Word.Bookmark.Start" aml:id="0"/>
+$bodyContent
+<aml:annotation w:type="Word.Bookmark.End" aml:id="0"/>
+#end
+
+
+
+
+#*
+	图片
+		name：图片名称
+		data：图片内容的字符串表示
+		width： 图片宽度
+		height：图片高度
+*#
+
+#macro(image $param)
+#if($param.name)#set($picName="wordml://"+$!{param.name})#else#set($picName="wordml://02000001.jpg")#end
+#set($data=$imageUtil.fileToBase64($param.url))
+<wx:sect><w:p wsp:rsidR="00034433" wsp:rsidRDefault="00467DC7"><w:r><w:pict><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"/><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"/><v:f eqn="sum @0 1 0"/><v:f eqn="sum 0 0 @1"/><v:f eqn="prod @2 1 2"/><v:f eqn="prod @3 21600 pixelWidth"/><v:f eqn="prod @3 21600 pixelHeight"/><v:f eqn="sum @0 0 1"/><v:f eqn="prod @6 1 2"/><v:f eqn="prod @7 21600 pixelWidth"/><v:f eqn="sum @8 21600 0"/><v:f eqn="prod @7 21600 pixelHeight"/><v:f eqn="sum @10 21600 0"/></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/><o:lock v:ext="edit" aspectratio="t"/></v:shapetype><w:binData w:name="${picName}" xml:space="preserve">$data</w:binData><v:shape id="_x0000_i1025" type="#_x0000_t75" style="width:${param.width}pt;height:${param.height}pt"><v:imagedata src="${picName}" o:title="Desert"/></v:shape></w:pict></w:r></w:p></wx:sect>
+#end
+
+
+
+
+ 
+
+
+
+

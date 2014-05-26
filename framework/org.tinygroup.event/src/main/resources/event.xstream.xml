@@ -1,0 +1,5 @@
+<xstream-configuration package-name="event">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.event.Parameter" />
+	</xstream-annotation-classes>
+</xstream-configuration>

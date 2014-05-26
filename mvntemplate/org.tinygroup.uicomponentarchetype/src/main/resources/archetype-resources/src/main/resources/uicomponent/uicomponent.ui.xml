@@ -1,0 +1,19 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<ui-components>
+	<ui-component name="${artifactId}">
+		<css-resource>
+		</css-resource>
+		<js-resource>
+		</js-resource>
+		<css-codelet>
+		<![CDATA[
+		]]>
+		</css-codelet>
+		<js-codelet>
+		<![CDATA[
+		]]>
+		</js-codelet>
+	</ui-component>
+</ui-components>

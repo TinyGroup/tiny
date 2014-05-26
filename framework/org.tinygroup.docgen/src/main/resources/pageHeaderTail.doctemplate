@@ -1,0 +1,84 @@
+#*
+	页眉
+*#
+#macro(pageHeader $content $font)
+<w:hdr w:type="odd">
+	<wx:pBdrGroup>
+		<wx:borders>
+			<wx:bottom wx:val="solid" wx:bdrwidth="15" wx:space="1" wx:color="$font.color"/>
+		</wx:borders>
+		<w:p wsp:rsidR="00430D00" wsp:rsidRDefault="00430D00">
+			<w:pPr>
+				<w:pStyle w:val="a3"/>
+			</w:pPr>
+			#wr($content, $font)
+		</w:p>
+	</wx:pBdrGroup>
+	<w:p wsp:rsidR="00375A35" wsp:rsidRDefault="00226D79"/>
+</w:hdr>
+#end
+
+
+
+
+#*
+	页脚
+*#
+#macro(pageTail $content $font)
+<w:ftr w:type="odd">
+	<w:p wsp:rsidR="006B6AC9" wsp:rsidRDefault="006B6AC9">
+		<w:pPr>
+			<w:pStyle w:val="a4"/>
+		</w:pPr>
+		#wr($content, $font)
+	</w:p>
+	<w:p wsp:rsidR="00E4369F" wsp:rsidRDefault="00E4369F">
+		<w:pPr>
+			<w:pStyle w:val="a4"/>
+		</w:pPr>
+	</w:p>
+</w:ftr>
+#end
+
+
+
+#*
+	页码
+*#
+#macro(footnote $startNo)
+<w:ftr w:type="odd">
+<w:p wsp:rsidR="00CA3F31" wsp:rsidRDefault="00CA3F31">
+<w:pPr>
+<w:pStyle w:val="a4"/>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:r>
+<w:fldChar w:fldCharType="begin"/>
+</w:r>
+<w:r>
+<w:instrText>PAGE \* MERGEFORMAT</w:instrText>
+</w:r>
+<w:r>
+<w:fldChar w:fldCharType="separate"/>
+</w:r>
+<w:r wsp:rsidRPr="00CA3F31">
+<w:rPr>
+<w:noProof/>
+<w:lang w:val="ZH-CN"/>
+</w:rPr>
+<w:t>1</w:t>
+</w:r>
+<w:r>
+<w:fldChar w:fldCharType="end"/>
+</w:r>
+</w:p>
+<w:p wsp:rsidR="00E4369F" wsp:rsidRDefault="00E4369F">
+<w:pPr>
+<w:pStyle w:val="a4"/>
+</w:pPr>
+</w:p>
+</w:ftr>
+#end 
+ 
+
+

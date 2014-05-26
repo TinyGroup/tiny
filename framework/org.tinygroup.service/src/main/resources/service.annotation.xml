@@ -1,0 +1,16 @@
+<annotation-class-matchers>
+	<annotation-class-matcher class-name="(.)*Service" annotation-id="service"
+		annotation-type="org\.tinygroup\.service\.annotation\.ServiceComponent">
+		<processor-beans>
+			<processor-bean enable="true" name="serviceComponentClassAction">
+			</processor-bean>
+		</processor-beans>
+	</annotation-class-matcher>
+	<annotation-class-matcher class-name="(.)*SysService" annotation-id="sysservice"
+		annotation-type="org\.tinygroup\.service\.annotation\.SysServiceComponent">
+		<processor-beans>
+			<processor-bean enable="true" name="serviceComponentClassAction">
+			</processor-bean>
+		</processor-beans>
+	</annotation-class-matcher>
+</annotation-class-matchers>

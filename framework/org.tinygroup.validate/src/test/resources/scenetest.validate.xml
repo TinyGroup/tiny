@@ -1,0 +1,89 @@
+<object-validators>
+	<object-validator bean-name="sceneUser">
+		<property-validator name="name" title="用户名称">
+			<validator bean-name="sizeValidator">
+				<properties>
+					<property name="min" value="10">
+					</property>
+					<property name="max" value="20">
+					</property>
+				</properties>
+			</validator>
+			<validator bean-name="notNullValidator"/>
+		</property-validator>
+		<property-validator name="age" title="年龄">
+			<validator bean-name="integerRangeValidator" scene="china">
+				<properties>
+					<property name="min" value="22">
+					</property>
+					<property name="max" value="200">
+					</property>
+				</properties>
+			</validator>
+			<validator bean-name="integerRangeValidator" scene="japan">
+				<properties>
+					<property name="min" value="18">
+					</property>
+					<property name="max" value="200">
+					</property>
+				</properties>
+			</validator>
+		</property-validator>
+
+		<property-validator name="grade" title="年级">
+			<validator bean-name="integerRangeValidator" scene="china">
+				<properties>
+					<property name="min" value="0">
+					</property>
+					<property name="max" value="6">
+					</property>
+				</properties>
+			</validator>
+		</property-validator>
+		<property-validator name="mate" title="配偶"/>
+		<property-validator name="address" title="配偶"/>
+	</object-validator>
+
+
+	<object-validator bean-name="sceneAddress">
+		<property-validator name="street" title="街道">
+			<validator bean-name="sizeValidator">
+				<properties>
+					<property name="min" value="10">
+					</property>
+					<property name="max" value="20">
+					</property>
+				</properties>
+			</validator>
+		</property-validator>
+		<property-validator name="number" title="号码">
+			<validator bean-name="integerRangeValidator" scene="china">
+				<properties>
+					<property name="min" value="0">
+					</property>
+					<property name="max" value="2000">
+					</property>
+				</properties>
+			</validator>
+			<validator bean-name="integerRangeValidator" scene="japan">
+				<properties>
+					<property name="min" value="0">
+					</property>
+					<property name="max" value="1000">
+					</property>
+				</properties>
+			</validator>
+		</property-validator>
+
+	</object-validator>
+	<basic-validator name="buyNum">
+		<validator bean-name="integerRangeValidator">
+				<properties>
+					<property name="min" value="10">
+					</property>
+					<property name="max" value="2000">
+					</property>
+				</properties>
+			</validator>
+	</basic-validator>
+</object-validators>

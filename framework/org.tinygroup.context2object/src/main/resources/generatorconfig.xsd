@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="generator-config">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="type-converters" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="generator-config-item" type="generatorConfigItemType"
+								minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="type-creators" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="generator-config-item" type="generatorConfigItemType"
+								minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="generatorConfigItemType">
+		<xs:attribute name="class-name" type="xs:string" />
+		<xs:attribute name="bean-name" type="xs:string" />
+	</xs:complexType>
+
+
+
+</xs:schema>

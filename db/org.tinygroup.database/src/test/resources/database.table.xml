@@ -1,0 +1,21 @@
+<tables  name="aa" title="AA" package-name="aa.bb">
+	<table id="aatable" name="aa" title="AA">
+		<table-field id="tableaa" standard-field-id="aastd" />
+		<table-field id="tablebb" standard-field-id="bbstd" primary="true" />
+		<table-field id="tablec" standard-field-id="cstd" />
+		<table-field id="tabled" standard-field-id="dstd" />
+		<table-field id="tablee" standard-field-id="estd" />
+		<index unique="true" reverse="false" name="aa_index">
+				<string>tablebb</string>
+		</index>
+	</table>
+	<table id="bbtable" name="bb" title="BB">
+		<table-field id="tableaa" standard-field-id="aastd" not-null="true"
+			primary="true" />
+		<table-field id="tablebb" standard-field-id="bbstd" />
+		<table-field id="tablec" standard-field-id="cstd" />
+		<table-field id="tabled" standard-field-id="dstd" />
+		<table-field id="tablee" standard-field-id="estd" />
+	</table>
+	
+</tables>

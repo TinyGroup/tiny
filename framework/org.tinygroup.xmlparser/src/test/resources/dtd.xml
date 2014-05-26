@@ -1,0 +1,28 @@
+<?xml version="1.0" ?> 
+
+<note>
+<to>George</to> 
+<to a="1">abc</to>
+<from>girl</from>
+<from a="2">tim</from> 
+<from b="2">John</from> 
+<from a="2" b="3">John</from>
+<from c="1">
+	<from c="2">
+		<from c="3">swint</from>
+	</from>
+</from>
+<zhang c="2">
+	<zhang1 c="3">abcd</zhang1>
+</zhang>
+<heading>Reminder</heading> 
+<body>Don't forget the meeting!</body> 
+<body>
+<a>a</a>
+<b>c</b>
+</body> 
+<body>
+<a>a</a>
+</body> 
+<body>Don't forget the meeting!</body> 
+</note>

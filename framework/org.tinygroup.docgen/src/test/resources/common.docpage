@@ -1,0 +1,40 @@
+#@wordDocument()
+#@body()
+
+
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ #*
+	宏bookmark，插入一个书签，该宏包含一个参数，表示书签名称，体表示该书签的内容
+*#
+#@bookmark("我的书签")
+#set($content="这里是书签")
+#h($content,  
+   {"font":{"name":"方正姚体","size":"48","color":"FF0000","bold":"","highlight":"cyan"}}
+  )
+#end
+ 
+
+#set($url="http://www.hundsun.com")
+#set($text="点击这里可以跳转到悠然首页")
+#@link($url)
+#h($text,
+	{"font":{"name":"方正姚体","size":"48","color":"FF0000","bold":"","highlight":"green"}}
+  )
+#end
+  
+ 
+ 
+ 
+ 
+
+#end
+#end
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="classes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="students" type="student" nillable="true"
+					minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="student">
+		<xs:sequence>
+			<xs:element name="address" type="xs:string" minOccurs="0" />
+			<xs:element name="birthday" type="birthday" minOccurs="0" />
+			<xs:element name="email" type="xs:string" minOccurs="0" />
+			<xs:element name="id" type="xs:int" />
+			<xs:element name="name" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="birthday">
+		<xs:sequence>
+			<xs:element name="birthday" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+

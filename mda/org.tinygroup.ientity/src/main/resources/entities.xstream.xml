@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xstream-configuration package-name="entities">
+	<xstream-annotation-classes>
+	    <xstream-annotation-class class-name="org.tinygroup.entity.common.ComboBoxInputMode" />
+	    <xstream-annotation-class class-name="org.tinygroup.entity.common.GetBeanMode" />
+	    <xstream-annotation-class class-name="org.tinygroup.entity.common.TreeInputMode" />
+		<xstream-annotation-class class-name="org.tinygroup.entity.common.DictInputMode" />
+		<xstream-annotation-class class-name="org.tinygroup.entity.common.OptionInputMode" />
+		<xstream-annotation-class class-name="org.tinygroup.entity.entitymodel.EntityModel" />
+		<xstream-annotation-class class-name="org.tinygroup.entity.relationmodel.RelationModel" />
+		<xstream-annotation-class class-name="org.tinygroup.entity.common.OperationReference" />
+	    <xstream-annotation-class class-name="org.tinygroup.entity.relation.EntityRelations" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.impl.AddExpression" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.impl.ConstantExpression" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.impl.DivisionExpression" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.impl.MultiplyExpression" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.impl.SubtractExpression" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.impl.VariableExpression" />
+	    <xstream-annotation-class class-name="org.tinygroup.expression.ExpressionConfigs" />
+	</xstream-annotation-classes>
+</xstream-configuration>

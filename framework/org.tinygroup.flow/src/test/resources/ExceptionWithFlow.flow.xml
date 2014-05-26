@@ -1,0 +1,16 @@
+<flow id="exceptionWithFlow" name="exceptionWithFlow">
+	<nodes>
+		<node id="begin">
+			<next-nodes>
+				<next-node component-result="begin" next-node-id="hello"/>
+			</next-nodes>
+		</node>
+		<node id="hello">
+			<component name="exceptionFlowComponent">
+			</component>
+			<next-nodes>
+				<next-node component-result="OK" />
+			</next-nodes>
+		</node>
+	</nodes>
+</flow>

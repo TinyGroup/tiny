@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="standard-types">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="standard-type" minOccurs="0" maxOccurs="unbounded"
+					type="standardTypeType" />
+			</xs:sequence>
+			<xs:attribute name="packageName" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="standardTypeType">
+		<xs:all>
+			<xs:element name="placeholder-list" minOccurs="0"
+				type="placeholderListType" />
+			<xs:element name="dialect-type-list" minOccurs="0"
+				type="dialectTypeListType" />
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="placeholderListType">
+		<xs:sequence>
+			<xs:element name="placeholder" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="id" type="xs:string" />
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="title" type="xs:string" />
+					<xs:attribute name="description" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="dialectTypeListType">
+		<xs:sequence>
+			<xs:element name="dialect-type" type="dialectTypeType"
+				minOccurs="0" maxOccurs="unbounded">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="dialectTypeType">
+		<xs:sequence>
+			<xs:element name="placeholder-value" minOccurs="0"
+				maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="value" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="language" type="xs:string" />
+		<xs:attribute name="type" type="xs:string" />
+		<xs:attribute name="type-name" type="xs:string" />
+		<xs:attribute name="data-type" type="xs:string" />
+		<xs:attribute name="default-value" type="xs:string" />
+	</xs:complexType>
+
+</xs:schema>

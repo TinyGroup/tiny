@@ -1,0 +1,21 @@
+<flow id="ExceptionFlow" name="ExceptionFlow">
+	<nodes>
+		<node id="exception" name="exception" title="异常处理节点">
+			<next-nodes>
+				<next-node component-result="OK" exception-type="java.lang.Throwable" next-node-id="exceptionProcess">
+				</next-node>
+			</next-nodes>
+		</node>
+		<node id="exceptionProcess" name="exceptionProcess" title="异常处理节点">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="流程异常flow:exceptionProcess处理ing...." />
+				</properties>
+			</component>
+			<next-nodes>
+				<next-node component-result="OK" next-node-id="end">
+				</next-node>
+			</next-nodes>
+		</node>
+	</nodes>
+</flow>

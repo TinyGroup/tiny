@@ -1,0 +1,16 @@
+<tables package-name="org.tinygroup.auth">
+	<table id="auth_relation" name="auth_relation" title="权限关系">
+		<table-field standard-field-id="auth_id" primary="true"
+			unique="true" not-null="true" id="auth_id" />
+		<table-field standard-field-id="subject_id" primary="false"
+			unique="false" not-null="false" id="subject_id" />
+		<table-field standard-field-id="object_id" primary="false"
+			unique="false" not-null="false" id="object_id" />
+		<table-field standard-field-id="subject_type" primary="false"
+			unique="false" not-null="false" id="subject_type" />
+		<table-field standard-field-id="object_type" primary="false"
+			unique="false" not-null="false" id="object_type" />
+		<table-field standard-field-id="status" primary="false"
+			unique="false" not-null="false" id="status" />
+	</table>
+</tables>

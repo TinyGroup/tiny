@@ -1,0 +1,25 @@
+<archetype
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+	<id>flowcomponent</id>
+	<sources>
+		<source>src/main/java/HelloWorldComponent.java</source>
+	</sources>
+
+	<resources>
+		<resource>Component.fc.xml</resource>
+		<resource>Component.beans.xml</resource>
+		<resource>
+			src/main/resources/icon/component.gif
+		</resource>
+	</resources>
+	<!--以下 通配符不可用
+	<testSources>
+		<source>src/test/java/*.java</source>
+	</testSources>
+	<testResources>
+		<resource> src/test/resources/**.* </resource>
+	</testResources>
+	 -->
+</archetype>

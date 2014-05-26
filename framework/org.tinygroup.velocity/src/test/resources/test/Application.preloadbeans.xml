@@ -1,0 +1,72 @@
+<beans>
+	<bean id="fullContextFileRepository" scope="singleton"
+		class="org.tinygroup.application.impl.FullContextFileRepositoryImpl">
+		<property name="application">
+			<ref id="application" />
+		</property>
+	</bean>
+	<bean id="velocityHelper" scope="singleton"
+		class="org.tinygroup.velocity.impl.VelocityHelperImpl">
+		<property name="fullContextFileRepository">
+			<ref id="fullContextFileRepository" />
+		</property>
+	</bean>
+	<bean id="responseEncoding" scope="singleton"
+		class="org.tinygroup.weblayer.impl.ResponseEncoding">
+		<property name="encoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="encoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="contentType">
+			<value>text/html; charset=UTF-8</value>
+		</property>
+	</bean>
+
+	<bean id="greetingProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.GreetingProcessor">
+	</bean>
+	<bean id="beanFactoryProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.BeanFactoryProcessor">
+	</bean>
+	<bean id="printSystemPropertiesProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.PrintSystemPropertiesProcessor">
+	</bean>
+	<bean id="fileResolverProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.FileResolverProcessor">
+	</bean>
+	<bean id="pluginMgtProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.PluginMgtProcessor">
+	</bean>
+	<bean id="pluginCommandProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.PluginCommandProcessor">
+	</bean>
+	<bean id="fileMonitorProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.FileMonitorProcessor">
+	</bean>
+	<bean id="velocityMacroFileProcessor" scope="singleton"
+		class="org.tinygroup.velocity.fileresolver.VelocityMacroFileProcessor">
+	</bean>
+
+	<bean id="buProcessor" scope="singleton"
+		class="org.tinygroup.applicationprocessor.processor.BuProcessor">
+	</bean>
+	<bean id="application" scope="singleton"
+		class="org.tinygroup.application.impl.ApplicationDefault">
+		<property name="applicationProcessors">
+			<list>
+				<ref id="greetingProcessor" />
+				<ref id="printSystemPropertiesProcessor" />
+				<ref id="fileResolverProcessor" />
+				<ref id="beanFactoryProcessor" />
+				<ref id="pluginMgtProcessor" />
+				<ref id="pluginCommandProcessor" />
+				<ref id="buProcessor" />
+				<!-- 
+				<ref id="fileMonitorProcessor" />
+				 -->
+			</list>
+		</property>
+	</bean>
+</beans>

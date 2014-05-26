@@ -1,0 +1,6 @@
+<processors language="h2">
+	<processor name="table" bean="h2SqlProcessor"></processor>
+	<processor name="initData" bean="initDataSqlProcessor"></processor>
+	<processor name="view" bean="viewSqlProcessor"></processor>
+	<processor name="procedure" bean="oracleProcedureSqlProcessor"></processor>
+</processors>

@@ -1,0 +1,124 @@
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061268" level="ERROR" thread="main">
+<log4j:message><![CDATA[n-a&m|e]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061275" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061275" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061275" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061275" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061276" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061276" level="ERROR" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061276" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061277" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061277" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061277" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061277" level="INFO" thread="main">
+<log4j:message><![CDATA[start]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061278" level="INFO" thread="main">
+<log4j:message><![CDATA[end]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061282" level="ERROR" thread="main">
+<log4j:message><![CDATA[n1a2m3e]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061285" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061285" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061285" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloA" timestamp="1400331061285" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061286" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061286" level="ERROR" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061286" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061286" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061287" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.HelloB" timestamp="1400331061288" level="INFO" thread="main">
+<log4j:message><![CDATA[性别]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061288" level="INFO" thread="main">
+<log4j:message><![CDATA[start]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061288" level="INFO" thread="main">
+<log4j:message><![CDATA[end]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061289" level="DEBUG" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061290" level="ERROR" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061290" level="INFO" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061290" level="WARN" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.tinygroup.logger.LoggerTest" timestamp="1400331061290" level="TRACE" thread="main">
+<log4j:message><![CDATA[罗果]]></log4j:message>
+</log4j:event>
+

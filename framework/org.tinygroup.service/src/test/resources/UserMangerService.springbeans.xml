@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id="exceptionService"
+		class="org.tinygroup.service.test.service.ExceptionService">
+	</bean>
+	<bean id="UserManagerService"
+		class="org.tinygroup.service.test.service.UserManagerService">
+	</bean>
+	<bean id="UserManagerAnnotationService"
+		class="org.tinygroup.service.test.service.UserManagerAnnotationService">
+	</bean>
+	<bean id="InterfaceDef2Impl"
+		class="org.tinygroup.service.test.service.InterfaceDef2Impl">
+		<property name="ref" ref="InterfaceDefImpl2" />
+	</bean>
+	<bean id="InterfaceDefImpl"
+		class="org.tinygroup.service.test.service.InterfaceDefImpl">
+		<property name="ref" ref="InterfaceDef2Impl" />
+	</bean>
+	<bean id="InterfaceDefImpl2"
+		class="org.tinygroup.service.test.service.InterfaceDefImpl2">
+
+	</bean>
+	
+	<bean id="GeneratorService"
+		class="org.tinygroup.service.test.service.GeneratorService">
+
+	</bean>
+	
+	
+	<bean id="ServiceUser" scope="prototype" 
+		class="org.tinygroup.service.test.base.ServiceUser">
+
+	</bean>
+</beans>

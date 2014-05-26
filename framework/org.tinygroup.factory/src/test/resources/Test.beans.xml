@@ -1,0 +1,58 @@
+<beans>
+	<bean id="user" name="user,user1,user2" scope="singleton"
+		class="org.tinygroup.factory.config.User">
+		<property name="name">
+			<value>aa</value>
+		</property>
+		<property name="age">
+			<value>12</value>
+		</property>
+		<property name="cat">
+			<ref id="cat" />
+		</property>
+		<property name="cats">
+			<list>
+				<ref id="cat" />
+			</list>
+		</property>
+		<property name="catSet">
+			<list>
+				<ref id="cat" />
+			</list>
+		</property>
+		<property name="catMap">
+			<map>
+				<entry key="aa" value-ref="cat"></entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="cat" scope="singleton" class="org.tinygroup.factory.config.Cat" />
+	<bean id="cat1" scope="prototype" class="org.tinygroup.factory.config.Cat" />
+	<bean id="aaa1" scope="singleton" class="org.tinygroup.factory.config.Aaa">
+		<property name="name">
+			<value>aaa1</value>
+		</property>
+	</bean>
+	<bean id="aaa" scope="singleton" class="org.tinygroup.factory.config.Aaa">
+		<property name="name">
+			<value>aaa</value>
+		</property>
+	</bean>
+	<bean id="bbb" scope="singleton" class="org.tinygroup.factory.config.Bbb"
+		autowire="ByType" />
+	<bean id="ccc" scope="singleton" class="org.tinygroup.factory.config.Ccc"
+		autowire="ByName" />
+
+	<bean id="user2" name="user,user1,user2" scope="prototype"
+		class="org.tinygroup.factory.config.User">
+		<property name="name">
+			<value>aa1</value>
+		</property>
+		<property name="age">
+			<value>121</value>
+		</property>
+		<property name="cat">
+			<ref id="cat1" />
+		</property>
+	</bean>
+</beans>

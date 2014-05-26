@@ -1,0 +1,69 @@
+#*
+	文档属性，只能放在wordDocument中
+*#
+
+#macro(documentProperties)
+<o:DocumentProperties>
+	$bodyContent
+</o:DocumentProperties>
+#end
+
+#*
+	作者，只能放在documentProperties中
+*#
+
+#macro(author $author)
+<o:Author>$author</o:Author>
+#end
+
+#*
+	最后作者，只能放在documentProperties中
+*#
+
+#macro(lastAuthor $author)
+<o:LastAuthor>$author</o:LastAuthor>
+#end
+
+#*
+	文档主体
+*#
+#macro(body)
+<w:body>
+	$bodyContent
+</w:body>
+#end
+
+
+#*
+	新页
+*#
+#macro(newPage)
+<w:r><w:br w:type="page"/></w:r>
+#end
+
+ 
+
+
+
+
+
+#*
+	页号
+		bookmark:书签名
+*#
+#macro(pageNumber $bookmark)
+<w:r>
+<w:rPr>
+<w:noProof/>
+<w:webHidden/>
+</w:rPr>
+<w:instrText>PAGEREF $bookmark \h</w:instrText>
+</w:r>
+#end
+
+
+
+
+
+
+ 

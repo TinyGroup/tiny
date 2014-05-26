@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="custom-sqls">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="usePackages" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="use-package" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="package-name" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="custom-sql" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="sql" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="dialectTypeName" type="xs:string" />
+									<xs:attribute name="content" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="type" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

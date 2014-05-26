@@ -1,0 +1,58 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="validateManager" name="validateManager" scope="singleton"
+		class="org.tinygroup.imda.validate.impl.ValidateManagerImpl">
+	</bean>
+	<bean id="validateMapToJqueryValidateDefine" name="validateMapToJqueryValidateDefine"
+		scope="singleton" class="org.tinygroup.imda.validate.ValidateMapToJqueryValidateDefine">
+	</bean>
+
+	<bean id="serviceCaller" scope="singleton"
+		class="org.tinygroup.imda.impl.ServiceCaller">
+		<property name="modelManager" ref="modelManager"></property>
+	</bean>
+
+	<bean id="modelManager" name="modelManager" scope="singleton"
+		class="org.tinygroup.imda.impl.ModelManagerImpl">
+	</bean>
+	
+	<bean id="modelRequestInfo" name="modelRequestInfo" scope="prototype"
+		class="org.tinygroup.imda.tinyprocessor.ModelRequestInfo">
+	</bean>
+	<bean id="modelDefineExtendFileProcessor" name="modelDefineExtendFileProcessor"
+		scope="singleton"
+		class="org.tinygroup.imda.fileprocessor.ModelDefineExtendFileProcessor">
+		<property name="manager" ref="modelManager"></property>
+	</bean>
+	<bean id="modelDefineFileProcessor" name="modelDefineFileProcessor"
+		scope="singleton" class="org.tinygroup.imda.fileprocessor.ModelDefineFileProcessor">
+		<property name="manager" ref="modelManager"></property>
+	</bean>
+	<bean id="mdaTinyProcessor" name="mdaTinyProcessor" scope="singleton"
+		class="org.tinygroup.imda.tinyprocessor.MdaTinyProcessor">
+		<property name="modelManager" ref="modelManager"></property>
+		<property name="validateManager" ref="validateManager"></property>
+	</bean>
+	<bean id="modelService" name="modelService" scope="singleton"
+		class="org.tinygroup.imda.ModelService">
+		<property name="modelManager" ref="modelManager"></property>
+	</bean>
+	<bean id="defaultModelViewProcessor" name="defaultModelViewProcessor"
+		scope="singleton" class="org.tinygroup.imda.impl.ModelViewProcessorImpl">
+	</bean>
+	<bean id="modelFileProcessor" name="modelFileProcessor"
+		scope="singleton" class="org.tinygroup.imda.fileprocessor.ModelFileProcessor">
+		<property name="manager" ref="modelManager"></property>
+		<property name="modelExtNames" value=".entity.xml,.relationmodel.xml,.mongomodel.xml"></property>
+	</bean>
+	
+	<bean id="getDefaultDateValue" name="getDefaultDateValue"
+		scope="singleton" class="org.tinygroup.imda.defaultvalue.GetDefaultDateValue">
+	</bean>
+	
+</beans>

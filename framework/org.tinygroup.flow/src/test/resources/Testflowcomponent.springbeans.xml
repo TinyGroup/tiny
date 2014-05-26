@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd"
+	default-autowire="byType" default-lazy-init="true">
+
+	<bean id="helloflow" name="helloflow" scope="prototype"
+		class="org.tinygroup.flow.component.HelloWorldComponent">
+	</bean>
+	<bean id="myExceptionComponent" name="myExceptionCompone" scope="prototype"
+		class="org.tinygroup.flow.exception.MyExceptionComponent">
+	</bean>
+	<bean id="printflow" name="printflow" scope="prototype"
+		 class="org.tinygroup.flow.component.PrintComponent">
+	</bean>
+	<bean id="keyprintflow" name="keyprintflow" scope="prototype"
+		 class="org.tinygroup.flow.component.KeyPrintComponent">
+	</bean>
+	<bean id="exceptionFlowComponent" name="exceptionFlowComponent" scope="prototype"
+		 class="org.tinygroup.flow.component.ExceptionComponent">
+	</bean>
+	<bean id="ExceptionDealComponent" name="ExceptionDealComponent" scope="prototype"
+		 class="org.tinygroup.flow.component.ExceptionDealComponent">
+	</bean>
+	<bean id="exceptionFlowComponent2" name="exceptionFlowComponent2" scope="prototype"
+		 class="org.tinygroup.flow.component.ExceptionComponent2">
+	</bean>
+	<bean id="computeComponent" name="computeComponent" scope="prototype"
+		 class="org.tinygroup.flow.component.ComputeComponent">
+	</bean>
+	<bean id="flowUser" name="flowUser" scope="prototype"
+		 class="org.tinygroup.flow.bean.FlowUser">
+	</bean>
+	<bean id="helloWorldAnnoComponent" name="helloWorldAnnoComponent" scope="prototype"
+		class="org.tinygroup.flow.annotation.HelloWorldAnnoComponent">
+	</bean>
+</beans>

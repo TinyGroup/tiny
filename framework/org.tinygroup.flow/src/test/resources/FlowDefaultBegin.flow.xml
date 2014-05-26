@@ -1,0 +1,12 @@
+<flow id="FlowDefaultBegin" name="Hello" default-node-id="end">
+	<nodes>
+		<node id="begin">
+			<component name="helloflow">
+				<properties>
+					<flow-property name="name" value="luoguo" />
+					<flow-property name="resultKey" value="helloInfo" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

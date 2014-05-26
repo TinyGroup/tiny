@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-model id="human" name="human" title="员工"
+	enable-delete="true" enable-modity="true" abstract-model="false"
+	version="1.0" cache-enabled="true">
+	<description>员工</description>
+	<extend-information>扩展信息</extend-information>
+	<operations>
+		<operation modal="true" id="copyAddhuman" name="copyAddhuman"
+			title="拷贝新增" type="copyAdd" url="" permission-check="false">
+			<description>拷贝新增员工操作</description>
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="objno111" compare-mode="equals">
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic">
+				<description>新增列表</description>
+				<operation-fields>
+					<operation-field editable="true" hidden="false"
+						field-id="objno111" />
+					<operation-field editable="true" hidden="false"
+						field-id="workstatus111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel1111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel2111" />
+					<operation-field editable="true" hidden="false"
+						field-id="orgid111" />
+					<operation-field editable="true" hidden="false"
+						field-id="exttextfield0111" />
+					<operation-field editable="true" hidden="false"
+						field-id="officeaddr111" />
+					<operation-field editable="true" hidden="false"
+						field-id="gender111" />
+					<operation-field editable="true" hidden="false"
+						field-id="mainstation111" />
+					<operation-field editable="true" hidden="false"
+						field-id="objname111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel3111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation modal="true" id="viewhuman" name="viewhuman"
+			title="查看" type="view" url="" permission-check="false" fixed-size="true">
+			<description>查看员工操作</description>
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="objno111" compare-mode="equals">
+
+				</condition-field>
+			</condition-fields>
+			<operation-group id="human_view_group" display-mode="Wizard">
+				<operation-fields>
+					<operation-field editable="true" hidden="false"
+						field-id="objno111" />
+					<operation-field editable="true" hidden="false"
+						field-id="workstatus111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel1111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel2111" />
+					<operation-field editable="true" hidden="false"
+						field-id="orgid111">
+						displayViewGroupFields
+						<format-string><![CDATA[<a href="javascript:alert('aaa.page?objno=$bean.objno');">$bean.objno</a>]]></format-string>
+					</operation-field>
+					<operation-field editable="true" hidden="false"
+						field-id="exttextfield0111" />
+					<operation-field editable="true" hidden="false"
+						field-id="officeaddr111" />
+					<operation-field editable="true" hidden="false"
+						field-id="gender111" />
+					<operation-field editable="true" hidden="false"
+						field-id="mainstation111" />
+					<operation-field editable="true" hidden="false"
+						field-id="objname111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel3111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation modal="true" id="addhuman" name="addhuman" title="新增"
+			type="add" url="" permission-check="false" width="400" height="300">
+			<description>新增员工操作</description>
+			<operation-group id="basic">
+				<description>新增列表</description>
+				<operation-fields>
+					<operation-field editable="true" hidden="false"
+						field-id="objno111" />
+					<operation-field editable="true" hidden="false"
+						field-id="workstatus111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel1111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel2111" />
+					<operation-field editable="true" hidden="false"
+						field-id="orgid111" />
+					<operation-field editable="true" hidden="false"
+						field-id="exttextfield0111" />
+					<operation-field editable="true" hidden="false"
+						field-id="officeaddr111" />
+					<operation-field editable="true" hidden="false"
+						field-id="gender111" />
+					<operation-field editable="true" hidden="false"
+						field-id="mainstation111" />
+					<operation-field editable="true" hidden="false"
+						field-id="objname111" />
+					<operation-field editable="true" hidden="false"
+						field-id="tel3111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation modal="true" id="deletehuman" name="deletehuman"
+			title="删除" type="delete" url="" permission-check="false">
+			<description>删除员工操作</description>
+			<condition-fields>
+				<condition-field editable="fase" hidden="false"
+					field-id="objno111" compare-mode="equals">
+
+				</condition-field>
+			</condition-fields>
+		</operation>
+		<operation modal="true" id="modifyhuman" name="modifyhuman"
+			title="修改" type="modify" url="" permission-check="false">
+			<description>修改员工操作</description>
+			<condition-fields>
+				<condition-field editable="false" hidden="false"
+					field-id="objno111" compare-mode="equals">
+
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic" display-mode="FieldSet">
+				<description>修改字段列表</description>
+				<operation-group id="basic" title="基本信息">
+					<operation-fields>
+						<operation-field editable="true" hidden="false"
+							field-id="objno111" />
+						<operation-field editable="true" hidden="false"
+							field-id="objname111" />
+						<operation-field editable="true" hidden="false"
+							field-id="gender111" >
+							<input-mode class="org.tinygroup.entity.common.OptionInputMode" type="simpleComboMode">
+								<option value="" text="" />
+								<option value="男" text="男" />
+								<option value="女" text="女" />
+							</input-mode>
+						</operation-field>
+					</operation-fields>
+				</operation-group>
+				<operation-group id="contact" title="联系方式">
+					<operation-fields>
+						<operation-field editable="true" hidden="false"
+							field-id="tel1111" />
+						<operation-field editable="true" hidden="false"
+							field-id="tel2111" />
+						<operation-field editable="true" hidden="false"
+							field-id="tel3111" />
+
+					</operation-fields>
+				</operation-group>
+				<operation-group id="other" title="其它信息">
+					<operation-fields>
+						<operation-field editable="true" hidden="false"
+							field-id="workstatus111" />
+						<operation-field editable="true" hidden="false"
+							field-id="orgid111" />
+						<operation-field editable="true" hidden="false"
+							field-id="exttextfield0111" />
+						<operation-field editable="true" hidden="false"
+							field-id="officeaddr111" />
+						<operation-field editable="true" hidden="false"
+							field-id="mainstation111" />
+					</operation-fields>
+				</operation-group>
+				<operation-group id="extend" title="扩展信息" url="index.pagelet">
+				</operation-group>
+			</operation-group>
+		</operation>
+	</operations>
+	<views>
+		<view id="tablehuman" name="tablehuman" title="员工列表" type="table"
+			width="800" height="600" page-size="100" condition-groups="简单查询,高级查询,专业查询"
+			modal="false" allow-filter-front="true" front-paging="false">
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="objno111" compare-mode="containsWith" groups="简单查询,高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="objname111" compare-mode="containsWith" groups="简单查询,高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="gender111" compare-mode="containsWith" groups="简单查询,高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="orgid111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="tel1111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="tel2111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="tel3111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="exttextfield0111" compare-mode="containsWith" groups="专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="officeaddr111" compare-mode="containsWith" groups="专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="mainstation111" compare-mode="containsWith" groups="专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="workstatus111" compare-mode="containsWith" groups="专业查询" />
+			</condition-fields>
+			<view-groups>
+				<view-group id="basicinfo" title="基本">
+					<display-field field-id="objno111" hidden="false" />
+					<display-field field-id="objname111" hidden="false" />
+					<display-field field-id="gender111" hidden="false" />
+					<display-field field-id="workstatus111" hidden="false" />
+					<display-field field-id="tel1111" hidden="false" />
+					<display-field field-id="tel2111" hidden="false" />
+					<display-field field-id="tel3111" hidden="false" />
+				</view-group>
+			</view-groups>
+			<order-fields>
+				<order-field field-id="objno111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="workstatus111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="tel1111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="tel2111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="orgid111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="exttextfield0111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="officeaddr111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="gender111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="mainstation111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="objname111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="tel3111" order-mode="asc"
+					editable="false" hidden="false" />
+			</order-fields>
+			<references>
+				<reference id="viewhuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="addhuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="deletehuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="modifyhuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="copyAddhuman" type="operation" show-mode="modelDialog"></reference>
+			</references>
+		</view>
+		<view id="cardhuman" name="cardhuman" title="员工卡片" type="card"
+			diaplayMode="FieldSet" width="800" height="600" page-size="10"
+			condition-groups="简单查询,高级查询,专业查询" modal="false" allow-filter-front="true"
+			front-paging="true">
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="objno111" compare-mode="containsWith" groups="简单查询,高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="objname111" compare-mode="containsWith" groups="简单查询,高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="gender111" compare-mode="containsWith" groups="简单查询,高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="orgid111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="tel1111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="tel2111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="tel3111" compare-mode="containsWith" groups="高级查询,专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="exttextfield0111" compare-mode="containsWith" groups="专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="officeaddr111" compare-mode="containsWith" groups="专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="mainstation111" compare-mode="containsWith" groups="专业查询" />
+				<condition-field editable="true" hidden="false"
+					field-id="workstatus111" compare-mode="containsWith" groups="专业查询" />
+			</condition-fields>
+			<view-groups>
+				<view-group id="basicinfo" title="基本">
+					<display-field field-id="objno111" hidden="false">
+						<format-string><![CDATA[<a href="javascript:alert('aaa.page?objno=$bean.objno');">$bean.objno</a>]]></format-string>
+					</display-field>
+					<display-field field-id="objname111" hidden="false" />
+					<display-field field-id="gender111" hidden="false" />
+					<display-field field-id="workstatus111" hidden="false" />
+					<display-field field-id="tel1111" hidden="false" />
+					<display-field field-id="tel2111" hidden="false" />
+					<display-field field-id="tel3111" hidden="false" />
+				</view-group>
+			</view-groups>
+			<order-fields>
+				<order-field field-id="objno111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="workstatus111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="tel1111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="tel2111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="orgid111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="exttextfield0111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="officeaddr111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="gender111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="mainstation111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="objname111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="tel3111" order-mode="asc"
+					editable="false" hidden="false" />
+			</order-fields>
+			<references>
+				<reference id="viewhuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="addhuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="deletehuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="modifyhuman" type="operation" show-mode="modelDialog"></reference>
+				<reference id="copyAddhuman" type="operation" show-mode="modelDialog"></reference>
+			</references>
+		</view>
+	</views>
+	<groups>
+		<group id="Basic" name="Basic" title="基本信息">
+			<field standard-field-id="objno" primary="true" unique="true"
+				display="false" editable="true" hidden="false" id="objno111" table-field="true"/>
+			<field standard-field-id="gender" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="gender111" table-field="true" />
+			<field standard-field-id="orgid" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="orgid111" table-field="true" />
+			<field standard-field-id="objname" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="objname111" table-field="true" />
+			<field standard-field-id="workstatus" primary="false" unique="true"
+				display="false" editable="true" hidden="false" id="workstatus111" table-field="true" />
+			<field standard-field-id="tel1" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="tel1111" table-field="true" />
+			<field standard-field-id="tel2" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="tel2111" table-field="true" />
+			<field standard-field-id="tel3" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="tel3111" table-field="true" />
+			<field standard-field-id="exttextfield0" primary="false"
+				unique="false" display="false" editable="true" hidden="false"
+				id="exttextfield0111" table-field="true" />
+			<field standard-field-id="officeaddr" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="officeaddr111" table-field="true" />
+			<field standard-field-id="mainstation" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="mainstation111" table-field="true" />
+		</group>
+	</groups>
+</entity-model>

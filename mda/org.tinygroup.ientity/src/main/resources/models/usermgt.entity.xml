@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-model id="usermgt" name="usermgt" title="用户"
+	enable-delete="true" enable-modity="true" abstract-model="false"
+	version="1.0" cache-enabled="true">
+	<description>用户</description>
+	<extend-information>扩展信息</extend-information>
+	<operations>
+		<operation id="copyAddUser" name="copyAddUser" title="拷贝新增"
+			type="copyAdd" url="" permission-check="false">
+			<description>拷贝新增用户操作</description>
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="user_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic">
+				<description>新增列表</description>
+				<operation-fields>
+					<operation-field editable="true" hidden="false"
+						field-id="name_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="age_111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation id="viewUser" name="viewUser" title="查看" type="view"
+			url="" permission-check="false" fixed-size="true">
+			<description>查看用户操作</description>
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="user_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+			<operation-group id="user_view_group" display-mode="Wizard">
+				<operation-group id="name" title="查看用户">
+					<description>查看姓名查看姓名查看姓名查看姓名</description>
+					<operation-fields>
+						<operation-field editable="false" hidden="false"
+							field-id="name_111" />
+					</operation-fields>
+				</operation-group>
+				<operation-group id="age" title="查看年龄">
+					<description>查看年龄查看年龄查看年龄查看年龄</description>
+					<operation-fields>
+						<operation-field editable="false" hidden="false"
+							field-id="age_111" />
+					</operation-fields>
+				</operation-group>
+			</operation-group>
+		</operation>
+		<operation id="addUser" name="addUser" title="新增" type="add"
+			url="" permission-check="false" width="400" height="300">
+			<description>新增用户操作</description>
+			<operation-group id="basic">
+				<description>新增列表</description>
+				<operation-fields>
+					<operation-field editable="false" hidden="true"
+						field-id="user_id111" />
+					<operation-field editable="true" hidden="false"
+						field-id="name_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="age_111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation id="deleteUser" name="deleteUser" title="删除"
+			type="delete" url="" permission-check="false">
+			<description>删除用户操作</description>
+			<condition-fields>
+				<condition-field editable="fase" hidden="false"
+					field-id="user_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+		</operation>
+		<operation id="modifyUser" name="modifyUser" title="修改"
+			type="modify" url="" permission-check="false">
+			<description>修改用户操作</description>
+			<condition-fields>
+				<condition-field editable="false" hidden="false"
+					field-id="user_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic">
+				<description>修改字段列表</description>
+				<operation-fields>
+					<operation-field editable="false" hidden="true"
+						field-id="user_id111" />
+					<operation-field editable="true" hidden="false"
+						field-id="name_111">
+						<input-mode type="textMode" />
+					</operation-field>
+					<operation-field editable="true" hidden="false"
+						field-id="age_111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+	</operations>
+	<views>
+		<view id="tableUser" name="tableUser" title="用户列表" type="table"
+			width="800" height="600" pageSize="10" conditionGroups="简单查询,高级查询"
+			modal="false" allow-filter-front="true">
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="name_111" compare-mode="equals" groups="简单查询,高级查询">
+				</condition-field>
+				<condition-field editable="true" hidden="false"
+					field-id="age_111" compare-mode="equals" groups="高级查询">
+				</condition-field>
+			</condition-fields>
+			<category-fields>
+				<category-field field-id="gender_111"></category-field>
+			</category-fields>
+			<view-groups>
+				<view-group id="basicinfo" title="基本" >
+					<display-field field-id="user_id111" hidden="true" />
+					<display-field field-id="name_111" hidden="false" />
+				</view-group>
+				<view-group id="extinfo" title="扩展">
+					<display-field field-id="age_111" hidden="false"  aggregate-function="average" aggregate-title="平均年龄:{0}" aggregate-by-view="true"/>
+					<display-field field-id="gender_111" hidden="false" />
+				</view-group>
+			</view-groups>
+			<order-fields>
+				<order-field field-id="user_id111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="name_111" editable="false"
+					hidden="false" />
+				<order-field field-id="age_111" editable="false" hidden="false"/>
+			</order-fields>
+			<having-fields>
+				<having-field field-id="age_111" compare-mode="greaterThan"
+					aggregate-function="max"></having-field>
+			</having-fields>
+			<group-fields>
+				<group-field field-id="user_id111" />
+			</group-fields>
+			<references>
+				<reference id="viewUser" type="operation" show-mode="modelDialog"></reference>
+				<reference id="addUser" type="operation" show-mode="modelDialog"></reference>
+				<reference id="deleteUser" type="operation" show-mode="modelDialog"></reference>
+				<reference id="modifyUser" type="operation" show-mode="modelDialog"></reference>
+				<reference id="copyAddUser" type="operation" show-mode="modelDialog"></reference>
+			</references>
+		</view>
+	</views>
+	<indexs>
+		<index id="user_name_index" name="user_name_index" unique="true">
+			<description>索引</description>
+			<fields>
+				<string>name_111</string>
+			</fields>
+		</index>
+	</indexs>
+	<groups>
+		<group id="Basic" name="Basic" title="基本信息">
+			<field standard-field-id="user_id" primary="true" unique="true"
+				display="false" editable="true" hidden="false" id="user_id111" table-field="true" />
+			<field standard-field-id="user_name" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="name_111" table-field="true" />
+			<field standard-field-id="user_age" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="age_111" table-field="true" />
+			<field standard-field-id="user_gender" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="gender_111" table-field="true" />
+		</group>
+	</groups>
+</entity-model>

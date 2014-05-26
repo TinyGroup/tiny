@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+
+	<bean id="metadataTableConfigConvert"
+		class="org.tinygroup.tinydb.convert.impl.MetadataTableConfigConvert">
+		<property name="dataSource">
+		  <ref bean="dynamicDataSource"/>
+		</property>
+	</bean>
+	
+	<bean id="derbyDialect"
+		class="org.tinygroup.tinydb.dialect.impl.DerbyDialect">
+		<property name="incrementer" ref="derbyIncrementer"></property>
+	</bean>
+	
+	<bean id="derbyIncrementer"
+		class="org.springframework.jdbc.support.incrementer.DerbyMaxValueIncrementer">
+		<property name="dataSource" ref="dynamicDataSource"></property>
+		<property name="incrementerName" value="incrementer"></property>
+		<property name="columnName" value="value"></property>
+		<property name="cacheSize" value="100"></property>
+	</bean>
+	
+	
+	<bean id="beanStringOperator"
+		class="org.tinygroup.tinydb.operator.impl.BeanStringOperator" scope="prototype">
+		<constructor-arg  ref="jdbcTemplate"></constructor-arg>  
+		<property name="dialect" ref="derbyDialect"></property>
+	</bean>
+</beans>  

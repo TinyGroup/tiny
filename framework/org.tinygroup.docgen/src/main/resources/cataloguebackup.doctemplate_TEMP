@@ -1,0 +1,89 @@
+#*
+	目录
+*#
+#macro(catalogue $content $font)
+	<w:p wsp:rsidR="00716C00" wsp:rsidRDefault="00716C00">
+		<w:pPr>
+			<w:pStyle w:val="TOC"/>
+		</w:pPr>
+		#wr($content,$font)
+	</w:p>
+	$bodyContent
+#end  
+
+
+
+#*
+	目录条目：代表一条目录
+*#
+#macro(cataItem $info)
+	<w:p wsp:rsidR="008707D0" wsp:rsidRPr="008707D0" wsp:rsidRDefault="008707D0">
+		#cataBeforeHlink($!{info.grade})
+		#cataHlink($info)
+	</w:p>
+	##lang()
+#end
+
+
+
+#*目录链接*#
+#macro(cataBeforeHlink $grade)
+<w:pPr>
+	#cataGrade($grade)
+	<w:tabs><w:tab w:val="right" w:leader="dot" w:pos="8296"/></w:tabs>
+	<w:rPr><w:noProof/><w:kern w:val="2"/><w:sz w:val="21"/></w:rPr>
+</w:pPr>
+#if($grade=="10")
+	<w:r><w:fldChar w:fldCharType="begin"/></w:r>
+	##<w:r><w:instrText>TOC \o "1-3" \h \z \u</w:instrText></w:r>
+	<w:r><w:fldChar w:fldCharType="separate"/></w:r>
+#end
+#end
+
+
+
+
+#*
+	目录链接
+		name: 目录名称
+		bookmark: 和大纲中的bookmarkNO对应
+		pageNum: 该目录对应内容所在页码
+*#
+#macro(cataHlink $info)
+<w:hlink w:dest="" w:bookmark="$!{info.bookmark}">
+<w:r wsp:rsidRPr="00161DF4">#font($info.font)<w:t></w:t></w:r>
+<w:r wsp:rsidRPr="00161DF4">#font($info.font)<w:t>$!{info.name}</w:t></w:r>
+<w:r>#font($info.font)<w:tab/></w:r>
+<w:r>
+	#font($info.font)<w:fldChar w:fldCharType="begin">
+	<w:fldData xml:space="preserve">CNDJ6nn5us4RjIIAqgBLqQsCAAAACAAAAA4AAABfAFQAbwBjADMANwAyADgAMAAzADgANgA1AAAA</w:fldData></w:fldChar>
+</w:r>
+<w:r>#font($info.font)<w:instrText>PAGEREF $!{info.bookmark} \h</w:instrText></w:r>
+<w:r>#font($info.font)</w:r>
+<w:r>#font($info.font)<w:fldChar w:fldCharType="separate"/></w:r>
+<w:r>#font($info.font)<w:t>$!{info.pageNum}</w:t></w:r>
+<w:r>#font($info.font)<w:fldChar w:fldCharType="end"/></w:r>
+</w:hlink>
+#end
+
+
+
+
+#*
+	目录等级
+		grade: 等级
+*#
+#macro(cataGrade $grade)
+<w:pStyle w:val="$grade"/>
+#end
+
+
+
+
+#语言
+#macro(lang)
+<w:p wsp:rsidR="008707D0" wsp:rsidRDefault="008707D0">
+<w:r><w:rPr><w:b/><w:b-cs/><w:lang w:val="ZH-CN"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r>
+</w:p>
+#end
+

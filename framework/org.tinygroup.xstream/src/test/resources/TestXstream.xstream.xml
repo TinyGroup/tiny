@@ -1,0 +1,6 @@
+<xstream-configuration>
+	<xstream-annotation-classes>
+		<!-- <xstream-annotation-class class-name="org.tinygroup.xstream.User" 
+			/> -->
+	</xstream-annotation-classes>
+</xstream-configuration>

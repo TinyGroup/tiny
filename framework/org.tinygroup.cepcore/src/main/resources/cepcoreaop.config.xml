@@ -1,0 +1,6 @@
+<!-- aop配置 -->
+<cepcore-aop-config>
+	<!-- 
+		<aop-config position="before-local" bean="requestParamValidate"></aop-config>
+	-->
+</cepcore-aop-config>

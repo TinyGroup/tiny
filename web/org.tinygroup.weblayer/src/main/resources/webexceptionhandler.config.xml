@@ -1,0 +1,4 @@
+<!-- 异常处理配置 -->
+<exception-handlers>
+		<!--<web-exception-handler exception="异常类名全路径" handler="异常对应的ExceptionHandler的beanId"/> -->
+</exception-handlers>

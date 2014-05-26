@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin-configs>
+	<plugin-config plugin-name="netPlugin" plugin-bean="netPlugin"
+		depend-plugins="" plugin-level="10" plugin-title="net插件"></plugin-config>
+</plugin-configs>

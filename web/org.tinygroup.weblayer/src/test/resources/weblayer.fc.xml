@@ -1,0 +1,10 @@
+<components>
+	<component name="fullContextUrlRedirectComponent" bean="fullContextUrlRedirectComponent"
+		title="页面跳转" icon="">
+		<short-description>页面跳转</short-description>
+		<long-description>页面跳转</long-description>
+		<parameter name="path" title="页面" type="java.lang.String"></parameter>
+	</component>
+
+
+</components>

@@ -1,0 +1,14 @@
+<model-define id="RelationModel" name="RelationModel" title="关系模型"
+	model-class="org.tinygroup.entity.relationmodel.RelationModel"
+	error-page="/model/modelError.pagelet"
+	validate-error-page="/model/modelValidateError.page"
+	model-infomation-getter="modelInfoGetter" model-loader-bean="relationModelLoader">
+	<model-processor-defines>
+		<model-processor-define name="relationQuery"
+			title="关联查询">
+			<model-processor-stage name="table" title="数据查询"
+				service-processor="relationViewModelServiceProcessor" view-processor="defaultModelViewProcessor"
+				parameter-builder="relationViewParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+	</model-processor-defines>
+</model-define>

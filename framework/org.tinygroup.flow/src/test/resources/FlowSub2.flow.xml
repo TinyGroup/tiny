@@ -1,0 +1,11 @@
+<flow id="00002:01" name="02business" extend-flow-id="00002">
+	<nodes>
+		<node id="Process">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="00002:01处理...." />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

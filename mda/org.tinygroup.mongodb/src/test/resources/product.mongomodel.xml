@@ -1,0 +1,58 @@
+<mongo-model id="product" name="product" title="产品信息表"
+	enable-delete="true" enable-modity="true" version="2.0" cache-enabled="true">
+	<operations>
+		<operation id="add" name="addProduct"
+			title="新增" enable-delete="true" enable-modity="true" type="add"
+			fixed-size="false" modal="true">
+			<operation-group id="addopbasicgroup" name="basicgroup"
+				title="基本信息" enable-delete="true" enable-modity="true">
+				<operation-fields>
+					<operation-field editable="false" hidden="false"
+						field-id="name" />
+					<operation-field editable="true" hidden="false"
+						field-id="age" />
+					<operation-field editable="true" hidden="false"
+						field-id="picture" />
+					<operation-field editable="true" hidden="false"
+						field-id="location" />	
+				</operation-fields>
+			</operation-group>
+		</operation>
+
+	</operations>
+
+	<groups>
+		<group id="basicgroup" name="basicgroup" title="基本信息"
+			enable-delete="true" enable-modity="true">
+			<field name="name" title="名称" primary="false" unique="false"
+				 not-null="false"  editable="false"
+				hidden="false" collection-field="true" id="name">
+			</field>
+			<field name="age" title="年龄" primary="false" unique="false"
+				 not-null="false"  editable="false"
+				hidden="false" collection-field="true" id="age">
+			</field>
+			<object-field id="picture" name="picture" title="图片信息" is-array="true">
+			   <field id="picture_name" name="name" title="图片名称" />
+		       <object-field id="obj" name="obj" title="对象" is-array="true">
+		         <field id="object_name" name="name" title="对象名称" />
+		         <field id="object_age" name="age" />
+		         <object-field id="address" name="address" title="地址" is-array="true">
+		            <object-field id="provice" name="provice"  is-array="true">
+		               <field id="provice_name" name="name" />
+		            </object-field>
+		         </object-field>
+		       </object-field>
+			</object-field>	
+			<object-field id="location" name="location"  is-array="true">
+			     <field id="location_name" name="name" />
+			      <object-field id="where" name="where"  is-array="true">
+			          <field id="place" name="place"  />
+			          <object-field id="controy" name="controy"  is-array="false">
+			             <field id="place_name" name="name"  />
+			          </object-field>
+			      </object-field>
+			</object-field>
+		</group>
+	</groups>
+</mongo-model>

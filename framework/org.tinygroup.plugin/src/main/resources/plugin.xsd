@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="plugin-configs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="plugin-config" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="plugin-name" type="xs:string" />
+						<xs:attribute name="plugin-title" type="xs:string" />
+						<xs:attribute name="description" type="xs:string" />
+						<xs:attribute name="plugin-bean" type="xs:string" />
+						<xs:attribute name="depend-plugins" type="xs:string" />
+						<xs:attribute name="depend-by-plugins" type="xs:string" />
+						<xs:attribute name="plugin-level" type="xs:integer" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

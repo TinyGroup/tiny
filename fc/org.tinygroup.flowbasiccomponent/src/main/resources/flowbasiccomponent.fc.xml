@@ -1,0 +1,66 @@
+<components>
+	<component name="queryAllFlowComponent" bean="queryAllFlowComponent"
+		title="查询所有流程" icon="">
+		<short-description>查询所有流程</short-description>
+		<long-description>查询所有流程</long-description>
+		<result name="flows" title="查询出的所有流程" type="java.util.Collection"></result>
+	</component>
+
+	<component name="context2ObjectComponent" bean="context2ObjectComponent"
+		title="对象转换组件" icon="">
+		<short-description>从context2中解析指定对象类型实例</short-description>
+		<long-description>
+			从context2中解析指定对象类型实例
+			如果目标对象是数组或者单对象，则无需传递参数collectionClassName
+			如果目标对象是集合类型，则需要传递collectionClassName
+			varName是解析对象时对象在上下文的变量名，若不传，则采用对象名小写作为变量名。
+			如有对象User,包含属性name\age。
+			上下文中存放为 a.name\a.age，则需要将varName配置为a
+			若上下文中存放为user.name\a.get，则将varName配置为user或者不配置
+			如果resultKey为空,则默认采用varName的值，若varName也为空，则采用对象类型名小写
+		</long-description>
+		<parameter name="className" title="对象类型" type="java.lang.String"></parameter>
+		<parameter name="collectionClassName" title="集合类型" type="java.lang.String"></parameter>
+		<parameter name="varName" title="对象变量名" type="java.lang.String"></parameter>
+		<parameter name="resultKey" title="转换获取的对象实例在context中的key" type="java.lang.String"></parameter>
+	</component>
+
+	<component name="keyChangeComponent" bean="keyChangeComponent"
+		title="对象转换组件" icon="">
+		<short-description>将context中指定key的值，存放到新key中</short-description>
+		<long-description>
+			参数格式为sourceKey:targetKey,sourceKey2:targetKey2,以逗号分隔每一组key,
+			每组key分为两个key,组件会从context中读取sourceKey的数据,并存放至targetKey中。
+		</long-description>
+		<parameter name="keyValues" title="源key与结果key的映射" type="java.lang.String"></parameter>
+		<parameter name="replaceModel" title="是否替换原key，若为true，则会删除原key" type="boolean"></parameter>
+	</component>
+	
+	
+	<component name="callMethodComponent" bean="callMethodComponent"
+		title="调用静态方法或者bean方法" icon="">
+		<short-description>调用指定类的静态方法或者调用指定bean的方法</short-description>
+		<long-description>
+			调用指定类的静态方法或者调用指定bean的方法。
+			className和beanName两参数只需要配置一个即可。若两者均配置，则以bean为准。
+			若以className\methodName进行执行，则需要保证该方法为静态方法。
+			params为参数在上下文中key值,多个以","分割,如param1,param2,param3。
+		</long-description>
+		<parameter name="className" title="类名" type="java.lang.String"></parameter>
+		<parameter name="beanName" title="beanId" type="java.lang.String"></parameter>
+		<parameter name="methodName" title="方法名" type="java.lang.String"></parameter>
+		<parameter name="params" title="参数在上下文中key值(支持el表达式),多个以,分割" type="java.lang.String"></parameter>
+		<parameter name="resultKey" title="方法执行结果放入上下文的key，不配则不放" type="java.lang.String"></parameter>
+	</component>
+	
+	<component name="callElComponent" bean="callElComponent"
+		title="执行el表达式" icon="">
+		<short-description>执行指定类的el表达式</short-description>
+		<long-description>
+			执行指定类的el表达式
+		</long-description>
+		<parameter name="expression" title="el表达式" type="java.lang.String"></parameter>
+		<parameter name="resultKey" title="方法执行结果放入上下文的key，不配则不放" type="java.lang.String"></parameter>
+	</component>
+</components>
+

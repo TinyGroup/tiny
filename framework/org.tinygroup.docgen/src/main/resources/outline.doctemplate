@@ -1,0 +1,39 @@
+#*
+	大纲
+		grade: 大纲等级
+		name: 大纲名称
+		bookmarkNO: 唯一标识大纲的ID，目录中需要使用该ID
+*#
+#macro(outline $info)
+<wx:sub-section>
+	<w:p>
+		<w:pPr><w:pStyle w:val="$!{info.grade}"/></w:pPr>
+		<aml:annotation aml:id="1" w:type="Word.Bookmark.Start" w:name="$!{info.bookmarkNO}"/>
+		#multilevel($info.multilevel)
+		#wr($!{info.name},${info.font})
+		<aml:annotation aml:id="1" w:type="Word.Bookmark.End"/>
+	</w:p>
+	$bodyContent
+</wx:sub-section>
+#end
+
+
+
+
+#*
+	多级列表
+*#
+#macro(multilevel $multi)
+<w:pPr>
+<w:listPr>
+<w:ilvl w:val="$multi.level"/>
+<w:ilfo w:val="$multi.ilfo"/>
+<wx:t wx:val="$multi.char"/>
+<wx:font wx:val="Times New Roman"/>
+</w:listPr>
+<w:rPr>
+<w:rFonts w:hint="fareast"/>
+</w:rPr>
+</w:pPr>
+#end
+

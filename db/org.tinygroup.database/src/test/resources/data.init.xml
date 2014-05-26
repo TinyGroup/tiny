@@ -1,0 +1,30 @@
+<initDatas>
+	<use-packages>
+	</use-packages>
+	<initData-list>
+		<initData package-name="aa.bb" table-id="aatable">
+			<records>
+				<record>
+					<value-pair table-field-id="tableaa" value="1"></value-pair>
+					<value-pair table-field-id="tablebb" value="1"></value-pair>
+				</record>
+				<record>
+					<value-pair table-field-id="tableaa" value="1"></value-pair>
+					<value-pair table-field-id="tablebb" value="1"></value-pair>
+				</record>
+			</records>
+		</initData>
+			<initData package-name="aa.bb" table-id="bbtable">
+			<records>
+				<record>
+					<value-pair table-field-id="tableaa" value="1"></value-pair>
+					<value-pair table-field-id="tablebb" value="1"></value-pair>
+				</record>
+				<record>
+					<value-pair table-field-id="tableaa" value="1"></value-pair>
+					<value-pair table-field-id="tablebb" value="1"></value-pair>
+				</record>
+			</records>
+		</initData>
+	</initData-list>
+</initDatas>

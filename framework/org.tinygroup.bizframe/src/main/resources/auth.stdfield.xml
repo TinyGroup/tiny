@@ -1,0 +1,8 @@
+<standard-fields package-name="org.tinygroup.common">
+  <standard-field title="权限关系编号" business-type-id="Varchar50" name="auth_id" id="auth_id"></standard-field>
+  <standard-field title="权限主体编号" business-type-id="Varchar50" name="subject_id" id="subject_id"></standard-field>
+  <standard-field title="权限客体编号" business-type-id="Varchar50" name="object_id" id="object_id"></standard-field>
+  <standard-field title="权限主体类型" business-type-id="Varchar30" name="subject_type" id="subject_type"></standard-field>   
+  <standard-field title="权限客体类型" business-type-id="Varchar30" name="object_type" id="object_type"></standard-field> 
+  <standard-field title="状态" business-type-id="Char1" name="status" id="status"></standard-field>  
+</standard-fields>

@@ -1,0 +1,5 @@
+<xstream-configuration package-name="velocity">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.velocity.config.VelocityContextConfig" />
+	</xstream-annotation-classes>
+</xstream-configuration>

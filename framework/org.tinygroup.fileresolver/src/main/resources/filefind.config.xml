@@ -1,0 +1,12 @@
+<full-context-file-finder>
+			<file ext-name="gif" content-type="image/gif" />
+			<file ext-name="png" content-type="image/png" />
+			<file ext-name="jpg" content-type="image/jpeg" />
+			<file ext-name="page" content-type="text/html" />
+			<file ext-name="layout" content-type="text/html" />
+			<file ext-name="js" content-type="text/javascript" />
+			<file ext-name="css" content-type="text/css" />
+			<file ext-name="jsp" content-type="text/html" />
+			<file ext-name="htm" content-type="text/html" />
+			<file ext-name="html" content-type="text/html" />
+</full-context-file-finder>

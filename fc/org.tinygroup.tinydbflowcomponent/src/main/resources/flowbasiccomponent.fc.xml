@@ -1,0 +1,56 @@
+<components>
+    <component name="tinydbAddService" bean="tinydbAddService"
+               title="插入组件" category="数据库" icon="">
+        <short-description>调用tinydb的新增方法来完成新增服务</short-description>
+        <long-description>
+            beanType：类似数据库表名
+            resultKey:方法返回的Bean对象，将以resultKey属性对应的值作为key保存到上下文中
+        </long-description>
+        <parameter name="beanType" title="类型" type="java.lang.String"></parameter>
+        <parameter name="resultKey" title="结果键值" type="java.lang.String"></parameter>
+    </component>
+
+    <component name="tinydbUpdateService" bean="tinydbUpdateService"
+               title="更新组件"  category="数据库" icon="">
+        <short-description>调用tinydb的更新方法来完成修改服务</short-description>
+        <long-description>
+            beanType：类似数据库表名
+            resultKey:方法返回的Bean对象，将以resultKey属性对应的值作为key保存到上下文中
+        </long-description>
+        <parameter name="beanType" title="类型" type="java.lang.String"></parameter>
+        <parameter name="resultKey" title="结果键值" type="java.lang.String"></parameter>
+    </component>
+    <component name="tinydbDeleteService" bean="tinydbDeleteService"
+               title="删除组件" category="数据库" icon="">
+        <short-description>调用tinydb的删除方法来完成删除服务</short-description>
+        <long-description>
+            beanType：类似数据库表名
+            resultKey:方法返回的Bean对象，将以resultKey属性对应的值作为key保存到上下文中
+        </long-description>
+        <parameter name="beanType" title="类型" type="java.lang.String"></parameter>
+        <parameter name="resultKey" title="结果键值" type="java.lang.String"></parameter>
+    </component>
+    <component name="tinydbQueryService" bean="tinydbQueryService"
+               title="查询组件" category="数据库" icon="">
+        <short-description>调用tinydb的查询方法来完成查询服务</short-description>
+        <long-description>
+            beanType：类似数据库表名
+            resultKey:方法返回的Bean对象，将以resultKey属性对应的值作为key保存到上下文中
+        </long-description>
+        <parameter name="beanType" title="类型" type="java.lang.String"></parameter>
+        <parameter name="resultKey" title="结果键值" type="java.lang.String"></parameter>
+    </component>
+    <component name="tinydbQueryServiceWithId" bean="tinydbQueryServiceWithId"
+               title="单记录查询组件" category="数据库" icon="">
+        <short-description>调用tinydb的更新方法来完成修改服务</short-description>
+        <long-description>
+            beanType：类似数据库表名
+            primaryKey:前台传送过来的主键值
+            resultKey:方法返回的Bean对象，将以resultKey属性对应的值作为key保存到上下文中
+        </long-description>
+        <parameter name="beanType" title="类型" type="java.lang.String"></parameter>
+        <parameter name="primaryKey" title="主键值" type="java.lang.String"></parameter>
+        <parameter name="resultKey" title="结果键值" type="java.lang.String"></parameter>
+    </component>
+</components>
+

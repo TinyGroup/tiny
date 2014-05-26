@@ -1,0 +1,6 @@
+<xstream-configuration package-name="database">
+	<xstream-annotation-classes>
+			<xstream-annotation-class
+			class-name="org.tinygroup.database.config.view.Views" />
+	</xstream-annotation-classes>
+</xstream-configuration>

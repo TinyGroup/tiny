@@ -1,0 +1,30 @@
+#@wordDocument()
+#@body()
+
+#*
+	图片
+		name: 图片名称
+		width: 图片宽度
+		height: 图片高度
+		data: 包含图片二进制数据的变量
+*#	
+#@image({"name":"111.jpg","width":"249pt","height":"119.25pt","url":"src/test/resources/pic.jpg"})
+#end
+
+
+
+#*
+	图片
+		name: 图片名称
+		width: 图片宽度
+		height: 图片高度
+		data: 包含图片二进制数据的变量
+*#	
+#@image({"name":"111.jpg","width":"249pt","height":"119.25pt","url":"src/test/resources/pic.jpg"})
+#end
+
+
+
+#end
+#end
+

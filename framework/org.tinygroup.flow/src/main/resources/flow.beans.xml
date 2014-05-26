@@ -1,0 +1,51 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<!-- logic Flow 逻辑流用到的bean -->
+	<bean id="flowExecutor" name="flowExecutor" scope="singleton"
+		class="org.tinygroup.flow.impl.FlowExecutorImpl">
+	</bean>
+	<bean id="flowFileProcessor" name="flowFileProcessor" scope="singleton"
+		class="org.tinygroup.flow.fileresolver.FlowFileProcessor">
+	</bean>
+	<bean id="flowComponentProcessor" name="flowComponentProcessor"
+		scope="singleton"
+		class="org.tinygroup.flow.fileresolver.FlowComponentProcessor">
+	</bean>
+
+
+	<!-- page Flow 页面流用到的bean -->
+	<bean id="pageFlowExecutor" name="pageFlowExecutor" scope="singleton"
+		class="org.tinygroup.flow.impl.FlowExecutorImpl">
+	</bean>
+	<bean id="pageFlowFileProcessor" name="pageFlowFileProcessor"
+		scope="singleton"
+		class="org.tinygroup.pageflow.fileresolver.PageFlowFileProcessor">
+	</bean>
+	<bean id="pageFlowComponentProcessor" name="pageFlowComponentProcessor"
+		scope="singleton"
+		class="org.tinygroup.pageflow.fileresolver.PageFlowComponentProcessor">
+	</bean>
+	
+	<!-- ComponentAnnotationAction -->
+	<bean id="flowComponentAnnotationAction" name="flowComponentAnnotationAction"
+		scope="singleton"
+		class="org.tinygroup.flow.annotation.FlowComponentAnnotationAction">
+		<property name="executor">
+		    <ref bean="flowExecutor"/>
+		</property>
+	</bean>
+	
+	<bean id="pageFlowComponentAnnotationAction" name="pageFlowComponentAnnotationAction"
+		scope="singleton"
+		class="org.tinygroup.flow.annotation.FlowComponentAnnotationAction">
+		<property name="executor">
+		    <ref bean="pageFlowExecutor"/>
+		</property>
+	</bean>
+	
+</beans>

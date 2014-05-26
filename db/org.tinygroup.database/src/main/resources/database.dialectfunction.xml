@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialect-function-mappings>
+
+	<dialect-function name="substr">		
+		<format><![CDATA[
+		#substr($1, $2, $3)
+		]]></format>
+		<desc><![CDATA[
+		截取字符串函数
+		$1: 被截取的字符串
+		$2: 截取串的起始位置
+		$3: 截取串的长度
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="substr($1,$2,$3)"/>
+			<dialect name="db2" function-name="substr($1,$2,$3)"/>
+			<dialect name="derby" function-name="substr($1,$2,$3)"/>
+			<dialect name="mysql" function-name="substr($1,$2,$3)"/>
+			<dialect name="sqlserver" function-name="substring($1,$2,$3)"/>
+			<dialect name="informix" function-name="substr($1,$2,$3)"/>
+			<dialect name="sybase" function-name="substring($1,$2,$3)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="cast">		
+		<format><![CDATA[
+		#cast($1, $2)
+		]]></format>
+		<desc><![CDATA[
+		字段类型转换
+		$1: 被转换的字段
+		$2: 被转换的目标类型
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="cast($1 as $2)"/>
+			<dialect name="db2" function-name="cast($1 as $2)"/>
+			<dialect name="derby" function-name="cast($1 as $2)"/>
+			<dialect name="mysql" function-name="cast($1 as $2)"/>
+			<dialect name="sqlserver" function-name="cast($1 as $2)"/>
+			<dialect name="informix" function-name="cast($1 as $2)"/>
+			<dialect name="sybase" function-name="cast($1 as $2)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="trim">		
+		<format><![CDATA[
+		#trim($1)
+		]]></format>
+		<desc><![CDATA[
+		去除字符串左右空格
+		$1: 被去空格的字符串
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="trim($1)"/>
+			<dialect name="db2" function-name="trim($1)"/>
+			<dialect name="derby" function-name="trim($1)"/>
+			<dialect name="mysql" function-name="trim($1)"/>
+			<dialect name="sqlserver" function-name="ltrim(rtrim($1))"/>
+			<dialect name="informix" function-name="trim($1)"/>
+			<dialect name="sybase" function-name="ltrim(rtrim($1))"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="concat">		
+		<format><![CDATA[
+		#concat($1 ...)
+		]]></format>
+		<desc><![CDATA[
+		连接字符串
+		$1: 被连接的字符串，可以有多个，以逗号分隔,例如：#concat($1,$2,$3,$4)
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="(@||)"/>
+			<dialect name="db2" function-name="(@||)"/>
+			<dialect name="derby" function-name="(@||)"/>
+			<dialect name="mysql" function-name="concat(@,)"/>
+			<dialect name="sqlserver" function-name="(@+)"/>
+			<dialect name="informix" function-name="(@||)"/>
+			<dialect name="sybase" function-name="(@+)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="date">		
+		<format><![CDATA[
+		#date($1)
+		]]></format>
+		<desc><![CDATA[
+		字符串转日期
+		(日期格式:yyyy-mm-dd)
+ 		$1:日期字符串
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="to_date($1,'yyyy-mm-dd')"/>
+			<dialect name="db2" function-name="date($1)"/>
+			<dialect name="derby" function-name="date($1)"/>
+			<dialect name="mysql" function-name="date_format($1, '%Y-%m-%d')"/>
+			<dialect name="sqlserver" function-name="convert(datetime,$1,20)"/>
+			<dialect name="informix" function-name="to_date($1 ,'%Y-%m-%d')"/>
+			<dialect name="sybase" function-name="convert(datetime,$1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="timestamp">		
+		<format><![CDATA[
+		#timestamp($1)
+		]]></format>
+		<desc><![CDATA[
+		字符串转日期时间
+		(时间格式:yyyy-mm-dd hh:mm:ss)
+ 		$1:日期时间字符串
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="to_date($1,'yyyy-mm-dd hh24:mi:ss')"/>
+			<dialect name="db2" function-name="timestamp($1)"/>
+			<dialect name="derby" function-name="timestamp($1)"/>
+			<dialect name="mysql" function-name="date_format($1, '%Y-%m-%d %H:%i:%s')"/>
+			<dialect name="sqlserver" function-name="convert(datetime,$1,20)"/>
+			<dialect name="informix" function-name="to_date($1 ,'%Y-%m-%d %H:%M:%S')"/>
+			<dialect name="sybase" function-name="convert(datetime,$1)"/>
+		</dialects>
+	</dialect-function>
+
+	<dialect-function name="nvl">		
+		<format><![CDATA[
+		#nvl($1, $2)
+		]]></format>
+		<desc><![CDATA[
+		空值转换
+ 		$1: 要进行空值替换的字段
+ 		$2: 如果$1为空，则以$2返回
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="nvl($1,$2)"/>
+			<dialect name="db2" function-name="value($1,$2)"/>
+			<dialect name="derby" function-name="value($1,$2)"/>
+			<dialect name="mysql" function-name="ifnull($1,$2)"/>
+			<dialect name="sqlserver" function-name="isnull($1,$2)"/>
+			<dialect name="informix" function-name="nvl($1,$2)"/>
+			<dialect name="sybase" function-name="isnull($1,$2)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="length">		
+		<format><![CDATA[
+		#length($1)
+		]]></format>
+		<desc><![CDATA[
+		取字符串长度
+ 		$1: 取长度的字符串
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="length($1)"/>
+			<dialect name="db2" function-name="length($1)"/>
+			<dialect name="derby" function-name="length($1)"/>
+			<dialect name="mysql" function-name="length($1)"/>
+			<dialect name="sqlserver" function-name="len($1)"/>
+			<dialect name="informix" function-name="length($1)"/>
+			<dialect name="sybase" function-name="len($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="sum">		
+		<format><![CDATA[
+		#sum($1)
+		]]></format>
+		<desc><![CDATA[
+		对某列进行求和
+ 		$1: 进行求和的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="sum($1)"/>
+			<dialect name="db2" function-name="sum($1)"/>
+			<dialect name="derby" function-name="sum($1)"/>
+			<dialect name="mysql" function-name="sum($1)"/>
+			<dialect name="sqlserver" function-name="sum($1)"/>
+			<dialect name="informix" function-name="sum($1)"/>
+			<dialect name="sybase" function-name="sum($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="avg">		
+		<format><![CDATA[
+		#avg($1)
+		]]></format>
+		<desc><![CDATA[
+		对某列进行求平均值
+ 		$1: 进行求平均值的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="avg($1)"/>
+			<dialect name="db2" function-name="avg($1)"/>
+			<dialect name="derby" function-name="avg($1)"/>
+			<dialect name="mysql" function-name="avg($1)"/>
+			<dialect name="sqlserver" function-name="avg($1)"/>
+			<dialect name="informix" function-name="avg($1)"/>
+			<dialect name="sybase" function-name="avg($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="count">		
+		<format><![CDATA[
+		#count($1)
+		]]></format>
+		<desc><![CDATA[
+		求查询记录数
+ 		$1: 进行求查询记录数的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="count($1)"/>
+			<dialect name="db2" function-name="count($1)"/>
+			<dialect name="derby" function-name="count($1)"/>
+			<dialect name="mysql" function-name="count($1)"/>
+			<dialect name="sqlserver" function-name="count($1)"/>
+			<dialect name="informix" function-name="count($1)"/>
+			<dialect name="sybase" function-name="count($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="stddev">		
+		<format><![CDATA[
+		#stddev($1)
+		]]></format>
+		<desc><![CDATA[
+		对某列进行求标准差
+ 		$1: 进行求标准差的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="stddev($1)"/>
+			<dialect name="db2" function-name="stddev($1)"/>
+			<dialect name="derby" function-name="stddev($1)"/>
+			<dialect name="mysql" function-name="stddev($1)"/>
+			<dialect name="sqlserver" function-name="stdev($1)"/>
+			<dialect name="informix" function-name="stdev($1)"/>
+			<dialect name="sybase" function-name="stddev($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="variance">		
+		<format><![CDATA[
+		#variance($1)
+		]]></format>
+		<desc><![CDATA[
+		对某列进行求方差
+ 		$1: 进行求方差的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="variance($1)"/>
+			<dialect name="db2" function-name="variance($1)"/>
+			<dialect name="derby" function-name="variance($1)"/>
+			<dialect name="mysql" function-name="variance($1)"/>
+			<dialect name="sqlserver" function-name="var($1)"/>
+			<dialect name="informix" function-name="variance($1)"/>
+			<dialect name="sybase" function-name="variance($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	
+	<dialect-function name="max">		
+		<format><![CDATA[
+		#max($1)
+		]]></format>
+		<desc><![CDATA[
+		对某列进行求最大值
+ 		$1: 进行求最大值的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="max($1)"/>
+			<dialect name="db2" function-name="max($1)"/>
+			<dialect name="derby" function-name="max($1)"/>
+			<dialect name="mysql" function-name="max($1)"/>
+			<dialect name="sqlserver" function-name="max($1)"/>
+			<dialect name="informix" function-name="max($1)"/>
+			<dialect name="sybase" function-name="max($1)"/>
+		</dialects>
+	</dialect-function>
+	
+	<dialect-function name="min">		
+		<format><![CDATA[
+		#min($1)
+		]]></format>
+		<desc><![CDATA[
+		对某列进行求最小值
+ 		$1: 进行求最小值的字段
+		]]></desc>
+		<dialects>
+			<dialect name="oracle" function-name="min($1)"/>
+			<dialect name="db2" function-name="min($1)"/>
+			<dialect name="derby" function-name="min($1)"/>
+			<dialect name="mysql" function-name="min($1)"/>
+			<dialect name="sqlserver" function-name="min($1)"/>
+			<dialect name="informix" function-name="min($1)"/>
+			<dialect name="sybase" function-name="min($1)"/>
+		</dialects>
+	</dialect-function>
+</dialect-function-mappings>

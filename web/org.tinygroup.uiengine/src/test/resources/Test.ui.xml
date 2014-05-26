@@ -1,0 +1,8 @@
+<ui-components>
+  <ui-component name="abc">
+    <css-resource>x.css</css-resource>
+    <js-resource>x.js</js-resource>
+    <css-codelet>#div{color: red }</css-codelet>
+    <js-codelet>alert(1);</js-codelet>
+  </ui-component>
+</ui-components>

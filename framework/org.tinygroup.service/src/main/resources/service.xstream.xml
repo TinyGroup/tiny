@@ -1,0 +1,6 @@
+<xstream-configuration  package-name="service">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.service.config.ServiceComponents" />
+	    <xstream-annotation-class class-name="org.tinygroup.service.config.ServiceViewMappings" />
+	</xstream-annotation-classes>
+</xstream-configuration>

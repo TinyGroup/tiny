@@ -1,0 +1,6 @@
+<processors language="db2">
+	<processor name="table" bean="db2SqlProcessor"></processor>
+	<processor name="initData" bean="initDataSqlProcessor"></processor>
+	<processor name="view" bean="viewSqlProcessor"></processor>
+	<processor name="procedure" bean="oracleProcedureSqlProcessor"></processor>
+</processors>

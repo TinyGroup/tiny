@@ -1,0 +1,181 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+
+
+	<bean id="mongoModelLoader" name="mongoModelLoader"
+		scope="singleton" class="org.tinygroup.mongodb.engine.loader.MongoModelLoader">
+	</bean>
+	
+	<bean id="mongoModelInfoGetter" name="mongoModelInfoGetter" scope="singleton"
+		class="org.tinygroup.mongodb.engine.MongoModelInfoGetter">
+	</bean>
+	
+	<bean id="mongoCompareModeContain" name="mongoCompareModeContain" scope="singleton"
+		class="org.tinygroup.mongodb.engine.comparemode.MongoCompareModeContain">
+	</bean>
+	
+	<!-- paramterbuilder -->
+	<bean id="addOperationParamterBuilder" name="addOperationParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.add.AddOperationParamterBuilder">
+	</bean>
+	<bean id="nestedAddOperationSelectParamterBuilder" name="nestedAddOperationSelectParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedadd.NestedAddOperationSelectParamterBuilder">
+	</bean>
+	<bean id="nestedAddOperationSaveParamterBuilder" name="nestedAddOperationSaveParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedadd.NestedAddOperationSaveParamterBuilder">
+	</bean>
+	<bean id="nestedRemoveOperationConfirmParamterBuilder" name="nestedRemoveOperationConfirmParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedremove.NestedRemoveOperationConfirmParamterBuilder">
+	</bean>
+	<bean id="nestedRemoveOperationParamterBuilder" name="nestedRemoveOperationParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedremove.NestedRemoveOperationParamterBuilder">
+	</bean>
+	<bean id="copyAddOperationSaveParamterBuilder" name="copyAddOperationSaveParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.copyadd.CopyAddOperationSaveParamterBuilder">
+	</bean>	
+	<bean id="copyAddOperationSelectParamterBuilder" name="copyAddOperationSelectParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.copyadd.CopyAddOperationSelectParamterBuilder">
+	</bean>
+	<bean id="deleteOperationParamterBuilder" name="deleteOperationParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.delete.DeleteOperationParamterBuilder">
+	</bean>	
+	<bean id="deleteOperationConfirmParamterBuilder" name="deleteOperationConfirmParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.delete.DeleteOperationConfirmParamterBuilder">
+	</bean>	
+	<bean id="modifyOperationSaveParamterBuilder" name="modifyOperationSaveParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.modify.ModifyOperationSaveParamterBuilder">
+	</bean>	
+	<bean id="modifyOperationSelectParamterBuilder" name="modifyOperationSelectParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.modify.ModifyOperationSelectParamterBuilder">
+	</bean>	
+	<bean id="viewOperationParamterBuilder" name="viewOperationParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.view.ViewOperationParamterBuilder">
+	</bean>	
+	<bean id="tableViewParamterBuilder" name="tableViewParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.table.TableViewParamterBuilder">
+	</bean>
+	<bean id="treeViewParamterBuilder" name="treeViewParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.tree.TreeViewParamterBuilder">
+	</bean>
+	
+	<bean id="relationQueryParamterBuilder" name="relationQueryParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.relation.RelationQueryParamterBuilder">
+	</bean>
+	
+	<bean id="nestedArrayQueryParamterBuilder" name="nestedArrayQueryParamterBuilder" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.nestedarrayquery.NestedArrayQueryParamterBuilder">
+	</bean>
+	
+	<!-- seriveprocessor -->
+	<bean id="addOperationServiceProcessor" name="addOperationServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.add.AddOperationServiceProcessor">
+	</bean>
+	<bean id="nestedAddOperationSaveServiceProcessor" name="nestedAddOperationSaveServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedadd.NestedAddOperationSaveServiceProcessor">
+	</bean>
+	<bean id="nestedAddOperationSelectServiceProcessor" name="nestedAddOperationSelectServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedadd.NestedAddOperationSelectServiceProcessor">
+	</bean>
+	<bean id="nestedRemoveOperationConfirmServiceProcessor" name="nestedRemoveOperationConfirmServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedremove.NestedRemoveOperationConfirmServiceProcessor">
+	</bean>
+	<bean id="nestedRemoveOperationServiceProcessor" name="nestedRemoveOperationServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.nestedremove.NestedRemoveOperationServiceProcessor">
+	</bean>
+	<bean id="copyAddOperationSaveServiceProcessor" name="copyAddOperationSaveServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.copyadd.CopyAddOperationSaveServiceProcessor">
+	</bean>	
+	<bean id="copyAddOperationSelectServiceProcessor" name="copyAddOperationSelectServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.copyadd.CopyAddOperationSelectServiceProcessor">
+	</bean>
+	<bean id="deleteOperationServiceProcessor" name="deleteOperationServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.delete.DeleteOperationServiceProcessor">
+	</bean>	
+	<bean id="deleteOperationConfirmServiceProcessor" name="deleteOperationConfirmServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.delete.DeleteOperationConfirmServiceProcessor">
+	</bean>	
+	<bean id="modifyOperationSaveServiceProcessor" name="modifyOperationSaveServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.modify.ModifyOperationSaveServiceProcessor">
+	</bean>	
+	<bean id="modifyOperationSelectServiceProcessor" name="modifyOperationSelectServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.modify.ModifyOperationSelectServiceProcessor">
+	</bean>	
+	<bean id="viewOperationServiceProcessor" name="viewOperationServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.operation.view.ViewOperationServiceProcessor">
+	</bean>	
+	<bean id="tableViewServiceProcessor" name="tableViewServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.table.TableViewServiceProcessor">
+	</bean>
+	<bean id="treeViewServiceProcessor" name="treeViewServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.tree.TreeViewServiceProcessor">
+	</bean>
+	
+	<bean id="relationQueryServiceProcessor" name="relationQueryServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.relation.RelationQueryServiceProcessor">
+	</bean>
+	
+	<bean id="nestedArrayQueryServiceProcessor" name="nestedArrayQueryServiceProcessor" scope="singleton"
+		class="org.tinygroup.mongodb.engine.view.nestedarrayquery.NestedArrayQueryServiceProcessor">
+	</bean>
+	
+	<!-- comparemode -->
+	<bean id="beginsWithCompareMode" name="beginsWithCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.BeginsWithCompareMode">
+	</bean>
+	<bean id="containsWithCompareMode" name="containsWithCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.ContainsWithCompareMode">
+	</bean>
+	<bean id="endsWithCompareMode" name="endsWithCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.EndsWithCompareMode">
+	</bean>
+	<bean id="equalsCompareMode" name="equalsCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.EqualsCompareMode">
+	</bean>
+	<bean id="greaterOrEqualsCompareMode" name="greaterOrEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.GreaterOrEqualsCompareMode">
+	</bean>
+	<bean id="greaterThanCompareMode" name="greaterThanCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.GreaterThanCompareMode">
+	</bean>
+	<bean id="isEmptyCompareMode" name="isEmptyCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.IsEmptyCompareMode">
+	</bean>
+	<bean id="isNotEmptyCompareMode" name="isNotEmptyCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.IsNotEmptyCompareMode">
+	</bean>
+	<bean id="isNullCompareMode" name="isNullCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.IsNullCompareMode">
+	</bean>
+	<bean id="isNotNullCompareMode" name="isNotNullCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.IsNotNullCompareMode">
+	</bean>
+	<bean id="lessOrEqualsCompareMode" name="lessOrEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.LessOrEqualsCompareMode">
+	</bean>
+	<bean id="lessThanCompareMode" name="lessThanCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.LessThanCompareMode">
+	</bean>
+	<bean id="notContainsWithCompareMode" name="notContainsWithCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.NotContainsWithCompareMode">
+	</bean>
+	<bean id="notEqualsCompareMode" name="notEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.NotEqualsCompareMode">
+	</bean>
+	<bean id="betweenAndCompareMode" name="betweenAndCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.BetweenAndCompareMode">
+	</bean>
+	<bean id="notBetweenAndCompareMode" name="notBetweenAndCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.NotBetweenAndCompareMode">
+	</bean>
+	<bean id="lengthNotEqualsCompareMode" name="lengthNotEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.LengthNotEqualsCompareMode">
+	</bean>
+	<bean id="lengthEqualsCompareMode" name="lengthEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.mongodb.engine.comparemode.impl.LengthEqualsCompareMode">
+	</bean>	
+</beans>

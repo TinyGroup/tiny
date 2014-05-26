@@ -1,0 +1,77 @@
+#@wordDocument()
+#@body()
+
+
+
+
+
+
+
+  
+  
+  
+  
+ 
+
+#*
+	注意，目录需要和大纲一起使用，目录跳转的地址需要在大纲中预先指定
+	目录头 ，在目录前显示目录两个字
+*#
+#@catalogue("目录",{"font":"微软雅黑","color":"002060","size":"34","bold":"on","highlight":"yellow"})
+
+#*
+	创建一条目录，属性如下
+	grade 等级为10，代表一级，20 代表二级... 依此类推
+	style 
+		font 字形，微软雅黑
+		color 颜色，绿色
+		size 字体大小，50
+		bold 是否加粗，加粗
+		incline 是否斜体，斜体
+		underline 是否加下划线，加下划线
+	content 
+		name 该目录的名称 第 1 章  对象入门
+		pageNum 该目录跳转的页码
+		bookmark 该目录对应的大纲ID，需要跳转到指定的大纲
+*#
+#cataItem({"grade":"10",
+		   "name":"第 1 章  对象入门",
+		   "pageNum":"1",
+		   "bookmark":"_Toc372801234",
+		   "font":{"font":"微软雅黑","color":"00B050","size":"50","bold":"on","incline":"on","underline":"on"}
+		 })
+#cataItem({"grade":"20","name":"1.1 抽象的进步","pageNum":"2","bookmark":"_Toc2ny301234"})
+#cataItem({"grade":"30","name":"1.1.1 注释文档","pageNum":"4","bookmark":"_Toc37ahy2234"})
+#cataItem({"grade":"20","name":"1.2 对象的接口","pageNum":"7","bookmark":"_Toc3728mi734"})
+#cataItem({"grade":"30","name":"1.2.1 集合与继承器","pageNum":"13","bookmark":"_Toc37280me84"})
+#cataItem({"grade":"20","name":"1.3 方案的重复使用","pageNum":"37","bookmark":"_Toc3plk23234"})
+#cataItem({"grade":"10","name":"第2 章一切都是对象","pageNum":"59","bookmark":"_Toc37281nju4"})
+#end
+
+	  
+#*
+	大纲
+		grade: 大纲等级
+		name: 大纲名称
+		bookmarkNO: 唯一标识大纲的ID，目录中需要使用该ID
+*#		  
+#@outline({"grade":"1","bookmarkNO":"_Toc372801234","name":"第 1 章  对象入门"})          ## 定义了一级大纲，名称为：第 1 章  对象入门，该大纲的ID: _Toc372801234
+	#@outline({"grade":"2","bookmarkNO":"_Toc2ny301234","name":"1.1 抽象的进步"})
+		#@outline({"grade":"3","bookmarkNO":"_Toc37ahy2234","name":"1.1.1 注释文档"})
+		#end
+	#end
+	#@outline({"grade":"2","bookmarkNO":"_Toc3728mi734","name":"1.2 对象的接口"})
+		#@outline({"grade":"3","bookmarkNO":"_Toc37280me84","name":"1.2.1 集合与继承器"})
+		#end
+	#end
+	#@outline({"grade":"2","bookmarkNO":"_Toc3plk23234","name":"1.3 方案的重复使用"})
+	#end
+#end
+
+#@outline({"grade":"1","bookmarkNO":"_Toc37281nju4","name":"第2 章一切都是对象"})
+#end
+
+
+#end
+#end
+

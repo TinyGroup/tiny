@@ -1,0 +1,313 @@
+#@wordDocument()
+#@body()
+
+
+
+#*
+	添加页眉
+*#
+#pageHeader("恒生电子股份有限公司",{"name":"宋体","size":"28","color":"FF0000","bold":""})
+ 
+#*
+	添加页脚
+*#
+#pageTail("恒生电子版权所有",{"name":"宋体","size":"34","color":"FF0000","bold":""})
+ 
+#*
+	添加页脚
+*#
+#footnote("3")
+
+
+
+
+#p("表格测试1，两行两列，单元格高度和宽度自动",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table()
+	#@tableRow()  
+		#@tableCell()  
+			#p("单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11单元格11")
+		#end
+		#@tableCell()  
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()  
+			#p("单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22单元格22")
+		#end
+	#end
+#end
+
+
+
+
+
+
+#p("表格测试2，两行两列，高度自动，单元格宽度分别为4000和2000",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table()
+	#@tableRow()  
+		#@tableCell({"span":{"width":"4000"}})   ##单元格宽度 4000
+			#p("单元格11")
+		#end
+		#@tableCell({"span":{"width":"3000"}})   ##单元格宽度 3000
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell({"span":{"width":"4000"}})   ##单元格宽度 4000
+			#p("单元格21")
+		#end
+		#@tableCell({"span":{"width":"3000"}})   ##单元格宽度 3000
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+
+#p("表格测试3，两行两列，宽度自动，单元格高度分别为5000和3000",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table()
+	#@tableRow(5000)  
+		#@tableCell()      
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow(3000)   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+#p("表格测试4，边框类型为单线，颜色为绿色，宽度为30",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"borders":{"wval":"single","color":"92D050","size":"30"}})
+	#@tableRow()  
+		#@tableCell()      
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#p("表格测试5，边框类型为双划线，颜色为紫色，宽度为20",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"borders":{"wval":"double","color":"7030A0","size":"20"}})
+	#@tableRow()  
+		#@tableCell()      
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+
+
+#p("表格测试6，",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"shading":{"wval":"solid","color":"92D050","fill":"auto"}})
+	#@tableRow()  
+		#@tableCell({"shading":{"wval":"solid","color":"FFFF00","fill":"auto"},
+					 "span":{"width":"6000","type":"dxa"}})
+			#p("单元格11")
+		#end
+		#@tableCell()    
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#p("表格测试7，",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"shading":{"wval":"solid","color":"92D050","fill":"auto"}})
+	#@tableRow()  
+		#@tableCell()
+			#p("单元格11")
+		#end
+		#@tableCell({"borders":{"wval":"thin-thick-medium-gap","width":"120","color":"00B050"},
+					 "shading":{"wval":"solid","color":"FF0000","fill":"FF0000"}})
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#p("表格测试8，",{"font":{"size":"24","color":"FF0000","bold":""}})
+#@table({"shading":{"wval":"solid","color":"92D050","fill":"auto"}})
+	#@tableRow()  
+		#@tableCell({"borders":{"wval":"dash-dot-stroked","width":"120","color":"E36C0A"},
+					 "shading":{"wval":"solid","color":"FFFF00","fill":"auto"}})
+			#p("单元格11")  
+		#end
+		#@tableCell()
+			#p("单元格12")
+		#end
+	#end
+	#@tableRow()   
+		#@tableCell()   
+			#p("单元格21")
+		#end
+		#@tableCell()   
+			#p("单元格22")
+		#end
+	#end
+#end
+
+
+
+#*
+	图片
+		name: 图片名称
+		width: 图片宽度
+		height: 图片高度
+		data: 包含图片二进制数据的变量
+*#	
+#@insertPicture({"name":"111.jpg","width":"249pt","height":"119.25pt","data":"$picData"})
+#end
+
+
+
+#p("普通段落测试")
+#p("左对齐",{"align":"left"})
+#p("居中",{"align":"center"})
+#p("右对齐",{"align":"right"})
+#p("两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐两端对齐")
+#p("分散对齐",{"align":"distribute"})
+#p("方正姚体",{"font":{"name":"方正姚体"}}) 
+#p("48号字体",{"font":{"size":"48"}}) 
+#p("红色字体",{"font":{"color":"FF0000"}}) 
+#p("加粗",{"font":{"bold":""}}) 
+#p("斜体",{"font":{"incline":""}}) 
+#p("删除线",{"font":{"strike":""}}) 
+#p("双下划线",{"font":{"u":"double"}}) 
+#p("黄色高亮",{"font":{"highlight":"yellow"}}) 
+#p("首字缩进",{"indent":{"firstLine":"300"}})
+
+
+
+ #*
+	宏bookmark，插入一个书签，该宏包含一个参数，表示书签名称，体表示该书签的内容
+*#
+#@bookmark("我的书签")
+#set($content="这里是书签")
+#h($content,  
+   {"font":{"name":"方正姚体","size":"48","color":"FF0000","bold":"","highlight":"cyan"}}
+  )
+#end
+ 
+
+#*
+	宏link，新建一个链接，该宏只有一个参数，表示已个url 
+		url地址  http://www.hundsun.com
+*#
+#set($url="http://www.hundsun.com")
+#set($text="点击这里可以跳转到恒生首页")
+#@link($url)
+#h($text,
+	{"font":{"name":"方正姚体","size":"48","color":"FF0000","bold":"","highlight":"green"}}
+  )
+#end
+  
+  
+
+
+
+
+  
+一级
+<w:p>#bullets({"grade":"0","i":"1","char":"l"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"2","char":"n"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"3","char":"u"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"4","char":"«"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"5","char":"ª"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"6","char":"©"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"7","char":"ü"})#wr("项目符号")</w:p>
+<w:p>#bullets({"grade":"0","i":"8","char":"Ø"})#wr("项目符号")</w:p>
+ 
+
+
+
+
+
+#cataHeader("目录",{"font":"宋体","color":"00B050","size":"30","bold":"on"})
+#catalogue({"begin":"","grade":"10","bookmarkNo":"_Toc374566201","pageNo":"1","content":"1. 对象入门"})
+#catalogue({"grade":"20","bookmarkNo":"_Toc374566202","pageNo":"1","content":"1.1 抽象的进步"})
+#catalogue({"grade":"30","bookmarkNo":"_Toc374566203","pageNo":"1","content":"1.1.1 注释文档"})
+#catalogue({"grade":"20","bookmarkNo":"_Toc374566204","pageNo":"1","content":"1.2 对象的接口"})
+#catalogue({"grade":"30","bookmarkNo":"_Toc374566205","pageNo":"1","content":"1.2.1 集合与继承器"})
+#catalogue({"grade":"20","bookmarkNo":"_Toc374566206","pageNo":"1","content":"1.3 方案的重复使用"})
+#cataEnd()
+
+
+
+#@outline({"grade":"1","bookmarkNO":"_Toc374566201","name":"对象入门","multilevel":{"level":"0","ilfo":"41","char":"1"}})#end
+#@outline({"grade":"2","bookmarkNO":"_Toc374566202","name":"抽象的进步","multilevel":{"level":"1","ilfo":"41","char":"1.1"}})#end
+#@outline({"grade":"3","bookmarkNO":"_Toc374566203","name":"注释文档","multilevel":{"level":"2","ilfo":"41","char":"1.1.1"}})#end
+#@outline({"grade":"2","bookmarkNO":"_Toc374566204","name":"对象的接口","multilevel":{"level":"1","ilfo":"41","char":"1.2"}})#end
+#@outline({"grade":"3","bookmarkNO":"_Toc374566205","name":"集合与继承器","multilevel":{"level":"2","ilfo":"41","char":"1.2.1"}})#end
+#@outline({"grade":"2","bookmarkNO":"_Toc374566206","name":"方案的重复使用","multilevel":{"level":"1","ilfo":"41","char":"1.3"}})#end
+
+
+
+ 
+
+
+  
+
+ 
+#end
+#end
+

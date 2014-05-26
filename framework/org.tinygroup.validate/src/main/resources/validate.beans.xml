@@ -1,0 +1,122 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:ehcache="http://www.springmodules.org/schema/ehcache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd  
+    http://www.springframework.org/schema/tx  
+    http://www.springframework.org/schema/tx/spring-tx-2.5.xsd  
+    http://www.springmodules.org/schema/ehcache  
+    http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd  
+    http://www.directwebremoting.org/schema/spring-dwr  
+    http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd
+    http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	
+	
+	<bean id="validatorMapStorage" name="validatorMapStorage" scope="singleton"
+		class="org.tinygroup.validate.impl.ValidatorMapStorageImpl">
+	</bean>
+	
+	<bean id="validatorManagerWrapper" name="validatorManagerWrapper" scope="singleton"
+		class="org.tinygroup.validate.impl.ValidatorManagerWrapper">
+	</bean>
+		
+	<bean id="annotationValidatorManager" name="annotationValidatorManager" scope="singleton"
+		class="org.tinygroup.validate.impl.AnnotationValidatorManagerImpl">
+		<property name="validatorMapStorage">
+			<ref bean="validatorMapStorage"/>
+		</property>
+		<property name="validatorManagerWrapper">
+			<ref bean="validatorManagerWrapper"/>
+		</property>
+	</bean>
+	<bean id="xmlValidatorManager" name="xmlValidatorManager" scope="singleton"
+		class="org.tinygroup.validate.impl.XmlValidatorManagerImpl">
+		<property name="validatorMapStorage">
+			<ref bean="validatorMapStorage"/>
+		</property>
+		<property name="validatorManagerWrapper">
+			<ref bean="validatorManagerWrapper"/>
+		</property>
+	</bean>
+	
+	<bean id="complexValidatorManager" name="complexValidatorManager" scope="singleton"
+		  class="org.tinygroup.validate.impl.ComplexValidatorManager">
+		<property name="validatorManagers">
+			<list>
+				<ref bean="annotationValidatorManager" />
+				<ref bean="xmlValidatorManager" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="validatorClassFieldAction" name="validatorClassFieldAction"
+		scope="singleton" 
+		class="org.tinygroup.validate.action.ValidatorClassFieldAction">
+		<property name="annotationValidatorManager">
+			<ref bean="annotationValidatorManager"></ref>
+		</property>
+	</bean>
+	<bean id="validatorFieldAnnotaionAction" name="validatorFieldAnnotaionAction"
+		scope="singleton" 
+		class="org.tinygroup.validate.action.ValidatorFieldAnnotationAction">
+		<property name="annotationValidatorManager">
+			<ref bean="annotationValidatorManager"></ref>
+		</property>
+	</bean>
+		<bean id="validateMapFileProcessor" scope="singleton"
+		class="org.tinygroup.validate.fileresolver.ValidateMapFileProcessor">
+	</bean>
+	<bean id="validateFileProcessor" scope="singleton"
+		class="org.tinygroup.validate.fileresolver.ValidateFileProcessor">
+	</bean>
+	<!--流程校验组件-->
+	<bean id="validateComponent" name="validateComponent" scope="singleton"
+		class="org.tinygroup.validate.component.ValidateComponent">
+		<property name="validatorManager">
+			<ref bean="complexValidatorManager"/>
+		</property>
+	</bean>
+	<!-- 检验器-->
+	<bean id="enumValidator" name="enumValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.EnumValidator">
+	</bean>
+	<bean id="equalsValidator" name="equalsValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.EqualsValidator">
+	</bean>
+	<bean id="falseValidator" name="falseValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.FalseValidator">
+	</bean>
+	<bean id="notEqualsValidator" name="notEqualsValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.NotEqualsValidator">
+	</bean>
+	<bean id="notNullValidator" name="notNullValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.NotNullValidator">
+	</bean>
+	<bean id="nullValidator" name="nullValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.NullValidator">
+	</bean>
+	<bean id="trueValidator" name="trueValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.TrueValidator">
+	</bean>
+	<bean id="integerRangeValidator" name="integerRangeValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.IntegerRangeValidator">
+	</bean>
+	<bean id="doubleRangeValidator" name="doubleRangeValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.DoubleRangeValidator">
+	</bean>
+	<bean id="floatRangeValidator" name="floatRangeValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.FloatRangeValidator">
+	</bean>
+	<bean id="patternValidator" name="patternValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.PatternValidator">
+	</bean>
+	<bean id="sizeValidator" name="sizeValidator" scope="prototype"
+		 class="org.tinygroup.validate.validator.SizeValidator">
+	</bean>
+</beans>

@@ -1,0 +1,6 @@
+<!--注解加载规则配置 -->
+<annotation-configuration>
+	<annotation-mapping id="service" value="(.)*Service"></annotation-mapping>
+	<annotation-mapping id="service" value="(.)*ServiceAdapter"></annotation-mapping>
+	<annotation-mapping id="validate" value="org\.tiny\..*"></annotation-mapping>
+</annotation-configuration>

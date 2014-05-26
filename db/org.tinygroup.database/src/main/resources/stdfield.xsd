@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="standard-fields">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="standard-field" minOccurs="0"
+					maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nick-name" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" />
+									<xs:attribute name="title" type="xs:string" />
+									<xs:attribute name="id" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" />
+						<xs:attribute name="name" type="xs:string" />
+						<xs:attribute name="title" type="xs:string" />
+						<xs:attribute name="description" type="xs:string" />
+						<xs:attribute name="business-type-id" type="xs:string" />
+						<xs:attribute name="not-null" type="xs:boolean" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="package-name" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

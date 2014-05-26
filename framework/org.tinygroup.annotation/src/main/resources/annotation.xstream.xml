@@ -1,0 +1,5 @@
+<xstream-configuration package-name="annotation">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.annotation.config.AnnotationClassMatchers" />
+	</xstream-annotation-classes>
+</xstream-configuration>

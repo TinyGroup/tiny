@@ -1,0 +1,28 @@
+<order-groups>
+		<order-group name="tiny-filter" default-type="after" default-feature="basic">
+			<order-object name="basic" type="org.tinygroup.weblayer.filter.BasicTinyFilter">
+				<feature-order type="before" feature="*"></feature-order>
+			</order-object>
+			<order-object name="setlocale" type="org.tinygroup.weblayer.filter.SetLocaleTinyFilter">
+				<feature-order type="after" feature="session"></feature-order>
+			</order-object>
+			<order-object name="parser" type="org.tinygroup.weblayer.filter.ParserTinyFilter">
+			</order-object>
+			<order-object name="buffered" type="org.tinygroup.weblayer.filter.BufferedTinyFilter">
+			</order-object>
+			<order-object name="lazycommit" type="org.tinygroup.weblayer.filter.LazyCommitTinyFilter">
+				<feature-order type="require" feature="buffered"></feature-order>
+			</order-object>
+			<order-object name="pagecache" type="org.tinygroup.weblayer.filter.PageCacheTinyFilter">
+				<feature-order type="require" feature="buffered"></feature-order>
+			</order-object>
+			<order-object name="rewrite" type="org.tinygroup.weblayer.filter.RewriteTinyFilter">
+				<feature-order type="require" feature="parser"></feature-order>
+				<feature-order type="after" feature="setlocale"></feature-order>
+			</order-object>
+			<order-object name="session" type="org.tinygroup.weblayer.filter.SessionTinyFilter">
+				<feature-order type="after" feature="parser"></feature-order>
+				<feature-order type="require" feature="lazycommit"></feature-order>
+			</order-object>
+		</order-group>
+</order-groups>

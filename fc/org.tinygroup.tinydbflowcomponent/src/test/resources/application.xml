@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+	<application-processors>
+		<application-processor bean="fileResolverProcessor"></application-processor>
+		<application-processor bean="beanOperatorApplicationProcessor"></application-processor>
+	</application-processors>
+	<bean-manager-config default-schema="opensource">
+	   <bean-opertate-config schema="opensource"
+			table-name-pattern="%" bean-name="beanStringOperator" key-type="uuid">
+		</bean-opertate-config>
+    </bean-manager-config>
+</application>

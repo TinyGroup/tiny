@@ -1,0 +1,39 @@
+<flow id="00002" name="business_template1" default-node-id="end">
+	<nodes>
+		<node id="dePackage" name="dePackage" title="解包处理">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="解包处理...." />
+				</properties>
+			</component>
+		</node>
+		<node id="PreProcess" name="PreProcess" title="预处理">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="预处理...." />
+				</properties>
+			</component>
+		</node>
+		<node id="Process" name="Process" title="处理">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="处理...." />
+				</properties>
+			</component>
+		</node>
+		<node id="AfterProcess" name="AfterProcess" title="后处理">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="后处理...." />
+				</properties>
+			</component>
+		</node>
+		<node id="Pacakge" name="Pacakge" title="打包">
+			<component name="printflow">
+				<properties>
+					<flow-property name="info" value="打包...." />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

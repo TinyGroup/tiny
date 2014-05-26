@@ -1,0 +1,13 @@
+<flow id="flowContext2Object" name="flowContext2Object" begin-node-id="context2Object"
+	default-node-id="end">
+	<nodes>
+		<node id="context2Object" name="context2Object"  title="转换对象">
+			<component name="context2ObjectComponent">
+				<properties>
+					<flow-property name="className" value="${className}" />
+					<flow-property name="resultKey" value="${resultKey}" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

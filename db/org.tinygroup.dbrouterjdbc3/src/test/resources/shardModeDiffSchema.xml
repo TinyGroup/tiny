@@ -1,0 +1,113 @@
+<routers>
+	<router id="shardModeDiffSchema" user-name="luog" password="123456"
+		key-generator-class="org.tinygroup.dbrouter.impl.keygenerator.RouterKeyGeneratorLong">
+		<key-generator-config increment="1"
+			data-source-id="ds0" />
+		<data-source-configs>
+			<data-source-config id="ds0"
+				driver="org.apache.derby.jdbc.EmbeddedDriver" url="jdbc:derby:derbydb/db01;create=true" />
+			<data-source-config id="ds1"
+				driver="org.apache.derby.jdbc.EmbeddedDriver" url="jdbc:derby:derbydb/db02;create=true" />
+			<data-source-config id="ds2"
+				driver="org.apache.derby.jdbc.EmbeddedDriver" url="jdbc:derby:derbydb/db03;create=true" />
+		</data-source-configs>
+		<partitions>
+			<partition id="abc" mode="2">
+				<partition-rules>
+					<partition-rule
+						class="org.tinygroup.dbrouter.impl.partionrule.PartionRuleByTableName"
+						table-name="student" />
+				</partition-rules>
+				<shards>
+					<shard id="shard0" data-source-id="ds0">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="tId" remainder="0" />
+						</shard-rules>
+					</shard>
+					<shard id="shard1" data-source-id="ds1">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="tId" remainder="1" />
+						</shard-rules>
+					</shard>
+					<shard id="shard2" data-source-id="ds2">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="student" primary-key-field-name="tId" remainder="2" />
+						</shard-rules>
+					</shard>
+				</shards>
+			</partition>
+
+			<partition id="teacher" mode="2">
+				<partition-rules>
+					<partition-rule
+						class="org.tinygroup.dbrouter.impl.partionrule.PartionRuleByTableName"
+						table-name="teacher" />
+				</partition-rules>
+				<shards>
+					<shard id="shard0" data-source-id="ds0">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="teacher" primary-key-field-name="id" remainder="0" />
+						</shard-rules>
+					</shard>
+					<shard id="shard1" data-source-id="ds1">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="teacher" primary-key-field-name="id" remainder="1" />
+						</shard-rules>
+					</shard>
+					<shard id="shard2" data-source-id="ds2">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="teacher" primary-key-field-name="id" remainder="2" />
+						</shard-rules>
+					</shard>
+				</shards>
+			</partition>
+
+			<partition id="teachers_male" mode="2">
+				<partition-rules>
+					<partition-rule
+						class="org.tinygroup.dbrouter.impl.partionrule.PartionRuleByTableName"
+						table-name="teachers_male" />
+				</partition-rules>
+				<shards>
+					<shard id="shard0" data-source-id="ds0">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="teachers_male" primary-key-field-name="id"
+								remainder="0" />
+						</shard-rules>
+					</shard>
+					<shard id="shard1" data-source-id="ds1">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="teachers_male" primary-key-field-name="id"
+								remainder="1" />
+						</shard-rules>
+					</shard>
+					<shard id="shard2" data-source-id="ds2">
+						<shard-rules>
+							<shard-rule
+								class="org.tinygroup.dbrouter.impl.shardrule.ShardRuleByIdDifferentSchema"
+								table-name="teachers_male" primary-key-field-name="id"
+								remainder="2" />
+						</shard-rules>
+					</shard>
+				</shards>
+			</partition>
+
+		</partitions>
+	</router>
+</routers>

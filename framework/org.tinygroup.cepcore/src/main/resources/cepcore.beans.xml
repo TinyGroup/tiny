@@ -1,0 +1,48 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+	<bean id="cepcore" name="cepcore" scope="singleton"
+		class="org.tinygroup.cepcore.impl.CEPcoreImpl">
+	</bean>
+	<bean id="cepCoreManagerCentral" name="cepCoreManagerCentral"
+		scope="singleton" class="org.tinygroup.cepcore.impl.CEPCoreCentralImpl">
+	</bean>
+	<bean id="nodeWeightPloyStrategy" name="nodeWeightPloyStrategy"
+		scope="prototype" class="org.tinygroup.cepcore.util.CEPNodeWeightPloy">
+	</bean>
+	<bean id="cepCoreManagerNode" name="cepCoreManagerNode"
+		scope="singleton" class="org.tinygroup.cepcore.impl.CEPCoreNode3Impl">
+	</bean>
+	<bean id="cepcore_aop_bean" name="cepcore_aop_bean"
+		scope="singleton" class="org.tinygroup.cepcore.aop.impl.CEPCoreAopManagerImpl">
+	</bean>
+	<bean id="requestParamValidate" name="requestParamValidate"
+		scope="singleton" class="org.tinygroup.cepcore.aop.impl.RequestParamValidate">
+		
+		<property name="cepCore">
+			<ref bean="cepcore" />
+		</property>
+	</bean>
+	
+	<bean id="exceptionProcessor" scope="singleton"
+		class="org.tinygroup.cepcore.impl.ExceptionProcessor">
+		<property name="manager">
+			<ref bean="exceptionHandlerManager" />
+		</property>
+	</bean>
+	
+	<bean id="cepCoreAopConfig" scope="singleton"
+		class="org.tinygroup.cepcore.aop.impl.CepCoreAopConfig">
+		<property name="manager">
+			<ref bean="cepcore_aop_bean" />
+		</property>
+	</bean>
+	<bean id="CEPProcessor" scope="singleton"
+		class="org.tinygroup.cepcore.applicationprocessor.CEPProcessor">
+		<property name="cep" ref="cepcore"></property>
+	</bean>
+</beans>

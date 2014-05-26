@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-model id="org" name="orgmgt" title="组织"
+	enable-delete="true" enable-modity="true" abstract-model="false"
+	version="1.0" cache-enabled="true">
+	<description>组织</description>
+	<extend-information>扩展信息</extend-information>
+	<operations>
+		<operation id="copyAddOrg" name="copyAddOrg" title="拷贝新增"
+			type="copyAdd" url="" permission-check="false">
+			<description>拷贝新增组织操作</description>
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="org_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic">
+				<description>新增列表</description>
+				<operation-fields>
+					<operation-field editable="true" hidden="false"
+						field-id="name_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="info_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="parent_org_id_111" />
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation id="viewOrg" name="viewOrg" title="查看" type="view"
+			url="" permission-check="false">
+			<description>查看组织操作</description>
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="org_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic">
+				<description>查看字段列表</description>
+				<operation-fields>
+					<operation-field editable="false" hidden="true"
+						field-id="org_id111" />
+					<operation-field editable="false" hidden="false"
+						field-id="name_111" />
+					<operation-field editable="false" hidden="false"
+						field-id="info_111" />
+					<operation-field editable="false" hidden="false"
+						field-id="parent_org_id_111" />	
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation id="addOrg" name="addOrg" title="新增" type="add"
+			url="" permission-check="false" width="400" height="300">
+			<description>新增组织操作</description>
+			<operation-group id="basic">
+				<description>新增列表</description>
+				<operation-fields>
+					<operation-field editable="false" hidden="true"
+						field-id="org_id111" />
+					<operation-field editable="true" hidden="false"
+						field-id="name_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="info_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="parent_org_id_111" />	
+				</operation-fields>
+			</operation-group>
+		</operation>
+		<operation id="deleteOrg" name="deleteOrg" title="删除" type="delete"
+			url="" permission-check="false">
+			<description>删除组织操作</description>
+			<condition-fields>
+				<condition-field editable="fase" hidden="false"
+					field-id="org_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+		</operation>
+		<operation id="modifyOrg" name="modifyOrg" title="修改" type="modify"
+			url="" permission-check="false">
+			<description>修改组织操作</description>
+			<condition-fields>
+				<condition-field editable="false" hidden="false"
+					field-id="org_id111" compare-mode="equals">
+					<groups></groups>
+				</condition-field>
+			</condition-fields>
+			<operation-group id="basic">
+				<description>修改字段列表</description>
+				<operation-fields>
+					<operation-field editable="false" hidden="true"
+						field-id="org_id111" />
+					<operation-field editable="true" hidden="false"
+						field-id="name_111">
+						<input-mode type="textMode" />
+					</operation-field>
+					<operation-field editable="true" hidden="false"
+						field-id="info_111" />
+					<operation-field editable="true" hidden="false"
+						field-id="parent_org_id_111" />	
+				</operation-fields>
+			</operation-group>
+		</operation>
+	</operations>
+	<views>
+		<view id="treeOrg" name="treeOrg" title="组织树" type="tree"
+			width="800" height="600" pageSize="10" conditionGroups="简单查询,高级查询"
+			modal="false" allow-edit="true">
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="parent_org_id_111" compare-mode="equals" groups="简单查询,高级查询">
+				</condition-field>
+				<condition-field editable="true" hidden="false"
+					field-id="info_111" compare-mode="equals" groups="高级查询">
+				</condition-field>
+			</condition-fields>
+			<view-groups>
+				<view-group>
+					<display-field field-id="org_id111" hidden="true" />
+					<display-field field-id="name_111" hidden="false" />
+				</view-group>
+			</view-groups>
+			<order-fields>
+				<order-field field-id="org_id111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="name_111" editable="false"
+					hidden="false" />
+				<order-field field-id="info_111" editable="false"
+					hidden="false" />
+			</order-fields>
+			<extendInformation>
+				<![CDATA[
+				<extend-info>
+				  <field-maps>
+					<field-map name="text" fieldId="name_111" pattern=""/>
+					<field-map name="toolTip" fieldId="toolTip" />
+					<field-map name="collapsedIconClass" fieldId="collapsedIconClass" />
+					<field-map name="navigateUrl" fieldId="" pattern="javscript:openUrl('${orgId}')"/>
+				  </field-maps>
+				</extend-info>
+				]]>
+			</extendInformation>
+		</view>
+		
+		<view id="menuOrg" name="menuOrg" title="组织菜单" type="menu"
+			width="800" height="600" pageSize="0" 
+			modal="false" allow-edit="true">
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="parent_org_id_111" compare-mode="equals" groups="简单查询,高级查询">
+				</condition-field>
+			</condition-fields>
+			<view-groups>
+				<view-group>
+					<display-field field-id="org_id111" hidden="true" />
+					<display-field field-id="name_111" hidden="false" />
+				</view-group>
+			</view-groups>
+			<order-fields>
+				<order-field field-id="org_id111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="name_111" editable="false"
+					hidden="false" />
+				<order-field field-id="info_111" editable="false"
+					hidden="false" />
+			</order-fields>
+			<extendInformation>
+				<![CDATA[
+				<extend-info>
+				  <field-maps>
+					<field-map name="text" fieldId="name_111" pattern=""/>
+					<field-map name="url" fieldId="" pattern="javscript:openUrl('${url}')"/>
+				  </field-maps>
+				</extend-info>
+				]]>
+			</extendInformation>
+		</view>
+		
+		<view id="tableOrg" name="tableOrg" title="组织列表" type="table"
+			width="800" height="600" pageSize="10" conditionGroups="简单查询,高级查询"
+			modal="false" allow-edit="true">
+			<condition-fields>
+				<condition-field editable="true" hidden="false"
+					field-id="name_111" compare-mode="containsWith" groups="简单查询,高级查询">
+				</condition-field>
+				<condition-field editable="true" hidden="false"
+					field-id="info_111" compare-mode="containsWith" groups="高级查询">
+				</condition-field>
+			</condition-fields>
+			<view-groups>
+				<view-group>
+					<display-field field-id="org_id111" hidden="true" />
+					<display-field field-id="name_111" hidden="false" />
+					<display-field field-id="info_111" hidden="false" />
+					<display-field field-id="parent_org_id_111" hidden="false" />
+				</view-group>
+			</view-groups>
+			<order-fields>
+				<order-field field-id="org_id111" order-mode="asc"
+					editable="false" hidden="false" />
+				<order-field field-id="name_111" editable="false"
+					hidden="false" />
+				<order-field field-id="info_111" editable="false"
+					hidden="false" />
+			</order-fields>
+			<group-fields>
+				<group-field field-id="org_id111" />
+			</group-fields>
+			<references>
+				<reference id="viewOrg" type="operation" show-mode="modelDialog"></reference>
+				<reference id="addOrg" type="operation" show-mode="modelDialog"></reference>
+				<reference id="deleteOrg" type="operation" show-mode="modelDialog"></reference>
+				<reference id="modifyOrg" type="operation" show-mode="modelDialog"></reference>
+				<reference id="copyAddOrg" type="operation" show-mode="modelDialog"></reference>
+			</references>
+		</view>
+	</views>
+	<indexs>
+		<index id="org_name_index" name="org_name_index" unique="true">
+			<description>索引</description>
+			<fields>
+				<string>name_111</string>
+			</fields>
+		</index>
+	</indexs>
+	<groups>
+		<group id="Basic" name="Basic" title="基本信息">
+			<field standard-field-id="org_id" primary="true" unique="false"
+				display="false" editable="true" hidden="false" id="org_id111" table-field="true"/>
+			<field standard-field-id="org_name" primary="false" unique="false" not-null="true"
+				display="false" editable="true" hidden="false" id="name_111" table-field="true" />
+			<field standard-field-id="org_info" primary="false" unique="false"
+				display="false" editable="true" hidden="false" id="info_111" table-field="true" />
+			<field standard-field-id="parent_org_id" primary="false"
+				unique="false" display="false" editable="true" model-id="org"
+				hidden="false" id="parent_org_id_111" table-field="true" />
+		</group>
+	</groups>
+</entity-model>

@@ -1,0 +1,10 @@
+<order-groups>
+		<order-group name="fileProcessor" default-type="after" default-feature="beans">
+			<order-object name="i18n" type="org.tinygroup.fileresolver.impl.I18nFileProcessor">
+				<feature-order type="before" feature="*"></feature-order>
+			</order-object>
+			<order-object name="xstream" type="org.tinygroup.fileresolver.impl.XStreamFileProcessor">
+				<feature-order type="before" feature="beans"></feature-order>
+			</order-object>
+		</order-group>
+</order-groups>

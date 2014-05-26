@@ -1,0 +1,12 @@
+<flow id="flowpage" name="flowpage" begin-node-id="flowpage" private-context="false" enable="false">
+  <nodes>
+    <node id="flowpage" name="flowpage" title="转换对象">
+      <component name="fullContextUrlRedirectComponent">
+        <properties>
+          <flow-property name="path" value="${path}"/>
+        </properties>
+      </component>
+    </node>
+    
+  </nodes>
+</flow>

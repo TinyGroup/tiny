@@ -1,0 +1,169 @@
+<service-components>
+	<service-component
+		type="org.tinygroup.plugin.impl.PluginManagerImpl"
+		group-id="org.tinygroup.plugin.impl" artifact-id="PluginManagerImpl">
+
+		<service-method name="servicePluginLevelAssemble"
+			local-name="servicePluginLevelAssemble" service-id="servicePluginLevelAssemble"
+			version="" description="组装指定级别以上的插件" method-name="assemble">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginLevelInit"
+			local-name="servicePluginLevelInit" service-id="servicePluginLevelInit"
+			version="" description="初始化指定级别以上的插件" method-name="init">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginLevelStart"
+			local-name="servicePluginLevelStart" service-id="servicePluginLevelStart"
+			version="" description="开始指定级别以上的插件" method-name="start">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginLevelPause"
+			local-name="servicePluginLevelPause" service-id="servicePluginLevelPause"
+			version="" description="暂停指定级别以下的插件" method-name="Pause">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginLevelStop"
+			local-name="servicePluginLevelStop" service-id="servicePluginLevelStop"
+			version="" description="停止指定级别以下的插件" method-name="stop">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginLevelDisassemble"
+			local-name="servicePluginLevelDisassemble" service-id="servicePluginLevelDisassemble"
+			version="" description="卸载指定级别以下的插件" method-name="disassemble">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginLevelDestroy"
+			local-name="servicePluginLevelDestroy" service-id="servicePluginLevelDestroy"
+			version="" description="销毁指定级别以下的插件" method-name="destroy">
+			<service-parameters>
+				<service-parameter name="level" type="int"
+					required="true" is-array="false" />
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		
+
+		<service-method name="servicePluginAssemble"
+			local-name="servicePluginAssemble" service-id="servicePluginAssemble"
+			version="" description="组装插件" method-name="assemble">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginInit"
+			local-name="servicePluginInit" service-id="servicePluginInit"
+			version="" description="初始化插件" method-name="init">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginStart"
+			local-name="servicePluginStart" service-id="servicePluginStart"
+			version="" description="开始插件" method-name="start">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginPause"
+			local-name="servicePluginPause" service-id="servicePluginPause"
+			version="" description="暂停插件" method-name="pause">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginStop"
+			local-name="servicePluginStop" service-id="servicePluginStop"
+			version="" description="停止指定级别以下的插件" method-name="stop">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginDisassemble"
+			local-name="servicePluginDisassemble" service-id="servicePluginDisassemble"
+			version="" description="卸载插件" method-name="disassemble">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+		
+		<service-method name="servicePluginDestroy"
+			local-name="servicePluginDestroy" service-id="servicePluginDestroy"
+			version="" description="销毁插件" method-name="destroy">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="void" />
+		</service-method>
+	
+	<service-method name="serviceGetAllPluginInfo"
+			local-name="" service-id="serviceGetAllPluginInfo"
+			version="" description="" method-name="getAllPluginInfo">
+			<service-parameters>
+			</service-parameters>
+			<service-result name="result" required="true"
+				is-array="false" type="java.util.List" />
+		</service-method>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</service-component>
+</service-components>

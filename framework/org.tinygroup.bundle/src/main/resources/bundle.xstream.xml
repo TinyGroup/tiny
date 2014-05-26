@@ -1,0 +1,5 @@
+<xstream-configuration package-name="bundle">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.bundle.config.BundleDefine" />
+	</xstream-annotation-classes>
+</xstream-configuration>

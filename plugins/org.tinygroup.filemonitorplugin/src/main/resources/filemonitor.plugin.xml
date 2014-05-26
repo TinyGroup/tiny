@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin-configs>
+	<plugin-config plugin-name="fileMonitorPlugin" plugin-bean="fileMonitorPlugin"
+		depend-plugins="" plugin-level="10" plugin-title="文件扫描监控插件"></plugin-config>
+</plugin-configs>

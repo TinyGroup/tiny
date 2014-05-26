@@ -1,0 +1,4 @@
+2014-05-24 09:12:46,040 -0    [main] INFO  org.tinygroup.order.processor.OrderProcessor  - 读取对象加载顺序配置文件:<D:\git\tiny\framework\org.tinygroup.order\target\test-classes\test.order.xml>开始
+2014-05-24 09:12:46,042 -2    [main] INFO  org.tinygroup.order.processor.OrderProcessor  - 读取对象加载顺序配置文件：<D:\git\tiny\framework\org.tinygroup.order\target\test-classes\test.order.xml>
+2014-05-24 09:12:46,062 -22   [main] INFO  org.tinygroup.order.processor.OrderGroup  - 文件处理器加载顺序处理开始
+2014-05-24 09:12:46,065 -25   [main] INFO  org.tinygroup.order.processor.OrderGroup  - 文件处理器加载顺序处理结束

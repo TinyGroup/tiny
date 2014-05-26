@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 测试 -->
+<application>
+	<application-properties>
+		<property name="BASE_PACKAGE" value="org.hundsun" />
+		<property name="TINY_IS_RELEASE_MODE" value="false" />
+		<property name="TINY_THEME" value="default" />
+		<property name="wholeWidth" value="200pt" />
+		<property name="labelWidth" value="80pt" />
+		<property name="fieldWidth" value="120pt" />
+		<property name="cardWidth" value="200pt" />
+		<!-- 如果没有指定语言或指定语言的内容找不到，则从默认语言查找 -->
+		<property name="TINY_DEFAULT_LOCALE" value="zh_CN" />
+	</application-properties>
+	<!-- config-processors节点由 ProcessorLoader处理器处理，如何配置请参考config-processors配置手册，本段配置如果不配置，则应用系统啥也不干 -->
+	<!-- greetings信息由org.tinygroup.application.processor.GreetingProcessor处理器处理，如何配置请参考 
+		GreetingProcessor配置手册 -->
+	<greetings>
+		**********************************************
+		* 欢迎进入Tiny
+		Server *
+		* *
+		* 如果有任何问题，请联系luoguo@hundsun.com *
+		**********************************************
+
+	</greetings>
+	<application-processors>
+		<application-processor bean="fileResolverProcessor"></application-processor>
+	</application-processors>
+	
+	<!-- 这里是文件搜索器相关配置，如果配置请参考file-resolver-configuration配置手册 -->
+
+</application>

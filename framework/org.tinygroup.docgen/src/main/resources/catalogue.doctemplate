@@ -1,0 +1,56 @@
+#*
+*#
+#macro(cataHeader $content $font)
+<w:p>
+	<w:pPr><w:pStyle w:val="TOC"/></w:pPr>
+	#wr($content, $font)
+</w:p>
+#end 
+
+
+#*
+*#
+#macro(cataWR)
+<w:r><w:rPr><w:noProof/><w:webHidden/></w:rPr>$bodyContent</w:r>
+#end 
+
+
+#*
+*#
+#macro(cataBegin)
+<w:r><w:fldChar w:fldCharType="begin"/></w:r>
+<w:r><w:instrText>TOC \o "1-3" \h \z \u</w:instrText></w:r>
+<w:r><w:fldChar w:fldCharType="separate"/></w:r>
+#end 
+
+
+#*
+*#
+#macro(cataEnd)
+<w:p><w:r><w:rPr><w:b/><w:b-cs/><w:lang w:val="ZH-CN"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r></w:p>
+#end 
+
+ 
+#*
+*#	
+#macro(cataLink $info)
+<w:hlink w:dest="" w:bookmark="$info.bookmarkNo">
+	#wr($info.content $info.font)
+	#@cataWR()<w:tab/>#end
+	#@cataWR()<w:fldChar w:fldCharType="begin"><w:fldData xml:space="preserve">CNDJ6nn5us4RjIIAqgBLqQsCAAAACAAAAA4AAABfAFQAbwBjADMANwA0ADUANgA2ADIAMAA5AAAA</w:fldData></w:fldChar>#end
+	#@cataWR()<w:instrText>PAGEREF $info.bookmarkNo \h</w:instrText>#end
+	#@cataWR()#end
+	#@cataWR()<w:fldChar w:fldCharType="separate"/>#end
+	#@cataWR()<w:t>$info.pageNo</w:t>#end
+	#@cataWR()<w:fldChar w:fldCharType="end"/>#end
+</w:hlink>
+#end 
+
+
+#macro(catalogue $info)
+<w:p>
+	<w:pPr><w:pStyle w:val="$info.grade"/><w:tabs><w:tab w:val="right" w:leader="dot" w:pos="8296"/></w:tabs><w:rPr><w:noProof/></w:rPr></w:pPr>
+	#if($info.begin)#cataBegin()#end
+	#cataLink($info)
+</w:p>
+#end 

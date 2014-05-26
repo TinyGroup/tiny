@@ -1,0 +1,80 @@
+2014-05-24 08:57:33,104 -0    [main] INFO  org.tinygroup.dbrouter.factory.RouterManagerBeanFactory  - 加载Bean配置文件/dbrouterbeans.xml开始...
+2014-05-24 08:57:33,233 -129  [main] INFO  org.tinygroup.dbrouter.factory.RouterManagerBeanFactory  - 加载Bean配置文件/dbrouterbeans.xml结束。
+2014-05-24 08:57:33,303 -199  [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:33,303 -199  [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:33,315 -211  [main] INFO  org.objectweb.carol.util.configuration.ConfigurationRepository  - No protocols were defined for property 'carol.protocols', trying with default protocol = 'jrmp'.
+2014-05-24 08:57:33,457 -353  [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:34,084 -980  [main] INFO  org.tinygroup.dbrouterjdbc3.jdbc.TinyStatement  - 线程组:<executeUpdate-threads>执行时间：64
+2014-05-24 08:57:35,658 -2554 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:35,658 -2554 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:35,659 -2555 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:46,269 -13165 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:46,274 -13170 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:46,275 -13171 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:46,275 -13171 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:53,103 -19999 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:53,123 -20019 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:53,124 -20020 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:53,124 -20020 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:53,579 -20475 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:53,587 -20483 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:53,587 -20483 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:53,588 -20484 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:53,886 -20782 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:53,890 -20786 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:53,890 -20786 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:53,890 -20786 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:54,118 -21014 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:54,123 -21019 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:54,123 -21019 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:54,124 -21020 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:54,989 -21885 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:55,014 -21910 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:55,014 -21910 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:55,015 -21911 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:57,004 -23900 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:57,019 -23915 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:57,019 -23915 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:57,021 -23917 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:57:58,427 -25323 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:57:58,428 -25324 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:57:58,428 -25324 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:57:58,429 -25325 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:00,130 -27026 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:00,131 -27027 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:00,131 -27027 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:00,133 -27029 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:01,604 -28500 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:01,619 -28515 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:01,620 -28516 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:01,621 -28517 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:03,494 -30390 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:03,507 -30403 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:03,507 -30403 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:03,508 -30404 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:13,010 -39906 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:13,010 -39906 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:13,011 -39907 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:44,816 -71712 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:44,817 -71713 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:44,818 -71714 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:52,488 -79384 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:52,488 -79384 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:52,490 -79386 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:53,623 -80519 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:53,632 -80528 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:53,633 -80529 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:53,634 -80530 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:54,562 -81458 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:54,566 -81462 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:54,566 -81462 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:54,567 -81463 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:57,079 -83975 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:57,089 -83985 [main] INFO  org.objectweb.jotm  - JOTM started with a local transaction factory which is not bound.
+2014-05-24 08:58:57,089 -83985 [main] INFO  org.objectweb.jotm  - CAROL initialization
+2014-05-24 08:58:57,091 -83987 [main] INFO  org.objectweb.jotm.jta  - JOTM 2.0.10
+2014-05-24 08:58:59,294 -86190 [main] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:59,330 -86226 [Thread-5] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:59,344 -86240 [Thread-7] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:59,345 -86241 [Thread-8] INFO  org.objectweb.jotm  - stop JOTM
+2014-05-24 08:58:59,346 -86242 [Thread-6] INFO  org.objectweb.jotm  - stop JOTM

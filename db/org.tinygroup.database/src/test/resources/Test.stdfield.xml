@@ -1,0 +1,15 @@
+<standard-fields package-name="org.tinygroup.test">
+	<standard-field id="test_name" name="name" title="姓名"
+		business-type-id="Varchar30">
+		<!-- <nick-name id="test_org_name" name="org_name" title="组织名称" /> -->
+	</standard-field>
+	<standard-field id="test_short_info" name="short_info"
+		title="短描述" business-type-id="TinyText">
+	</standard-field>
+	<standard-field id="test_age" name="age" title="年龄"
+		business-type-id="Int">
+	</standard-field>
+	<standard-field id="test_create_time" name="create_time"
+		title="创建时间" business-type-id="Datetime">
+	</standard-field>
+</standard-fields>

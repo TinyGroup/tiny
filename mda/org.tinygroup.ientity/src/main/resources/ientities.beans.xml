@@ -1,0 +1,204 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-autowire="byName" default-lazy-init="true">
+
+
+	<bean id="entitiesModelViewProcessor" name="entitiesModelViewProcessor"
+		scope="singleton" class="org.tinygroup.entity.engine.EntitiesModelViewProcessor">
+	</bean>
+	<bean id="entityOperationTableParameterBuilder" name="entityOperationTableParameterBuilder"
+		scope="singleton" class="org.tinygroup.entity.engine.entity.view.table.EntityOperationTableParameterBuilder">
+	</bean>
+	<bean id="entityViewModelTableServiceProcessor" name="entityViewModelTableServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.view.table.EntityViewModelTableServiceProcessor">
+	</bean>
+	
+	<bean id="entityOperationTreeParameterBuilder" name="entityOperationTreeParameterBuilder"
+		scope="singleton" class="org.tinygroup.entity.engine.entity.view.tree.EntityOperationTreeParameterBuilder">
+	</bean>
+	<bean id="entityViewModelTreeServiceProcessor" name="entityViewModelTreeServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.view.tree.EntityViewModelTreeServiceProcessor">
+	</bean>
+	
+	<bean id="entityOperationTreeWithCodeParameterBuilder" name="entityOperationTreeWithCodeParameterBuilder"
+		scope="singleton" class="org.tinygroup.entity.engine.entity.view.treewithcode.EntityOperationTreeWithCodeParameterBuilder">
+	</bean>
+	<bean id="entityViewModelTreeWithCodeServiceProcessor" name="entityViewModelTreeWithCodeServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.view.treewithcode.EntityViewModelTreeWithCodeServiceProcessor">
+	</bean>
+	
+	<bean id="entityOperationMenuParameterBuilder" name="entityOperationMenuParameterBuilder"
+		scope="singleton" class="org.tinygroup.entity.engine.entity.view.menu.EntityOperationMenuParameterBuilder">
+	</bean>
+	<bean id="entityViewModelMenuServiceProcessor" name="entityViewModelMenuServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.view.menu.EntityViewModelMenuServiceProcessor">
+	</bean>	
+	<bean id="modelInfoGetter" name="modelInfoGetter" scope="singleton"
+		class="org.tinygroup.entity.engine.ModelInfoGetter">
+	</bean>
+	<bean id="entityModelLoader" name="entityModelLoader" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.EntityModelLoader">
+	</bean>
+	<bean id="relationModelLoader" name="relationModelLoader" scope="singleton"
+		class="org.tinygroup.entity.engine.relation.RelationModelLoader">
+	</bean>
+	
+	<bean id="entityModelToTable" name="entityModelToTable" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.impl.EntityModelToTableImpl">
+	</bean>
+	
+	<bean id="entityOperationViewParameterBuilder" name="entityOperationViewParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.view.EntityOperationViewParameterBuilder">
+	</bean>
+	
+	<bean id="entityViewModelViewServiceProcessor" name="entityViewModelViewServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.view.EntityViewModelViewServiceProcessor">
+	</bean>
+	
+	<bean id="entityOperationAddParameterBuilder" name="entityOperationAddParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.add.EntityOperationAddParameterBuilder">
+	</bean>
+	
+	<bean id="entityViewModelAddServiceProcessor" name="entityViewModelAddServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.add.EntityViewModelAddServiceProcessor">
+	</bean>
+	
+	<bean id="entityOperationCopyAddStageSaveParameterBuilder" name="entityOperationCopyAddStageSaveParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.copyadd.EntityOperationCopyAddStageSaveParameterBuilder">
+	</bean>
+	
+	<bean id="entityOperationCopyAddStageSelectParameterBuilder" name="entityOperationCopyAddStageSelectParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.copyadd.EntityOperationCopyAddStageSelectParameterBuilder">
+	</bean>
+	
+	<bean id="entityViewModelCopyAddStageSelectServiceProcessor" name="EntityViewModelCopyAddStageSelectServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.copyadd.EntityViewModelCopyAddStageSelectServiceProcessor">
+	</bean>
+	
+	<bean id="entityViewModelCopyAddStageSaveServiceProcessor" name="entityViewModelCopyAddStageSaveServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.copyadd.EntityViewModelCopyAddStageSaveServiceProcessor">
+	</bean>
+    
+ 
+    <bean id="entityOperationDeleteParameterBuilder" name="entityOperationDeleteParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.delete.EntityOperationDeleteParameterBuilder">
+	</bean>
+	
+	<bean id="entityOperationDeleteConfirmParameterBuilder" name="entityOperationDeleteConfirmParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.delete.EntityOperationDeleteConfirmParameterBuilder">
+	</bean>
+	
+	<bean id="entityViewModelDeleteConfirmServiceProcessor" name="entityViewModelDeleteConfirmServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.delete.EntityViewModelDeleteConfirmServiceProcessor">
+	</bean>
+	
+	<bean id="entityViewModelDeleteServiceProcessor" name="entityViewModelDeleteServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.delete.EntityViewModelDeleteServiceProcessor">
+	</bean>
+    <bean id="entityOperationModifyStageSelectParameterBuilder" name="entityOperationModifyStageSelectParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.modify.EntityOperationModifyStageSelectParameterBuilder">
+	</bean>
+	
+	<bean id="entityViewModelModifyStageSelectServiceProcessor" name="entityViewModelModifyStageSelectServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.modify.EntityViewModelModifyStageSelectServiceProcessor">
+	</bean>
+     <bean id="entityOperationModifyStageSaveParameterBuilder" name="entityOperationModifyStageSaveParameterBuilder" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.modify.EntityOperationModifyStageSaveParameterBuilder">
+	</bean>
+	
+	<bean id="entityViewModelModifyStageSaveServiceProcessor" name="entityViewModelModifyStageSaveServiceProcessor" scope="singleton"
+		class="org.tinygroup.entity.engine.entity.operation.modify.EntityViewModelModifyStageSaveServiceProcessor">
+	</bean>
+	 <bean id="dictDataLoader" name="dictDataLoader" scope="singleton"
+		class="org.tinygroup.entity.dictload.DictDataLoader">
+	</bean>
+	 <bean id="dictFromDatabaseService" name="dictFromDatabaseService" scope="singleton"
+		class="org.tinygroup.entity.impl.DictFromDatabaseService">
+	</bean>
+	
+	<bean id="relationViewModelServiceProcessor" name="relationViewModelServiceProcessor"
+		scope="singleton" class="org.tinygroup.entity.engine.relation.view.RelationViewModelServiceProcessor">
+	</bean>
+	<bean id="relationViewParameterBuilder" name="relationViewParameterBuilder"
+		scope="singleton" class="org.tinygroup.entity.engine.relation.view.RelationViewParameterBuilder">
+	</bean>
+	<bean id="entityRelationsManager" name="entityRelationsManager"
+		scope="singleton" class="org.tinygroup.entity.impl.EntityRelationsManagerImpl">
+	</bean>
+	<bean id="entityRelationsFileProcessor" name="entityRelationsFileProcessor"
+		scope="singleton" class="org.tinygroup.entity.fileresolver.EntityRelationsFileProcessor">
+	</bean>
+	
+	<bean id="beginsWithCompareMode" name="beginsWithCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.BeginsWithCompareMode">
+	</bean>
+	<bean id="containsWithCompareMode" name="containsWithCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.ContainsWithCompareMode">
+	</bean>
+	<bean id="EndsWithCompareMode" name="EndsWithCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.EndsWithCompareMode">
+	</bean>
+	<bean id="equalsCompareMode" name="equalsCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.EqualsCompareMode">
+	</bean>
+	<bean id="greaterOrEqualsCompareMode" name="greaterOrEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.GreaterOrEqualsCompareMode">
+	</bean>
+	<bean id="greaterThanCompareMode" name="greaterThanCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.GreaterThanCompareMode">
+	</bean>
+	<bean id="isEmptyCompareMode" name="isEmptyCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.IsEmptyCompareMode">
+	</bean>
+	<bean id="isNotEmptyCompareMode" name="isNotEmptyCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.IsNotEmptyCompareMode">
+	</bean>
+	<bean id="isNullCompareMode" name="isNullCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.IsNullCompareMode">
+	</bean>
+	<bean id="isNotNullCompareMode" name="isNotNullCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.IsNotNullCompareMode">
+	</bean>
+	<bean id="lessOrEqualsCompareMode" name="lessOrEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.LessOrEqualsCompareMode">
+	</bean>
+	<bean id="lessThanCompareMode" name="lessThanCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.LessThanCompareMode">
+	</bean>
+	<bean id="notContainsWithCompareMode" name="notContainsWithCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.NotContainsWithCompareMode">
+	</bean>
+	<bean id="notEqualsCompareMode" name="notEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.NotEqualsCompareMode">
+	</bean>
+	<bean id="betweenAndCompareMode" name="betweenAndCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.BetweenAndCompareMode">
+	</bean>
+	<bean id="notBetweenAndCompareMode" name="notBetweenAndCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.NotBetweenAndCompareMode">
+	</bean>
+	<bean id="lengthNotEqualsCompareMode" name="lengthNotEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.LengthNotEqualsCompareMode">
+	</bean>
+	<bean id="lengthEqualsCompareMode" name="lengthEqualsCompareMode"
+		scope="singleton" class="org.tinygroup.entity.impl.LengthEqualsCompareMode">
+	</bean>
+	
+	
+	<bean id="compareModeContain" name="compareModeContain"
+		scope="singleton" class="org.tinygroup.entity.CompareModeContain">
+	</bean>
+	
+	<bean id="expressionManager" name="expressionManager"
+		scope="singleton" class="org.tinygroup.expression.impl.ExpressionManagerImpl">
+	</bean>
+	
+	<bean id="expressionFileProcesor" name="expressionFileProcesor"
+		scope="singleton" class="org.tinygroup.expression.fileresolver.ExpressionFileProcesor">
+	</bean>
+	
+</beans>

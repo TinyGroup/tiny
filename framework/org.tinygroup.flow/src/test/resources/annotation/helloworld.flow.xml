@@ -1,0 +1,12 @@
+<flow id="helloworld" name="aa" default-node-id="end" begin-node-id="helloworld">
+	<nodes>
+		<node id="helloworld">
+			<component name="helloWorldAnnoComponent">
+				<properties>
+					<flow-property name="name" value="${name}" />
+					<flow-property name="resultKey" value="${resultKey}" />
+				</properties>
+			</component>
+		</node>
+	</nodes>
+</flow>

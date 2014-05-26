@@ -1,0 +1,26 @@
+<archetype
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+	<id>plugincomponent</id>
+	<sources>
+		<source>src/main/java/PluginImpl.java</source>
+		<source>src/main/java/Hello.java</source>
+	</sources>
+
+	<resources>
+		<resource>src/main/resources/plugins.xml</resource>
+		<resource>src/main/resources/Plugin.beans.xml</resource>
+		<resource>
+			src/main/resources/icon/component.gif
+		</resource>
+	</resources>
+	<!--以下 通配符不可用
+	<testSources>
+		<source>src/test/java/*.java</source>
+	</testSources>
+	<testResources>
+		<resource> src/test/resources/**.* </resource>
+	</testResources>
+	 -->
+</archetype>

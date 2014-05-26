@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="initDatas">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="use-packages" type="usePackagesType"
+					minOccurs="0" />
+				<xs:element name="initData-list" type="initDataListType"
+					minOccurs="0" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="usePackagesType">
+		<xs:sequence>
+			<xs:element name="use-package" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="package-name" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="initDataListType">
+		<xs:sequence>
+			<xs:element name="initData" type="initDataType" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="initDataType">
+		<xs:all>
+			<xs:element name="records" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="record" type="recordType" minOccurs="0"
+							maxOccurs="unbounded" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="package-name" type="xs:string" />
+		<xs:attribute name="table-id" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="recordType">
+		<xs:sequence>
+			<xs:element name="value-pair" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="table-field-id" type="xs:string" />
+					<xs:attribute name="value" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

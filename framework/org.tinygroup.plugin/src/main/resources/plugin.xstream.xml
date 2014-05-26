@@ -1,0 +1,5 @@
+<xstream-configuration package-name="plugin">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.plugin.config.PluginConfigs" />
+	</xstream-annotation-classes>
+</xstream-configuration>

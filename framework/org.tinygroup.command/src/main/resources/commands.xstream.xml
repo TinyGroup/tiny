@@ -1,0 +1,5 @@
+<xstream-configuration package-name="commands">
+	<xstream-annotation-classes>
+		<xstream-annotation-class class-name="org.tinygroup.command.config.Commands" />
+	</xstream-annotation-classes>
+</xstream-configuration>

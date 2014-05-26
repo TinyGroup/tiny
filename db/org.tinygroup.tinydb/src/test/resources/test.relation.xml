@@ -1,0 +1,24 @@
+<relation-configs>
+	<relation-config id="11" type="oneToMore1"
+		collection-mode="List" key-name="" mode="1:n">
+		<relations>
+			<relation-config id="12" type="oneToMore2" relation-key-name="relationIdList"
+				collection-mode="List" key-name="id" main-name="relationId" mode="1:n">
+				<relations>
+					<relation-config id="13" type="oneToMore3" relation-key-name="relationIdSet" collection-mode="Set"
+						key-name="id" main-name="relationId" mode="1:n"/>
+				</relations>
+			</relation-config>
+		</relations>
+	</relation-config>
+	<relation-config id="14" type="moreToOne1" mode="n:1">
+	   <relations>
+	        <relation-config id="15" type="moreToOne2" mode="n:1" main-name="relationId" key-name="relationId1" >
+	          <relations>
+	             <relation-config id="16" type="moreToOne4" main-name="relationId" key-name="relationId" relation-key-name="relationIdList" mode="1:n"/>
+	          </relations>
+	        </relation-config>
+	         <relation-config id="17" type="moreToOne3" main-name="relationId" key-name="relationId2" mode="n:1"/>
+	   </relations>
+	</relation-config>
+</relation-configs>

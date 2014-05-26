@@ -1,0 +1,32 @@
+#macro(add $list)
+#set($total=0)
+#foreach($item in $list)
+$item
+#set($total =$total+$item)
+#end
+--------------
+total = $total
+#end
+
+#macro(d)
+<tr><td>$!bodyContent</td></tr>
+#end
+
+
+#macro(accordion $id) 
+<div id="$id">
+ $!bodyContent
+</div>
+<script>
+$(function() {
+    $( "#$id" ).accordion();
+});
+</script>
+#end
+
+#macro(accordionSection $title)
+   <h3>$!title</h3>
+    <div>
+       $!bodyContent
+    </div>
+#end

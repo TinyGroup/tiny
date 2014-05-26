@@ -1,0 +1,13 @@
+<order-groups>
+		<order-group name="needOrder" default-type="after" default-feature="three">
+			<order-object name="one" type="org.tinygroup.order.orderObject.One">
+				<feature-order type="before" feature="*"></feature-order>
+			</order-object>
+			<order-object name="two" type="org.tinygroup.order.orderObject.Two">
+				<feature-order type="require" feature="one"></feature-order>
+			</order-object>
+			<order-object name="three" type="org.tinygroup.order.orderObject.Three">
+				<feature-order type="require" feature="two"></feature-order>
+			</order-object>
+		</order-group>
+</order-groups>

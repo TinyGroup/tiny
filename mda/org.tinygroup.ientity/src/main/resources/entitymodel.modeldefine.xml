@@ -1,0 +1,76 @@
+<model-define id="EntityModel" name="EntityModel" title="实体模型"
+	model-class="org.tinygroup.entity.entitymodel.EntityModel"
+	error-page="/model/modelError.pagelet"
+	validate-error-page="/model/modelValidateError.page"
+	model-infomation-getter="modelInfoGetter" model-loader-bean="entityModelLoader">
+	<model-processor-defines>
+		<model-processor-define record-mode="Single"
+			name="view" title="查看">
+			<model-processor-stage name="view" title="查看"
+				service-processor="entityViewModelViewServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationViewParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define record-mode="none" name="add" title="新增">
+			<model-processor-stage name="show" title="查询"
+				service-processor="" view-processor="defaultModelViewProcessor"
+				parameter-builder=""></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="entityViewModelAddServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationAddParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="copyAdd" title="拷贝新增" record-mode="Single">
+			<model-processor-stage name="copy" title="记录拷贝"
+				service-processor="entityViewModelCopyAddStageSelectServiceProcessor" view-processor="defaultModelViewProcessor"
+				parameter-builder="entityOperationCopyAddStageSelectParameterBuilder"></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="entityViewModelCopyAddStageSaveServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationCopyAddStageSaveParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define record-mode="Multiple"
+			name="delete" title="删除">
+		    <page-config confirm="true" message="你确认要删除选中记录吗？" stage-name="delete"></page-config>
+			<!-- <model-processor-stage name="confirm" title="删除确认"
+				service-processor="entityViewModelDeleteConfirmServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationDeleteConfirmParameterBuilder"></model-processor-stage> -->
+			<model-processor-stage name="delete" title="删除"
+				service-processor="entityViewModelDeleteServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationDeleteParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="modify" title="修改" record-mode="Single">
+			<model-processor-stage name="select" title="修改"
+				service-processor="entityViewModelModifyStageSelectServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationModifyStageSelectParameterBuilder"></model-processor-stage>
+			<model-processor-stage name="save" title="保存" need-validate="true"
+				service-processor="entityViewModelModifyStageSaveServiceProcessor" 
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationModifyStageSaveParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="table" title="表格">
+			<model-processor-stage name="table" title="表格"
+				service-processor="entityViewModelTableServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationTableParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="card" title="卡片">
+			<model-processor-stage name="card" title="卡片"
+				service-processor="entityViewModelTableServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationTableParameterBuilder"></model-processor-stage>
+			<model-processor-stage name="detail" title="卡片"
+				service-processor="entityViewModelTableServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationTableParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="tree" title="树">
+			<model-processor-stage name="tree" title="树"
+				service-processor="entityViewModelTreeServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationTreeParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="treeWithCode" title="规则编号形式树">
+			<model-processor-stage name="treeWithCode" title="规则编号形式树"
+				service-processor="entityViewModelTreeWithCodeServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationTreeWithCodeParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+		<model-processor-define name="menu" title="菜单">
+			<model-processor-stage name="menu" title="菜单"
+				service-processor="entityViewModelMenuServiceProcessor"
+				view-processor="defaultModelViewProcessor" parameter-builder="entityOperationTreeParameterBuilder"></model-processor-stage>
+		</model-processor-define>
+	</model-processor-defines>
+</model-define>

@@ -1,0 +1,7 @@
+<xstream-configuration package-name="processor">
+	<xstream-annotation-classes>
+		<xstream-annotation-class
+			class-name="org.tinygroup.database.config.processor.Processors" />
+	</xstream-annotation-classes>
+</xstream-configuration>
+

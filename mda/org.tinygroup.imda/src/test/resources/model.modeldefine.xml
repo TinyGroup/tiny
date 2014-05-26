@@ -1,0 +1,12 @@
+<model-define name="CaseModel" title="CaseModel"
+	model-class="org.tinygroup.imda.usermodel.CaseModel"
+	model-infomation-getter="infoGetter" model-loader-bean="baseModelLoader">
+	<model-processor-defines>
+		<model-processor-define name="processor1"
+			title="processor1">
+			<model-processor-stage name="stage1" title="stage1"
+				service-processor="caseModelServiceProcessor" view-processor="caseModelViewProcessor"
+				parameter-builder="parameterBuilder"></model-processor-stage>
+		</model-processor-define>
+	</model-processor-defines>
+</model-define>
